@@ -1,7 +1,6 @@
 import fs from 'fs';
 import axios from 'axios';
 
-
 const clientId = process.env.SPOTIFY_CLIENT_ID;
 const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
 const refreshToken = process.env.SPOTIFY_REFRESH_TOKEN;
@@ -44,12 +43,12 @@ async function getRecentTracks(accessToken) {
   }));
 }
 
-(async () => {
-  const accessToken = await getAccessToken();
-  const tracks = await getRecentTracks(accessToken);
+const accessToken = await getAccessToken();
+const tracks = await getRecentTracks(accessToken);
 
-  fs.mkdirSync('data', { recursive: true });
-  fs.writeFileSync('data/tracks.json', JSON.stringify(tracks, null, 2));
+// Ensure data directory exists
+fs.mkdirSync('data', { recursive: true });
+// Write to tracks.json
+fs.writeFileSync('data/tracks.json', JSON.stringify(tracks, null, 2));
 
-  console.log('✅ Updated data/tracks.json');
-})();
+console.log('✅ Updated data/tracks.json');
