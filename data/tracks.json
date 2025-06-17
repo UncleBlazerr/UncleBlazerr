@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "name": "Thunderhorse",
+    "artist": "Metalocalypse: Dethklok",
+    "url": "https://open.spotify.com/track/7eZbzL7QD69KAbOygX39lr",
+    "image": "https://i.scdn.co/image/ab67616d0000b273533644c194069d80a08109cf"
+  },
+  {
+    "name": "Courtesy Of The Red, White And Blue (The Angry American)",
+    "artist": "Toby Keith",
+    "url": "https://open.spotify.com/track/0M7mWKqwTIaVjYyxfZmtTa",
+    "image": "https://i.scdn.co/image/ab67616d0000b273bb5c54a68f9ce31f83b98de4"
+  },
+  {
+    "name": "How Do You Like Me Now?!",
+    "artist": "Toby Keith",
+    "url": "https://open.spotify.com/track/7rDcULv8vV16vetBjPJhuE",
+    "image": "https://i.scdn.co/image/ab67616d0000b273829f42844519e667aa17cbe7"
+  },
+  {
+    "name": "All-American Girl",
+    "artist": "Carrie Underwood",
+    "url": "https://open.spotify.com/track/2dRPQFwPqAmc42mDRnsDQu",
+    "image": "https://i.scdn.co/image/ab67616d0000b2738b3962e95912849e28378231"
+  },
+  {
+    "name": "Man! I Feel Like A Woman!",
+    "artist": "Shania Twain",
+    "url": "https://open.spotify.com/track/2mqaYmF0XmV8egZB6jQOtN",
+    "image": "https://i.scdn.co/image/ab67616d0000b273f4fc5ce3068e340f35037770"
+  }
+]
