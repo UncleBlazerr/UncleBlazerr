@@ -1,51 +1,82 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Top 5 Spotify Tracks</title>
+  <meta charset="UTF-8" />
+  <title>My Spotify Stats</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       padding: 2rem;
+      background: #f9f9f9;
     }
+
+    h1, h2 {
+      color: #1DB954;
+    }
+
     ul {
       list-style: none;
       padding: 0;
     }
+
     li {
       margin-bottom: 1.5rem;
       display: flex;
       align-items: center;
+      background: #fff;
+      padding: 0.75rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
+
     img {
       width: 64px;
       height: 64px;
       margin-right: 1rem;
+      border-radius: 4px;
+    }
+
+    small {
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <h1>Top 5 Recently Played Spotify Trackz</h1>
-  <ul id="track-list"></ul>
+  <h1>🎵 My Spotify Dashboard</h1>
+
+  <h2>🎧 Top 5 Most Played Tracks (All Time)</h2>
+  <ul id="top-tracks"></ul>
+
+  <h2>🔁 Recently Played Tracks</h2>
+  <ul id="recent-tracks"></ul>
 
   <script>
-    fetch('data/tracks.json')
-      .then(res => res.json())
-      .then(data => {
-        const list = document.getElementById('track-list');
-        data.forEach(track => {
-          const li = document.createElement('li');
-          li.innerHTML = `
-            <img src="${track.image}" alt="Cover art">
-            <div>
-              <a href="${track.url}" target="_blank">${track.name}</a><br>
-              <small>${track.artist}</small>
-            </div>
-          `;
-          list.appendChild(li);
+    function renderTracks(selector, url) {
+      fetch(url)
+        .then(res => res.json())
+        .then(data => {
+          const list = document.querySelector(selector);
+          data.forEach(track => {
+            const li = document.createElement('li');
+            li.innerHTML = `
+              <img src="${track.image}" alt="Cover art">
+              <div>
+                <a href="${track.url}" target="_blank">${track.name}</a><br>
+                <small>${track.artist}</small>
+              </div>
+            `;
+            list.appendChild(li);
+          });
+        })
+        .catch(err => {
+          const list = document.querySelector(selector);
+          list.innerHTML = '<li><em>Failed to load tracks</em></li>';
+          console.error(err);
         });
-      });
+    }
+
+    renderTracks('#top-tracks', 'data/top.json');
+    renderTracks('#recent-tracks', 'data/recent.json');
   </script>
 </body>
 </html>
