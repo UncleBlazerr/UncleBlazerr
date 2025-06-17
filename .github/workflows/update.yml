@@ -2,7 +2,7 @@ name: Update Spotify Tracks
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # Every 30 minutes
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -19,9 +19,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./
 
       - name: Run update script
         run: node scripts/updateTopTracks.js
+        working-directory: ./
         env:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
@@ -34,3 +36,4 @@ jobs:
           git add data/tracks.json
           git commit -m "🔁 Update top Spotify tracks [skip ci]" || echo "No changes"
           git push
+        working-directory: ./
