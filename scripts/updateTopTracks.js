@@ -26,13 +26,13 @@ async function getAccessToken() {
   return res.data.access_token;
 }
 
-async function fetchTracks(url, token) {
+async function fetchTracks(url, token, isRecent = false) {
   const res = await axios.get(url, {
     headers: { Authorization: `Bearer ${token}` }
   });
 
   return res.data.items.map(item => {
-    const track = item.track || item; // recent has `item.track`, top has `item`
+    const track = isRecent ? item.track : item;
     return {
       name: track.name,
       artist: track.artists.map(a => a.name).join(', '),
@@ -46,23 +46,27 @@ async function fetchTracks(url, token) {
 async function main() {
   const token = await getAccessToken();
 
-  // Recent tracks
-  const recent = await fetchTracks(
-    'https://api.spotify.com/v1/me/player/recently-played?limit=5',
-    token
-  );
   await fs.mkdir('data', { recursive: true });
-  await fs.writeFile('data/recent.json', JSON.stringify(recent, null, 2));
 
-  // Top played tracks (long-term)
-  const top = await fetchTracks(
+  // Recently played
+  const recentTracks = await fetchTracks(
+    'https://api.spotify.com/v1/me/player/recently-played?limit=5',
+    token,
+    true
+  );
+  await fs.writeFile('data/recent.json', JSON.stringify(recentTracks, null, 2));
+
+  // Top played (long-term)
+  const topTracks = await fetchTracks(
     'https://api.spotify.com/v1/me/top/tracks?limit=5&time_range=long_term',
     token
   );
-  await fs.writeFile('data/top.json', JSON.stringify(top, null, 2));
+  await fs.writeFile('data/top.json', JSON.stringify(topTracks, null, 2));
+
+  console.log('✅ Data updated successfully.');
 }
 
 main().catch(err => {
-  console.error(err);
+  console.error('❌ Error updating Spotify data:', err.message);
   process.exit(1);
 });
