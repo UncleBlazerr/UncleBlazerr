@@ -2,23 +2,24 @@ name: Update Spotify Tracks
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
-  workflow_dispatch:
+    - cron: '*/30 * * * *'  # Every 30 mins
+  workflow_dispatch:         # Manual run button
+
+permissions:
+  contents: write  # ✅ Needed for git push to work
 
 jobs:
   update:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo at root
+      - name: Checkout repo
         uses: actions/checkout@v3
-        with:
-          path: '.'
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: 18
 
       - name: Install dependencies
         run: npm install
@@ -31,7 +32,7 @@ jobs:
           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
 
       - name: Commit updated data
-        env: 
+        env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git config user.name "GitHub Actions"
