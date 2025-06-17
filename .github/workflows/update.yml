@@ -31,6 +31,8 @@ jobs:
           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
 
       - name: Commit updated data
+        env: 
+          GH_PAT: ${{secrets.GH_PAT}}
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
