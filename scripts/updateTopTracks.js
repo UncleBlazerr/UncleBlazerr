@@ -1,54 +1,68 @@
-import fs from 'fs';
+import fs from 'fs/promises';
 import axios from 'axios';
 
-const clientId = process.env.SPOTIFY_CLIENT_ID;
-const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
-const refreshToken = process.env.SPOTIFY_REFRESH_TOKEN;
+const {
+  SPOTIFY_CLIENT_ID,
+  SPOTIFY_CLIENT_SECRET,
+  SPOTIFY_REFRESH_TOKEN
+} = process.env;
 
 async function getAccessToken() {
-  const response = await axios.post(
+  const res = await axios.post(
     'https://accounts.spotify.com/api/token',
     new URLSearchParams({
       grant_type: 'refresh_token',
-      refresh_token: refreshToken,
+      refresh_token: SPOTIFY_REFRESH_TOKEN
     }),
     {
       headers: {
         Authorization:
           'Basic ' +
-          Buffer.from(`${clientId}:${clientSecret}`).toString('base64'),
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
+          Buffer.from(`${SPOTIFY_CLIENT_ID}:${SPOTIFY_CLIENT_SECRET}`).toString('base64'),
+        'Content-Type': 'application/x-www-form-urlencoded'
+      }
     }
   );
-
-  return response.data.access_token;
+  return res.data.access_token;
 }
 
-async function getRecentTracks(accessToken) {
-  const response = await axios.get(
+async function fetchTracks(url, token) {
+  const res = await axios.get(url, {
+    headers: { Authorization: `Bearer ${token}` }
+  });
+
+  return res.data.items.map(item => {
+    const track = item.track || item; // recent has `item.track`, top has `item`
+    return {
+      name: track.name,
+      artist: track.artists.map(a => a.name).join(', '),
+      url: track.external_urls.spotify,
+      image: track.album.images[0]?.url || '',
+      preview_url: track.preview_url || null
+    };
+  });
+}
+
+async function main() {
+  const token = await getAccessToken();
+
+  // Recent tracks
+  const recent = await fetchTracks(
     'https://api.spotify.com/v1/me/player/recently-played?limit=5',
-    {
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-      },
-    }
+    token
   );
+  await fs.mkdir('data', { recursive: true });
+  await fs.writeFile('data/recent.json', JSON.stringify(recent, null, 2));
 
-  return response.data.items.map(item => ({
-    name: item.track.name,
-    artist: item.track.artists.map(a => a.name).join(', '),
-    url: item.track.external_urls.spotify,
-    image: item.track.album.images[0]?.url || '',
-  }));
+  // Top played tracks (long-term)
+  const top = await fetchTracks(
+    'https://api.spotify.com/v1/me/top/tracks?limit=5&time_range=long_term',
+    token
+  );
+  await fs.writeFile('data/top.json', JSON.stringify(top, null, 2));
 }
 
-const accessToken = await getAccessToken();
-const tracks = await getRecentTracks(accessToken);
-
-// Ensure data directory exists
-fs.mkdirSync('data', { recursive: true });
-// Write to tracks.json
-fs.writeFileSync('data/tracks.json', JSON.stringify(tracks, null, 2));
-
-console.log('✅ Updated data/tracks.json');
+main().catch(err => {
+  console.error(err);
+  process.exit(1);
+});
