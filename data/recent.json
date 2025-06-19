@@ -7,6 +7,13 @@
     "preview_url": null
   },
   {
+    "name": "The Middle",
+    "artist": "Jimmy Eat World",
+    "url": "https://open.spotify.com/track/6GG73Jik4jUlQCkKg9JuGO",
+    "image": "https://i.scdn.co/image/ab67616d0000b27395d1d98c5176e4f982bd73d6",
+    "preview_url": null
+  },
+  {
     "name": "Stacy's Mom",
     "artist": "Fountains Of Wayne",
     "url": "https://open.spotify.com/track/27L8sESb3KR79asDUBu8nW",
@@ -24,13 +31,6 @@
     "name": "Yo Ho Mateys Away",
     "artist": "The Never Land Pirate Band",
     "url": "https://open.spotify.com/track/2wiO723A7G2gTx3txcWR7p",
-    "image": "https://i.scdn.co/image/ab67616d0000b273356a5a6be1b1c17267f32fd1",
-    "preview_url": null
-  },
-  {
-    "name": "Jake and the Never Land Pirates (Main Title) - From \"Jake and the Never Land Pirates\"/Soundtrack Version",
-    "artist": "The Never Land Pirate Band",
-    "url": "https://open.spotify.com/track/6j6fuhuCNiULtPmlfYKOz2",
     "image": "https://i.scdn.co/image/ab67616d0000b273356a5a6be1b1c17267f32fd1",
     "preview_url": null
   }
