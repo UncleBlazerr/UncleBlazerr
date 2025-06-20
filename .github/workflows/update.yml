@@ -2,7 +2,7 @@ name: Update Spotify Tracks
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # Every 30 mins
+    - cron: '*/10 * * * *'  # Every 30 mins
   workflow_dispatch:         # Manual run button
 
 permissions:
