@@ -1,9 +1,30 @@
 [
   {
-    "name": "Lost",
-    "artist": "Hours Eastly",
-    "url": "https://open.spotify.com/track/2RPhwLuJxbqGTXkfZlpyZS",
-    "image": "https://i.scdn.co/image/ab67616d0000b2731afbfe18cfe73b7ac098fad4",
+    "name": "Trust the Path (with The Hip Abduction)",
+    "artist": "Coyote Island, The Hip Abduction",
+    "url": "https://open.spotify.com/track/1ajLihStvm4xClsn6rsFLn",
+    "image": "https://i.scdn.co/image/ab67616d0000b2738ebe99fd1fd2668486dc8f72",
+    "preview_url": null
+  },
+  {
+    "name": "Shine",
+    "artist": "Stick Figure",
+    "url": "https://open.spotify.com/track/1QhrlNjzqmqEFW5T5yMFhw",
+    "image": "https://i.scdn.co/image/ab67616d0000b273b051ce304d1eb1a6f340cd20",
+    "preview_url": null
+  },
+  {
+    "name": "Where Is My Mind?",
+    "artist": "The Step Beats",
+    "url": "https://open.spotify.com/track/5nv88WgMaPtHda07y7chpp",
+    "image": "https://i.scdn.co/image/ab67616d0000b27318c96eb5bcdfa5c35fbd4c1b",
+    "preview_url": null
+  },
+  {
+    "name": "Loosen Up",
+    "artist": "Surfer Girl",
+    "url": "https://open.spotify.com/track/1vZ1RXHw8CO6shDoTvngHa",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e30600c0750b22493adcf652",
     "preview_url": null
   },
   {
@@ -11,27 +32,6 @@
     "artist": "Hours Eastly",
     "url": "https://open.spotify.com/track/2RPhwLuJxbqGTXkfZlpyZS",
     "image": "https://i.scdn.co/image/ab67616d0000b2731afbfe18cfe73b7ac098fad4",
-    "preview_url": null
-  },
-  {
-    "name": "Lost",
-    "artist": "Hours Eastly",
-    "url": "https://open.spotify.com/track/2RPhwLuJxbqGTXkfZlpyZS",
-    "image": "https://i.scdn.co/image/ab67616d0000b2731afbfe18cfe73b7ac098fad4",
-    "preview_url": null
-  },
-  {
-    "name": "Part of My Life",
-    "artist": "Collie Buddz",
-    "url": "https://open.spotify.com/track/4M3IhVHuE5X8bhryrnBSCY",
-    "image": "https://i.scdn.co/image/ab67616d0000b2731baa226218a6ed1d1ed22ab8",
-    "preview_url": null
-  },
-  {
-    "name": "Dreamin' Safe and Sound",
-    "artist": "Claire Wright",
-    "url": "https://open.spotify.com/track/7pcmQANfl623NVzJOJdFOG",
-    "image": "https://i.scdn.co/image/ab67616d0000b27391e09d588cecc963da4b3fb2",
     "preview_url": null
   }
 ]
