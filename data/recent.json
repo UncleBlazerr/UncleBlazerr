@@ -1,5 +1,26 @@
 [
   {
+    "name": "Requiem",
+    "artist": "Trivium",
+    "url": "https://open.spotify.com/track/6ABF1zJPIZ6mOOXxWBqUvO",
+    "image": "https://i.scdn.co/image/ab67616d0000b27304d44cf5d72268345fc016cb",
+    "preview_url": null
+  },
+  {
+    "name": "Fugue (A Revelation)",
+    "artist": "Trivium",
+    "url": "https://open.spotify.com/track/619BKZZcRoKkWesmDWqsdk",
+    "image": "https://i.scdn.co/image/ab67616d0000b27304d44cf5d72268345fc016cb",
+    "preview_url": null
+  },
+  {
+    "name": "If I Could Collapse the Masses",
+    "artist": "Trivium",
+    "url": "https://open.spotify.com/track/25VfNqor7AtwNZ1IGQdJ6k",
+    "image": "https://i.scdn.co/image/ab67616d0000b27304d44cf5d72268345fc016cb",
+    "preview_url": null
+  },
+  {
     "name": "Black No. 1 (Little Miss Scare -All)",
     "artist": "Type O Negative",
     "url": "https://open.spotify.com/track/710B9xFjNOisQtKtppZE9p",
@@ -11,27 +32,6 @@
     "artist": "Trivium",
     "url": "https://open.spotify.com/track/2tNx0sauNCGfpniMNu9hEh",
     "image": "https://i.scdn.co/image/ab67616d0000b273ec6ceb0c5b6ed2c9dd93afc2",
-    "preview_url": null
-  },
-  {
-    "name": "Bück dich",
-    "artist": "Rammstein",
-    "url": "https://open.spotify.com/track/3pi5DteeniOsDzonEx5qpg",
-    "image": "https://i.scdn.co/image/ab67616d0000b273030cda12ffbebd6561c1c0f0",
-    "preview_url": null
-  },
-  {
-    "name": "Scorn",
-    "artist": "In Flames",
-    "url": "https://open.spotify.com/track/7xLWPi544APqf8CkNcimKz",
-    "image": "https://i.scdn.co/image/ab67616d0000b273c62cee93f23640a1dc1034c3",
-    "preview_url": null
-  },
-  {
-    "name": "Clad in Shadows 99",
-    "artist": "In Flames",
-    "url": "https://open.spotify.com/track/7La2yseCR4oZdqhPlrYhr8",
-    "image": "https://i.scdn.co/image/ab67616d0000b2732d90350cfe583b3aff6f09a6",
     "preview_url": null
   }
 ]
