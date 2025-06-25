@@ -1,6 +1,10 @@
 from pybaseball import statcast, playerid_reverse_lookup
 from datetime import datetime, timedelta
 import pandas as pd
+import os
+
+#make os dir
+os.makedirs("almosthomers", exist_ok=True)
 
 # Use yesterday's date
 yesterday = (datetime.today() - timedelta(days=1)).strftime('%Y-%m-%d')
@@ -62,5 +66,5 @@ final = merged[[
 final.columns = ['Batter', 'Exit Velo', 'Launch Angle', 'Distance (ft)', 'Event']
 
 # Export to HTML
-final.to_html("output.html", escape=False, index=False)
+final.to_html("almosthomers/index.html", escape=False, index=False)
 print("✅ HTML saved as output.html — open it in your browser.")
