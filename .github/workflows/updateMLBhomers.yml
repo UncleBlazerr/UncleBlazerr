@@ -1,4 +1,4 @@
-name: Update Spotify Tracks
+name: Update MLB Almost Homer Data
 
 on:
   schedule:
