@@ -29,3 +29,12 @@ jobs:
       - name: Commit updated data
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
+      - name: Commit updated data
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add almosthomers/index.html
+          git commit -m "Update almosthomers page [skip ci]" || echo "No changes to commit"
+          git push
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
