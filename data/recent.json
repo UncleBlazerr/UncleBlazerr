@@ -1,23 +1,16 @@
 [
   {
-    "name": "Spiel mit mir - 2023 Mix",
-    "artist": "Rammstein",
-    "url": "https://open.spotify.com/track/6NbFPAKCJO4Nnwm2H8HqfG",
-    "image": "https://i.scdn.co/image/ab67616d0000b273030cda12ffbebd6561c1c0f0",
-    "preview_url": null
-  },
-  {
-    "name": "An Island Still Remains",
-    "artist": "The Hip Abduction",
-    "url": "https://open.spotify.com/track/4yyxTlIOlwlhQoFEKfjvMf",
-    "image": "https://i.scdn.co/image/ab67616d0000b273740911642df10fd09e841885",
-    "preview_url": null
-  },
-  {
-    "name": "What Is Love",
+    "name": "One Headlight",
     "artist": "The Step Beats",
-    "url": "https://open.spotify.com/track/3uKFsttuwTOvRafTct30Ej",
-    "image": "https://i.scdn.co/image/ab67616d0000b2731c113fb4ce7f8ba2fadb3e45",
+    "url": "https://open.spotify.com/track/1TifqHrjggg9Hc84DTeewc",
+    "image": "https://i.scdn.co/image/ab67616d0000b2738418641d3460de8418d7d1f1",
+    "preview_url": null
+  },
+  {
+    "name": "Barbie Girl",
+    "artist": "Aqua",
+    "url": "https://open.spotify.com/track/5ZrDlcxIDZyjOzHdYW1ydr",
+    "image": "https://i.scdn.co/image/ab67616d0000b273f5768db89dd8ac30fd0e414f",
     "preview_url": null
   },
   {
@@ -28,10 +21,17 @@
     "preview_url": null
   },
   {
-    "name": "The Ways (with The Hip Abduction)",
-    "artist": "Sensamotion, The Hip Abduction",
-    "url": "https://open.spotify.com/track/6n5GWwAp6KJHkfXkPY9rwX",
-    "image": "https://i.scdn.co/image/ab67616d0000b273e0501435982c75e447abb839",
+    "name": "Sippin On Something",
+    "artist": "The Expendables",
+    "url": "https://open.spotify.com/track/7rdE87U2SMrnFHRkd2FOw8",
+    "image": "https://i.scdn.co/image/ab67616d0000b273d8b5cdcbf7b08402d552f4be",
+    "preview_url": null
+  },
+  {
+    "name": "Trust the Path (with The Hip Abduction)",
+    "artist": "Coyote Island, The Hip Abduction",
+    "url": "https://open.spotify.com/track/1ajLihStvm4xClsn6rsFLn",
+    "image": "https://i.scdn.co/image/ab67616d0000b2738ebe99fd1fd2668486dc8f72",
     "preview_url": null
   }
 ]
