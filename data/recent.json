@@ -7,6 +7,13 @@
     "preview_url": null
   },
   {
+    "name": "Evil",
+    "artist": "Surfer Girl",
+    "url": "https://open.spotify.com/track/7Es4zOBTNjhVdUZbFhiAPm",
+    "image": "https://i.scdn.co/image/ab67616d0000b2738d1994fd322757db13aa7a10",
+    "preview_url": null
+  },
+  {
     "name": "Feet To The Breeze",
     "artist": "Alific",
     "url": "https://open.spotify.com/track/3BajQB8g5bdeV8rzOKiOFA",
@@ -25,13 +32,6 @@
     "artist": "Rodney Atkins",
     "url": "https://open.spotify.com/track/5OusUgzHz6Ulb3GZT7WUo5",
     "image": "https://i.scdn.co/image/ab67616d0000b2735eb53d834d5d3c06b92b3240",
-    "preview_url": null
-  },
-  {
-    "name": "Nothin' To Lose",
-    "artist": "Josh Gracin",
-    "url": "https://open.spotify.com/track/7oiCqfE8Wjk8wf0pFTgL2H",
-    "image": "https://i.scdn.co/image/ab67616d0000b2736ceaf6343d2443ed4880a283",
     "preview_url": null
   }
 ]
