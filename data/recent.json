@@ -1,37 +1,37 @@
 [
   {
-    "name": "Twilight Of The Thunder God",
+    "name": "The Pursuit of Vikings",
     "artist": "Amon Amarth",
-    "url": "https://open.spotify.com/track/5u3l2TONYacJgmRPQVaF9y",
-    "image": "https://i.scdn.co/image/ab67616d0000b2739203fd1f5c23f0ad92ce63fa",
+    "url": "https://open.spotify.com/track/0sObxZUKqdPfgjG9ahSlP5",
+    "image": "https://i.scdn.co/image/ab67616d0000b27395e7594a7df822c720d45867",
     "preview_url": null
   },
   {
-    "name": "Platz Eins",
-    "artist": "Lindemann",
-    "url": "https://open.spotify.com/track/4kF5GADt85FeD8Y26RRyLY",
-    "image": "https://i.scdn.co/image/ab67616d0000b273e675d7e4970918b5e0fb3052",
-    "preview_url": null
-  },
-  {
-    "name": "Übers Meer",
-    "artist": "Till Lindemann",
-    "url": "https://open.spotify.com/track/54n47TfaEmhJfUBQI22cXz",
-    "image": "https://i.scdn.co/image/ab67616d0000b2734777848e48ad53ec00578e18",
-    "preview_url": null
-  },
-  {
-    "name": "Linchpin",
-    "artist": "Fear Factory",
-    "url": "https://open.spotify.com/track/4qjvr0qMFUo26SxwC4VygS",
-    "image": "https://i.scdn.co/image/ab67616d0000b27334ef33bfdc17f96d0c21dc7c",
-    "preview_url": null
-  },
-  {
-    "name": "Der Meister",
+    "name": "Zeig dich",
     "artist": "Rammstein",
-    "url": "https://open.spotify.com/track/5ft9yiGXI9o4bnbznZFP3U",
-    "image": "https://i.scdn.co/image/ab67616d0000b273dcdfc25819de77e79c2edf49",
+    "url": "https://open.spotify.com/track/3d3k8g4GTVx9EFIFlOZOEX",
+    "image": "https://i.scdn.co/image/ab67616d0000b27302add2c77fb6999e311a3248",
+    "preview_url": null
+  },
+  {
+    "name": "Back In the Day",
+    "artist": "Megadeth",
+    "url": "https://open.spotify.com/track/2RZZAz0LmWWPCtOC2yPszv",
+    "image": "https://i.scdn.co/image/ab67616d0000b273cda3b381e6d4dddf4bc4d16c",
+    "preview_url": null
+  },
+  {
+    "name": "Small Town Boy",
+    "artist": "Paradise Lost",
+    "url": "https://open.spotify.com/track/0jfNgP8sP2tnOloYDw0HoM",
+    "image": "https://i.scdn.co/image/ab67616d0000b273353a9dd1cfdd30b79148eb90",
+    "preview_url": null
+  },
+  {
+    "name": "Push It",
+    "artist": "Static-X",
+    "url": "https://open.spotify.com/track/6O7pihLJgeqxUnG7u9oYL2",
+    "image": "https://i.scdn.co/image/ab67616d0000b2730099efc7034c941135448e94",
     "preview_url": null
   }
 ]
