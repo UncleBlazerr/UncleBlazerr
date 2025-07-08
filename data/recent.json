@@ -1,37 +1,37 @@
 [
   {
+    "name": "Raise Your Horns",
+    "artist": "Amon Amarth",
+    "url": "https://open.spotify.com/track/6ypKaenmVXMCXvlkfYOpjf",
+    "image": "https://i.scdn.co/image/ab67616d0000b273b229100629ef1469cd8edb9c",
+    "preview_url": null
+  },
+  {
+    "name": "Asche zu Asche",
+    "artist": "Rammstein",
+    "url": "https://open.spotify.com/track/407eqFGqQc40KPf43YrQ44",
+    "image": "https://i.scdn.co/image/ab67616d0000b273dcdfc25819de77e79c2edf49",
+    "preview_url": null
+  },
+  {
+    "name": "Demon Speeding",
+    "artist": "Rob Zombie",
+    "url": "https://open.spotify.com/track/605hJIiMrdsUjr4Vx4BFD6",
+    "image": "https://i.scdn.co/image/ab67616d0000b2731d624949c965172774b98178",
+    "preview_url": null
+  },
+  {
+    "name": "Personal Jesus",
+    "artist": "Marilyn Manson",
+    "url": "https://open.spotify.com/track/4gZYw4chUdkjumdu0ODJ9t",
+    "image": "https://i.scdn.co/image/ab67616d0000b273a75e8c780084644f1edf8f77",
+    "preview_url": null
+  },
+  {
     "name": "The Pursuit of Vikings",
     "artist": "Amon Amarth",
     "url": "https://open.spotify.com/track/0sObxZUKqdPfgjG9ahSlP5",
     "image": "https://i.scdn.co/image/ab67616d0000b27395e7594a7df822c720d45867",
-    "preview_url": null
-  },
-  {
-    "name": "Zeig dich",
-    "artist": "Rammstein",
-    "url": "https://open.spotify.com/track/3d3k8g4GTVx9EFIFlOZOEX",
-    "image": "https://i.scdn.co/image/ab67616d0000b27302add2c77fb6999e311a3248",
-    "preview_url": null
-  },
-  {
-    "name": "Back In the Day",
-    "artist": "Megadeth",
-    "url": "https://open.spotify.com/track/2RZZAz0LmWWPCtOC2yPszv",
-    "image": "https://i.scdn.co/image/ab67616d0000b273cda3b381e6d4dddf4bc4d16c",
-    "preview_url": null
-  },
-  {
-    "name": "Small Town Boy",
-    "artist": "Paradise Lost",
-    "url": "https://open.spotify.com/track/0jfNgP8sP2tnOloYDw0HoM",
-    "image": "https://i.scdn.co/image/ab67616d0000b273353a9dd1cfdd30b79148eb90",
-    "preview_url": null
-  },
-  {
-    "name": "Push It",
-    "artist": "Static-X",
-    "url": "https://open.spotify.com/track/6O7pihLJgeqxUnG7u9oYL2",
-    "image": "https://i.scdn.co/image/ab67616d0000b2730099efc7034c941135448e94",
     "preview_url": null
   }
 ]
