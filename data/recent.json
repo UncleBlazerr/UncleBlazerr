@@ -1,5 +1,26 @@
 [
   {
+    "name": "Twilight Of The Thunder God",
+    "artist": "Amon Amarth",
+    "url": "https://open.spotify.com/track/5u3l2TONYacJgmRPQVaF9y",
+    "image": "https://i.scdn.co/image/ab67616d0000b2739203fd1f5c23f0ad92ce63fa",
+    "preview_url": null
+  },
+  {
+    "name": "Platz Eins",
+    "artist": "Lindemann",
+    "url": "https://open.spotify.com/track/4kF5GADt85FeD8Y26RRyLY",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e675d7e4970918b5e0fb3052",
+    "preview_url": null
+  },
+  {
+    "name": "Übers Meer",
+    "artist": "Till Lindemann",
+    "url": "https://open.spotify.com/track/54n47TfaEmhJfUBQI22cXz",
+    "image": "https://i.scdn.co/image/ab67616d0000b2734777848e48ad53ec00578e18",
+    "preview_url": null
+  },
+  {
     "name": "Linchpin",
     "artist": "Fear Factory",
     "url": "https://open.spotify.com/track/4qjvr0qMFUo26SxwC4VygS",
@@ -11,27 +32,6 @@
     "artist": "Rammstein",
     "url": "https://open.spotify.com/track/5ft9yiGXI9o4bnbznZFP3U",
     "image": "https://i.scdn.co/image/ab67616d0000b273dcdfc25819de77e79c2edf49",
-    "preview_url": null
-  },
-  {
-    "name": "Holy Wars...The Punishment Due - 2004 Remix",
-    "artist": "Megadeth",
-    "url": "https://open.spotify.com/track/5LyRtsQLhcXmy50VXhQXXS",
-    "image": "https://i.scdn.co/image/ab67616d0000b273be9fa5a89479b6af481938a0",
-    "preview_url": null
-  },
-  {
-    "name": "Kids",
-    "artist": "Hämatom",
-    "url": "https://open.spotify.com/track/2yXuUK5IOV1QfDXyyCkwzr",
-    "image": "https://i.scdn.co/image/ab67616d0000b2730942bc89f60147a94e6586e8",
-    "preview_url": null
-  },
-  {
-    "name": "Isolate",
-    "artist": "Paradise Lost",
-    "url": "https://open.spotify.com/track/0OfNaPflQEr5tvyaCxwfDj",
-    "image": "https://i.scdn.co/image/ab67616d0000b273353a9dd1cfdd30b79148eb90",
     "preview_url": null
   }
 ]
