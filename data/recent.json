@@ -1,37 +1,37 @@
 [
   {
-    "name": "Small Town Boy",
-    "artist": "Paradise Lost",
-    "url": "https://open.spotify.com/track/0jfNgP8sP2tnOloYDw0HoM",
-    "image": "https://i.scdn.co/image/ab67616d0000b273353a9dd1cfdd30b79148eb90",
+    "name": "El Mariachi",
+    "artist": "Hämatom",
+    "url": "https://open.spotify.com/track/1aIeLIgx9sLZkTqfaVr4OQ",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e939563a961ef8a3ef12b02e",
     "preview_url": null
   },
   {
-    "name": "Sonne",
-    "artist": "Rammstein",
-    "url": "https://open.spotify.com/track/4w3R0GZ2rScJMKlgPJzHRq",
-    "image": "https://i.scdn.co/image/ab67616d0000b27325d8b7c6feee0c8d6593d606",
-    "preview_url": null
-  },
-  {
-    "name": "Shut Your Mouth",
+    "name": "Eleanor Rigby",
     "artist": "PAIN",
-    "url": "https://open.spotify.com/track/1gUq6SezLS3lc7KxBZaA3A",
+    "url": "https://open.spotify.com/track/0ihywODJrRSCNML7ouTs4k",
     "image": "https://i.scdn.co/image/ab67616d0000b273c339c73a778abc29533b9b31",
     "preview_url": null
   },
   {
-    "name": "Shut Your Mouth",
-    "artist": "PAIN",
-    "url": "https://open.spotify.com/track/1gUq6SezLS3lc7KxBZaA3A",
-    "image": "https://i.scdn.co/image/ab67616d0000b273c339c73a778abc29533b9b31",
-    "preview_url": null
-  },
-  {
-    "name": "Steh auf",
+    "name": "G-Spot Michael",
     "artist": "Lindemann",
-    "url": "https://open.spotify.com/track/2cwwUYTPOEfz0pam6tiVZz",
-    "image": "https://i.scdn.co/image/ab67616d0000b273e675d7e4970918b5e0fb3052",
+    "url": "https://open.spotify.com/track/0w7FHwjyq0nnxjotU9SdyV",
+    "image": "https://i.scdn.co/image/ab67616d0000b27306ee94de5aefb213d3e62198",
+    "preview_url": null
+  },
+  {
+    "name": "Asche zu Asche",
+    "artist": "Rammstein",
+    "url": "https://open.spotify.com/track/407eqFGqQc40KPf43YrQ44",
+    "image": "https://i.scdn.co/image/ab67616d0000b273dcdfc25819de77e79c2edf49",
+    "preview_url": null
+  },
+  {
+    "name": "Die Sünde lebt",
+    "artist": "Maerzfeld",
+    "url": "https://open.spotify.com/track/0wcYf6jXSewVzf6Ufe3b7o",
+    "image": "https://i.scdn.co/image/ab67616d0000b2739882aca421a90552c71e60b6",
     "preview_url": null
   }
 ]
