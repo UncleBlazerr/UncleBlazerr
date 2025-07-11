@@ -1,5 +1,19 @@
 [
   {
+    "name": "Small Town Boy",
+    "artist": "Paradise Lost",
+    "url": "https://open.spotify.com/track/0jfNgP8sP2tnOloYDw0HoM",
+    "image": "https://i.scdn.co/image/ab67616d0000b273353a9dd1cfdd30b79148eb90",
+    "preview_url": null
+  },
+  {
+    "name": "Sonne",
+    "artist": "Rammstein",
+    "url": "https://open.spotify.com/track/4w3R0GZ2rScJMKlgPJzHRq",
+    "image": "https://i.scdn.co/image/ab67616d0000b27325d8b7c6feee0c8d6593d606",
+    "preview_url": null
+  },
+  {
     "name": "Shut Your Mouth",
     "artist": "PAIN",
     "url": "https://open.spotify.com/track/1gUq6SezLS3lc7KxBZaA3A",
@@ -18,20 +32,6 @@
     "artist": "Lindemann",
     "url": "https://open.spotify.com/track/2cwwUYTPOEfz0pam6tiVZz",
     "image": "https://i.scdn.co/image/ab67616d0000b273e675d7e4970918b5e0fb3052",
-    "preview_url": null
-  },
-  {
-    "name": "Push It",
-    "artist": "Static-X",
-    "url": "https://open.spotify.com/track/6O7pihLJgeqxUnG7u9oYL2",
-    "image": "https://i.scdn.co/image/ab67616d0000b2730099efc7034c941135448e94",
-    "preview_url": null
-  },
-  {
-    "name": "Sehnsucht",
-    "artist": "Rammstein",
-    "url": "https://open.spotify.com/track/7DBW4qp2XCNAbWFMsrqao3",
-    "image": "https://i.scdn.co/image/ab67616d0000b273030cda12ffbebd6561c1c0f0",
     "preview_url": null
   }
 ]
