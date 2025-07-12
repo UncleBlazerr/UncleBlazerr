@@ -1,30 +1,16 @@
 [
   {
-    "name": "Two (with The Hip Abduction)",
-    "artist": "Surfer Girl, The Hip Abduction",
-    "url": "https://open.spotify.com/track/2AQex83emqgQfGUbFLivNv",
-    "image": "https://i.scdn.co/image/ab67616d0000b2738d1994fd322757db13aa7a10",
+    "name": "A Bar Song (Tipsy)",
+    "artist": "Shaboozey",
+    "url": "https://open.spotify.com/track/5fZJQrFKWQLb7FpJXZ1g7K",
+    "image": "https://i.scdn.co/image/ab67616d0000b273efa97e80fdb012456a40532c",
     "preview_url": null
   },
   {
-    "name": "Out There",
-    "artist": "Tropidelic",
-    "url": "https://open.spotify.com/track/4Q9HkRBPuwOFlBz1cXV06F",
-    "image": "https://i.scdn.co/image/ab67616d0000b2733f4cfbaea79669e468989ec2",
-    "preview_url": null
-  },
-  {
-    "name": "Adoration for none",
-    "artist": "Gojira",
-    "url": "https://open.spotify.com/track/3l5h9gjuQDSC6CI0N6Fr0v",
-    "image": "https://i.scdn.co/image/ab67616d0000b273633e47ec647995bd469d8a0d",
-    "preview_url": null
-  },
-  {
-    "name": "You Don't Mess Around with Jim",
-    "artist": "Jim Croce",
-    "url": "https://open.spotify.com/track/6ZBeRXjadHvBk9VYSnoO0R",
-    "image": "https://i.scdn.co/image/ab67616d0000b2735b7a6cabbcb9fe150966563c",
+    "name": "Falling Down (with Nick Hexum of 311)",
+    "artist": "Tropidelic, 311",
+    "url": "https://open.spotify.com/track/5A9xSuOZGQJNdRGEWVNGeI",
+    "image": "https://i.scdn.co/image/ab67616d0000b2730b8b4c8f51979b4e2086896d",
     "preview_url": null
   },
   {
@@ -32,6 +18,20 @@
     "artist": "Pops, Beach Fly",
     "url": "https://open.spotify.com/track/5u1iXHzud5pmP1tP9Uyx73",
     "image": "https://i.scdn.co/image/ab67616d0000b273294c6caa0fc89529dc933627",
+    "preview_url": null
+  },
+  {
+    "name": "Gimme Love",
+    "artist": "The Elovaters",
+    "url": "https://open.spotify.com/track/1nUNC6zK5dkcVNMp43TyWC",
+    "image": "https://i.scdn.co/image/ab67616d0000b273cd99fa9f3dde1248225c8ec8",
+    "preview_url": null
+  },
+  {
+    "name": "Two (with The Hip Abduction)",
+    "artist": "Surfer Girl, The Hip Abduction",
+    "url": "https://open.spotify.com/track/2AQex83emqgQfGUbFLivNv",
+    "image": "https://i.scdn.co/image/ab67616d0000b2738d1994fd322757db13aa7a10",
     "preview_url": null
   }
 ]
