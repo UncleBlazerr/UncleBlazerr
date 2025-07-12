@@ -1,5 +1,26 @@
 [
   {
+    "name": "You Don't Mess Around with Jim",
+    "artist": "Jim Croce",
+    "url": "https://open.spotify.com/track/6ZBeRXjadHvBk9VYSnoO0R",
+    "image": "https://i.scdn.co/image/ab67616d0000b2735b7a6cabbcb9fe150966563c",
+    "preview_url": null
+  },
+  {
+    "name": "Monkey Ate My Mango",
+    "artist": "Pops, Beach Fly",
+    "url": "https://open.spotify.com/track/5u1iXHzud5pmP1tP9Uyx73",
+    "image": "https://i.scdn.co/image/ab67616d0000b273294c6caa0fc89529dc933627",
+    "preview_url": null
+  },
+  {
+    "name": "Chug Like a Train!",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/6xkSfdfDrw7RLT5DPRNxMF",
+    "image": "https://i.scdn.co/image/ab67616d0000b27349c67becd821ff2a107f0341",
+    "preview_url": null
+  },
+  {
     "name": "The Color Dance",
     "artist": "Danny Go!",
     "url": "https://open.spotify.com/track/38V02vJaYwPImeFEGhRBAT",
@@ -11,27 +32,6 @@
     "artist": "Danny Go!",
     "url": "https://open.spotify.com/track/7FfFraDlwTXR2WlCmdoHKz",
     "image": "https://i.scdn.co/image/ab67616d0000b2739a5dd031e633b86b95829612",
-    "preview_url": null
-  },
-  {
-    "name": "The Claw (Pachelbel's Canon)",
-    "artist": "Bluey, Marly Luske, Joff Bush",
-    "url": "https://open.spotify.com/track/2RpIM5fRYM5hJbFmkkhqXC",
-    "image": "https://i.scdn.co/image/ab67616d0000b27319ae9f2ac27cfa4de951e56e",
-    "preview_url": null
-  },
-  {
-    "name": "Ka-Pow! Superhero Dance",
-    "artist": "Danny Go!",
-    "url": "https://open.spotify.com/track/501TN2V1YvVfIfPLNafJnX",
-    "image": "https://i.scdn.co/image/ab67616d0000b2734d27fd6fb16853d299b3c885",
-    "preview_url": null
-  },
-  {
-    "name": "Gorilla Smash!",
-    "artist": "Danny Go!",
-    "url": "https://open.spotify.com/track/1Q3Qq6NSvtl8XcAAjKXkC2",
-    "image": "https://i.scdn.co/image/ab67616d0000b2732a77affe9b6caa12003c48b8",
     "preview_url": null
   }
 ]
