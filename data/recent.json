@@ -1,5 +1,19 @@
 [
   {
+    "name": "Digital Heaven",
+    "artist": "Mihali",
+    "url": "https://open.spotify.com/track/5V7ge7ltQ3LTUXNNcRVWqw",
+    "image": "https://i.scdn.co/image/ab67616d0000b273618ebcb140c39057f9eb741a",
+    "preview_url": null
+  },
+  {
+    "name": "Where Is My Mind?",
+    "artist": "The Step Beats",
+    "url": "https://open.spotify.com/track/5nv88WgMaPtHda07y7chpp",
+    "image": "https://i.scdn.co/image/ab67616d0000b27318c96eb5bcdfa5c35fbd4c1b",
+    "preview_url": null
+  },
+  {
     "name": "Pacific Coast Highway (with Trevor Hall)",
     "artist": "The Hip Abduction, Trevor Hall",
     "url": "https://open.spotify.com/track/1wYLsHZTwVTfHs4JgqkUCe",
@@ -18,20 +32,6 @@
     "artist": "Mihali",
     "url": "https://open.spotify.com/track/3zxj6yiovubL7OcOkmIApW",
     "image": "https://i.scdn.co/image/ab67616d0000b273a1f8d8230258b00df06e5299",
-    "preview_url": null
-  },
-  {
-    "name": "King of the Low (with Moon Taxi)",
-    "artist": "Mihali, Moon Taxi",
-    "url": "https://open.spotify.com/track/5YrZjRJrGvsS4t1AJAk4a5",
-    "image": "https://i.scdn.co/image/ab67616d0000b273a1f8d8230258b00df06e5299",
-    "preview_url": null
-  },
-  {
-    "name": "Dreamin' Safe and Sound",
-    "artist": "Claire Wright",
-    "url": "https://open.spotify.com/track/7pcmQANfl623NVzJOJdFOG",
-    "image": "https://i.scdn.co/image/ab67616d0000b27391e09d588cecc963da4b3fb2",
     "preview_url": null
   }
 ]
