@@ -1,5 +1,12 @@
 [
   {
+    "name": "Cowboy Take Me Away",
+    "artist": "The Chicks",
+    "url": "https://open.spotify.com/track/3rXCZRMiMZp0feGcYXpwYX",
+    "image": "https://i.scdn.co/image/ab67616d0000b27309874a0209b4bc9c0b3a0a01",
+    "preview_url": null
+  },
+  {
     "name": "Hard Workin' Man",
     "artist": "Brooks & Dunn",
     "url": "https://open.spotify.com/track/51uGoXB3PbXLyeH0aPGo7H",
@@ -25,13 +32,6 @@
     "artist": "Diamond Rio",
     "url": "https://open.spotify.com/track/7lUE02KHkZM44BZgjCaWRO",
     "image": "https://i.scdn.co/image/ab67616d0000b2736f1682e2efad986299c00154",
-    "preview_url": null
-  },
-  {
-    "name": "Mud on the Tires",
-    "artist": "Brad Paisley",
-    "url": "https://open.spotify.com/track/4AQWKGBWTR7fVuUKxi5sKE",
-    "image": "https://i.scdn.co/image/ab67616d0000b2737302ccf08d789304c55ee73e",
     "preview_url": null
   }
 ]
