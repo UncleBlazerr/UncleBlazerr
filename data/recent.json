@@ -1,5 +1,12 @@
 [
   {
+    "name": "Bang Bang",
+    "artist": "DISPATCH",
+    "url": "https://open.spotify.com/track/2yGoiZes2YcueNA4nGDmdS",
+    "image": "https://i.scdn.co/image/ab67616d0000b2732163f43d5a76548a6e65ec66",
+    "preview_url": null
+  },
+  {
     "name": "Lost And Found",
     "artist": "Iration",
     "url": "https://open.spotify.com/track/1aMoqIYGFADaV3nPaSKL7X",
@@ -25,13 +32,6 @@
     "artist": "Rebelution",
     "url": "https://open.spotify.com/track/0BweE3lWBMXRPWWLtLV5z8",
     "image": "https://i.scdn.co/image/ab67616d0000b273353f607d1714d69c30b61751",
-    "preview_url": null
-  },
-  {
-    "name": "Flow",
-    "artist": "Katastro",
-    "url": "https://open.spotify.com/track/6byEdfUvCWTkP1f1Pq2Cmu",
-    "image": "https://i.scdn.co/image/ab67616d0000b273a53b5da45a268465a54758c2",
     "preview_url": null
   }
 ]
