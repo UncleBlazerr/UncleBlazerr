@@ -1,5 +1,19 @@
 [
   {
+    "name": "Bück dich",
+    "artist": "Rammstein",
+    "url": "https://open.spotify.com/track/3pi5DteeniOsDzonEx5qpg",
+    "image": "https://i.scdn.co/image/ab67616d0000b273030cda12ffbebd6561c1c0f0",
+    "preview_url": null
+  },
+  {
+    "name": "Steh auf",
+    "artist": "Lindemann",
+    "url": "https://open.spotify.com/track/2cwwUYTPOEfz0pam6tiVZz",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e675d7e4970918b5e0fb3052",
+    "preview_url": null
+  },
+  {
     "name": "Himmelsrand",
     "artist": "Equilibrium",
     "url": "https://open.spotify.com/track/7ldJhE5mB9ukNh3OjuX85T",
@@ -18,20 +32,6 @@
     "artist": "Maerzfeld",
     "url": "https://open.spotify.com/track/0wcYf6jXSewVzf6Ufe3b7o",
     "image": "https://i.scdn.co/image/ab67616d0000b2739882aca421a90552c71e60b6",
-    "preview_url": null
-  },
-  {
-    "name": "Raise Your Horns",
-    "artist": "Amon Amarth",
-    "url": "https://open.spotify.com/track/6ypKaenmVXMCXvlkfYOpjf",
-    "image": "https://i.scdn.co/image/ab67616d0000b273b229100629ef1469cd8edb9c",
-    "preview_url": null
-  },
-  {
-    "name": "Small Town Boy",
-    "artist": "Paradise Lost",
-    "url": "https://open.spotify.com/track/0jfNgP8sP2tnOloYDw0HoM",
-    "image": "https://i.scdn.co/image/ab67616d0000b273353a9dd1cfdd30b79148eb90",
     "preview_url": null
   }
 ]
