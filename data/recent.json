@@ -1,5 +1,26 @@
 [
   {
+    "name": "Himmelsrand",
+    "artist": "Equilibrium",
+    "url": "https://open.spotify.com/track/7ldJhE5mB9ukNh3OjuX85T",
+    "image": "https://i.scdn.co/image/ab67616d0000b27339af9a0f9ce131e3e9c92388",
+    "preview_url": null
+  },
+  {
+    "name": "Allesfresser",
+    "artist": "Lindemann",
+    "url": "https://open.spotify.com/track/69InBLmrz7Cu0jBJk1dAgw",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e675d7e4970918b5e0fb3052",
+    "preview_url": null
+  },
+  {
+    "name": "Die Sünde lebt",
+    "artist": "Maerzfeld",
+    "url": "https://open.spotify.com/track/0wcYf6jXSewVzf6Ufe3b7o",
+    "image": "https://i.scdn.co/image/ab67616d0000b2739882aca421a90552c71e60b6",
+    "preview_url": null
+  },
+  {
     "name": "Raise Your Horns",
     "artist": "Amon Amarth",
     "url": "https://open.spotify.com/track/6ypKaenmVXMCXvlkfYOpjf",
@@ -11,27 +32,6 @@
     "artist": "Paradise Lost",
     "url": "https://open.spotify.com/track/0jfNgP8sP2tnOloYDw0HoM",
     "image": "https://i.scdn.co/image/ab67616d0000b273353a9dd1cfdd30b79148eb90",
-    "preview_url": null
-  },
-  {
-    "name": "Go With The Flow",
-    "artist": "PAIN",
-    "url": "https://open.spotify.com/track/0ogtgveW3JxxtPE4YVJPaj",
-    "image": "https://i.scdn.co/image/ab67616d0000b273e606a24df420df49afd851e2",
-    "preview_url": null
-  },
-  {
-    "name": "Praise Abort",
-    "artist": "Lindemann",
-    "url": "https://open.spotify.com/track/1IHCEJ8tsYLYy7n65C0CVe",
-    "image": "https://i.scdn.co/image/ab67616d0000b2736df62f6900c46bf4eb1059e3",
-    "preview_url": null
-  },
-  {
-    "name": "Zeig dich",
-    "artist": "Rammstein",
-    "url": "https://open.spotify.com/track/3d3k8g4GTVx9EFIFlOZOEX",
-    "image": "https://i.scdn.co/image/ab67616d0000b27302add2c77fb6999e311a3248",
     "preview_url": null
   }
 ]
