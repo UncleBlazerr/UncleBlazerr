@@ -1,5 +1,12 @@
 [
   {
+    "name": "Fire Burning",
+    "artist": "Sean Kingston",
+    "url": "https://open.spotify.com/track/2oENJa1T33GJ0w8dC167G4",
+    "image": "https://i.scdn.co/image/ab67616d0000b273ea34361c4a339d474c3be057",
+    "preview_url": null
+  },
+  {
     "name": "Sugar (feat. Francesco Yates)",
     "artist": "Robin Schulz, Francesco Yates",
     "url": "https://open.spotify.com/track/5tf1VVWniHgryyumXyJM7w",
@@ -25,13 +32,6 @@
     "artist": "Danny Go!",
     "url": "https://open.spotify.com/track/3SiijksKZyytWUhHftvctc",
     "image": "https://i.scdn.co/image/ab67616d0000b2730cc842d078721e39adb11c80",
-    "preview_url": null
-  },
-  {
-    "name": "Trust the Path (with The Hip Abduction)",
-    "artist": "Coyote Island, The Hip Abduction",
-    "url": "https://open.spotify.com/track/1ajLihStvm4xClsn6rsFLn",
-    "image": "https://i.scdn.co/image/ab67616d0000b273305b8c25c33da7a7620205f6",
     "preview_url": null
   }
 ]
