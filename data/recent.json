@@ -1,5 +1,26 @@
 [
   {
+    "name": "There I Go",
+    "artist": "Common Kings",
+    "url": "https://open.spotify.com/track/5maLNTxNa29qrB1qpBoh6y",
+    "image": "https://i.scdn.co/image/ab67616d0000b2735236c2e17a5a1856c0807c58",
+    "preview_url": null
+  },
+  {
+    "name": "Shine",
+    "artist": "Stick Figure",
+    "url": "https://open.spotify.com/track/1QhrlNjzqmqEFW5T5yMFhw",
+    "image": "https://i.scdn.co/image/ab67616d0000b273b051ce304d1eb1a6f340cd20",
+    "preview_url": null
+  },
+  {
+    "name": "Siren (with Stick Figure)",
+    "artist": "The Movement, Stick Figure",
+    "url": "https://open.spotify.com/track/3jSlARN861elnfSuveZx8X",
+    "image": "https://i.scdn.co/image/ab67616d0000b273d3cd6fbbfddc2cbd9771d097",
+    "preview_url": null
+  },
+  {
     "name": "Watch It Burn",
     "artist": "Katastro",
     "url": "https://open.spotify.com/track/6kihPUxpuhTcK4NrfmluDS",
@@ -11,27 +32,6 @@
     "artist": "Mihali, Tropidelic, Lily Fangz",
     "url": "https://open.spotify.com/track/6M1TVfDfGDY3XzI6hpAZ81",
     "image": "https://i.scdn.co/image/ab67616d0000b273a1f8d8230258b00df06e5299",
-    "preview_url": null
-  },
-  {
-    "name": "Some Say the Ocean - Reggae Remix",
-    "artist": "The Hip Abduction",
-    "url": "https://open.spotify.com/track/7uApejpbclBo1AbLDEvny2",
-    "image": "https://i.scdn.co/image/ab67616d0000b273740911642df10fd09e841885",
-    "preview_url": null
-  },
-  {
-    "name": "Some Say the Ocean - Reggae Remix",
-    "artist": "The Hip Abduction",
-    "url": "https://open.spotify.com/track/7uApejpbclBo1AbLDEvny2",
-    "image": "https://i.scdn.co/image/ab67616d0000b273740911642df10fd09e841885",
-    "preview_url": null
-  },
-  {
-    "name": "Sunburn (with Tropidelic)",
-    "artist": "Little Stranger, Tropidelic",
-    "url": "https://open.spotify.com/track/78KCXk5q6nu7S3sYKjD0NG",
-    "image": "https://i.scdn.co/image/ab67616d0000b2730544608f3b2015ca5f19aab6",
     "preview_url": null
   }
 ]
