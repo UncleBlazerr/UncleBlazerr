@@ -1,37 +1,37 @@
 [
   {
+    "name": "Steh auf",
+    "artist": "Lindemann",
+    "url": "https://open.spotify.com/track/2cwwUYTPOEfz0pam6tiVZz",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e675d7e4970918b5e0fb3052",
+    "preview_url": null
+  },
+  {
+    "name": "Square Hammer",
+    "artist": "Ghost",
+    "url": "https://open.spotify.com/track/2XgTw2co6xv95TmKpMcL70",
+    "image": "https://i.scdn.co/image/ab67616d0000b2739e4a3c9e73ce2429c4d1fe70",
+    "preview_url": null
+  },
+  {
+    "name": "Shut Your Mouth",
+    "artist": "PAIN",
+    "url": "https://open.spotify.com/track/1gUq6SezLS3lc7KxBZaA3A",
+    "image": "https://i.scdn.co/image/ab67616d0000b273c339c73a778abc29533b9b31",
+    "preview_url": null
+  },
+  {
+    "name": "Zeig dich",
+    "artist": "Rammstein",
+    "url": "https://open.spotify.com/track/3d3k8g4GTVx9EFIFlOZOEX",
+    "image": "https://i.scdn.co/image/ab67616d0000b27302add2c77fb6999e311a3248",
+    "preview_url": null
+  },
+  {
     "name": "Rich Girl",
     "artist": "Daryl Hall & John Oates",
     "url": "https://open.spotify.com/track/0qRR9d89hIS0MHRkQ0ejxX",
     "image": "https://i.scdn.co/image/ab67616d0000b2733ebc5b9d8942069d3b920550",
-    "preview_url": null
-  },
-  {
-    "name": "Good Vibrations - Remastered 2001",
-    "artist": "The Beach Boys",
-    "url": "https://open.spotify.com/track/5t9KYe0Fhd5cW6UYT4qP8f",
-    "image": "https://i.scdn.co/image/ab67616d0000b273fb9dac3244b8486758058a81",
-    "preview_url": null
-  },
-  {
-    "name": "Fortunate Son",
-    "artist": "Creedence Clearwater Revival",
-    "url": "https://open.spotify.com/track/4BP3uh0hFLFRb5cjsgLqDh",
-    "image": "https://i.scdn.co/image/ab67616d0000b2739f39192f9f8ca1c90847b3e5",
-    "preview_url": null
-  },
-  {
-    "name": "The Joker",
-    "artist": "Steve Miller Band",
-    "url": "https://open.spotify.com/track/1bp2IO61zbQrbWNmKKxg3f",
-    "image": "https://i.scdn.co/image/ab67616d0000b273375445cc7a2aedff11361b51",
-    "preview_url": null
-  },
-  {
-    "name": "Runnin' Down A Dream",
-    "artist": "Tom Petty",
-    "url": "https://open.spotify.com/track/5yAu4njFSdM47dfsTkQPZ2",
-    "image": "https://i.scdn.co/image/ab67616d0000b273a2bc5fd7e51b61a904e7c20c",
     "preview_url": null
   }
 ]
