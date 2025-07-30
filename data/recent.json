@@ -1,5 +1,19 @@
 [
   {
+    "name": "Platz Eins",
+    "artist": "Lindemann",
+    "url": "https://open.spotify.com/track/4kF5GADt85FeD8Y26RRyLY",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e675d7e4970918b5e0fb3052",
+    "preview_url": null
+  },
+  {
+    "name": "A Grave Mistake",
+    "artist": "Ice Nine Kills",
+    "url": "https://open.spotify.com/track/2mMNBgFRyEiRoGvrdoONeq",
+    "image": "https://i.scdn.co/image/ab67616d0000b27348fbb2aab19d588bb9153580",
+    "preview_url": null
+  },
+  {
     "name": "Orion (Remastered)",
     "artist": "Metallica",
     "url": "https://open.spotify.com/track/4xyWJM4kscTROV2RESdwpd",
@@ -18,20 +32,6 @@
     "artist": "Ghost",
     "url": "https://open.spotify.com/track/2XgTw2co6xv95TmKpMcL70",
     "image": "https://i.scdn.co/image/ab67616d0000b2739e4a3c9e73ce2429c4d1fe70",
-    "preview_url": null
-  },
-  {
-    "name": "Shut Your Mouth",
-    "artist": "PAIN",
-    "url": "https://open.spotify.com/track/1gUq6SezLS3lc7KxBZaA3A",
-    "image": "https://i.scdn.co/image/ab67616d0000b273c339c73a778abc29533b9b31",
-    "preview_url": null
-  },
-  {
-    "name": "Zeig dich",
-    "artist": "Rammstein",
-    "url": "https://open.spotify.com/track/3d3k8g4GTVx9EFIFlOZOEX",
-    "image": "https://i.scdn.co/image/ab67616d0000b27302add2c77fb6999e311a3248",
     "preview_url": null
   }
 ]
