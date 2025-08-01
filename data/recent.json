@@ -1,5 +1,12 @@
 [
   {
+    "name": "Monolith",
+    "artist": "Fit For A King, Alpha Wolf",
+    "url": "https://open.spotify.com/track/5X1l3kriHl4JJ9XtFCskKX",
+    "image": "https://i.scdn.co/image/ab67616d0000b27304262aec95e8a926e948072a",
+    "preview_url": null
+  },
+  {
     "name": "Self vs Self (feat. In Flames)",
     "artist": "Pendulum, In Flames",
     "url": "https://open.spotify.com/track/2lN6G35gsXkA3xzPYqmis5",
@@ -25,13 +32,6 @@
     "artist": "Hollywood Undead",
     "url": "https://open.spotify.com/track/2vzJUdxQx6cp9VbtqkjPm7",
     "image": "https://i.scdn.co/image/ab67616d0000b273807d7f425d68eb7d94493f93",
-    "preview_url": null
-  },
-  {
-    "name": "Undead",
-    "artist": "Hollywood Undead",
-    "url": "https://open.spotify.com/track/5wBLDkxVvclanSitx5jq8e",
-    "image": "https://i.scdn.co/image/ab67616d0000b273e3a40a64f0473c111cf42b06",
     "preview_url": null
   }
 ]
