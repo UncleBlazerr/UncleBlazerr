@@ -1,5 +1,12 @@
 [
   {
+    "name": "Sharp Dressed Man (2008 Remaster)",
+    "artist": "ZZ Top",
+    "url": "https://open.spotify.com/track/0bRNszTbTFLNlunAeh7eom",
+    "image": "https://i.scdn.co/image/ab67616d0000b273a2b4f98f60e3cacf3866b2e3",
+    "preview_url": null
+  },
+  {
     "name": "Listen to the Music",
     "artist": "The Doobie Brothers",
     "url": "https://open.spotify.com/track/7Ar4G7Ci11gpt6sfH9Cgz5",
@@ -25,13 +32,6 @@
     "artist": "Creedence Clearwater Revival",
     "url": "https://open.spotify.com/track/1YqJSpIxdavjQ8BxAttU0r",
     "image": "https://i.scdn.co/image/ab67616d0000b2736e186edfb8fe3710fdc1f7c2",
-    "preview_url": null
-  },
-  {
-    "name": "25 or 6 to 4 - 2002 Remaster",
-    "artist": "Chicago",
-    "url": "https://open.spotify.com/track/7GqIDx2QVGOpd4r1fZaUUW",
-    "image": "https://i.scdn.co/image/ab67616d0000b273f97c928726d4abbaed5aebf9",
     "preview_url": null
   }
 ]
