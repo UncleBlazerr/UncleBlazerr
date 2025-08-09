@@ -1,5 +1,12 @@
 [
   {
+    "name": "Leggo Beast",
+    "artist": "Steel Pulse",
+    "url": "https://open.spotify.com/track/2Fg0V8uIWQnBSTWJsrW5P6",
+    "image": "https://i.scdn.co/image/ab67616d0000b273575da312c2dbaf47c49ececb",
+    "preview_url": null
+  },
+  {
     "name": "Caribbean Sunshine",
     "artist": "Mukkaround, Costa Rebel",
     "url": "https://open.spotify.com/track/6pbeeC9UTbIBOqXZHUIYfc",
@@ -25,13 +32,6 @@
     "artist": "Stick Figure",
     "url": "https://open.spotify.com/track/0cqQVgpf8HF2fnPyg3rPqR",
     "image": "https://i.scdn.co/image/ab67616d0000b273b051ce304d1eb1a6f340cd20",
-    "preview_url": null
-  },
-  {
-    "name": "Slow & Easy (feat. Dirty Heads)",
-    "artist": "ROME, Dirty Heads",
-    "url": "https://open.spotify.com/track/0uhVQo0ErzBQ7uzSYaCeVj",
-    "image": "https://i.scdn.co/image/ab67616d0000b273b741b880783a7751a7b13c46",
     "preview_url": null
   }
 ]
