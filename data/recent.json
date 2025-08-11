@@ -1,5 +1,12 @@
 [
   {
+    "name": "Fading State",
+    "artist": "Mihali, Nahko, Trevor Hall",
+    "url": "https://open.spotify.com/track/10cUy7s4knqEoING47LolZ",
+    "image": "https://i.scdn.co/image/ab67616d0000b27328b909c8c8bc7c03d011011b",
+    "preview_url": null
+  },
+  {
     "name": "Shine",
     "artist": "Stick Figure",
     "url": "https://open.spotify.com/track/1QhrlNjzqmqEFW5T5yMFhw",
@@ -25,13 +32,6 @@
     "artist": "Rebelution",
     "url": "https://open.spotify.com/track/5JmJVj3qLsCnBsQ8IC9XLf",
     "image": "https://i.scdn.co/image/ab67616d0000b273edc09d4eccc8a4928ea0076c",
-    "preview_url": null
-  },
-  {
-    "name": "Part of My Life",
-    "artist": "Collie Buddz",
-    "url": "https://open.spotify.com/track/4M3IhVHuE5X8bhryrnBSCY",
-    "image": "https://i.scdn.co/image/ab67616d0000b2731baa226218a6ed1d1ed22ab8",
     "preview_url": null
   }
 ]
