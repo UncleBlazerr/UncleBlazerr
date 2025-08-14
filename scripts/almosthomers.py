@@ -82,52 +82,306 @@ final['Exit Velo Style'] = final['Exit Velo'].apply(lambda x: get_exit_velo_colo
 # Group by team
 teams = final['Team'].unique()
 
+# Calculate team statistics
+team_stats = {}
+for team in final['Team'].unique():
+    team_data = final[final['Team'] == team]
+    team_stats[team] = {
+        'count': len(team_data),
+        'avg_distance': team_data['Distance (ft)'].mean(),
+        'max_distance': team_data['Distance (ft)'].max(),
+        'avg_exit_velo': team_data['Exit Velo'].mean()
+    }
+
 # Generate HTML with team tables
 html_content = """
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Almost Homers by Team</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1 { text-align: center; }
-        h2 { margin-top: 30px; }
-        table { border-collapse: collapse; width: 100%; margin-bottom: 30px; }
-        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-        th { background-color: #f2f2f2; }
-        .exit-velo { color: white; font-weight: bold; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            font-weight: 300;
+        }
+        
+        .team-section {
+            margin-bottom: 50px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .team-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        
+        .team-header {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .team-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .team-stats {
+            display: flex;
+            gap: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        .stat-label {
+            opacity: 0.8;
+            font-size: 0.8rem;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+        
+        th {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 15px 20px;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            border-bottom: 2px solid #dee2e6;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #f1f3f4;
+            transition: background-color 0.2s ease;
+        }
+        
+        tr:hover td {
+            background-color: #f8f9fa;
+        }
+        
+        .exit-velo {
+            color: white;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 0.9rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .batter-cell {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .batter-cell img {
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .distance-cell {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .event-cell {
+            padding: 6px 12px;
+            border-radius: 20px;
+            background: #e3f2fd;
+            color: #1976d2;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .no-data {
+            text-align: center;
+            padding: 40px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .team-header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .team-stats {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            th, td {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+            
+            .batter-cell {
+                flex-direction: column;
+                text-align: center;
+                gap: 5px;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Almost Homers by Team</h1>
+    <div class="container">
+        <div class="header">
+            <h1>Almost Homers by Team</h1>
+            <p class="subtitle">Yesterday's closest calls that didn't leave the yard</p>
+        </div>
 """
 
 for team in sorted(teams):
     team_data = final[final['Team'] == team].copy()
     if len(team_data) > 0:
-        html_content += f"<h2>{team}</h2>\n"
-        html_content += "<table>\n"
-        html_content += "<tr><th>Batter</th><th>Exit Velo</th><th>Launch Angle</th><th>Distance (ft)</th><th>Event</th></tr>\n"
+        stats = team_stats[team]
+        html_content += f"""
+        <div class="team-section">
+            <div class="team-header">
+                <div class="team-name">{team}</div>
+                <div class="team-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">{stats['count']}</div>
+                        <div class="stat-label">Almost HRs</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">{stats['avg_distance']:.0f} ft</div>
+                        <div class="stat-label">Avg Distance</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">{stats['max_distance']:.0f} ft</div>
+                        <div class="stat-label">Longest</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">{stats['avg_exit_velo']:.1f}</div>
+                        <div class="stat-label">Avg Exit Velo</div>
+                    </div>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Batter</th>
+                        <th>Exit Velo</th>
+                        <th>Launch Angle</th>
+                        <th>Distance</th>
+                        <th>Event</th>
+                    </tr>
+                </thead>
+                <tbody>
+        """
         
         for _, row in team_data.iterrows():
             exit_velo_style = get_exit_velo_color(row['Exit Velo'])
-            html_content += f"""<tr>
-                <td>{row['Batter']}</td>
-                <td class="exit-velo" style="{exit_velo_style}">{row['Exit Velo']}</td>
-                <td>{row['Launch Angle']}</td>
-                <td>{row['Distance (ft)']}</td>
-                <td>{row['Event']}</td>
-            </tr>\n"""
+            event_text = str(row['Event']).replace('_', ' ').title() if str(row['Event']) != 'nan' else 'In Play'
+            
+            html_content += f"""
+                    <tr>
+                        <td><div class="batter-cell">{row['Batter']}</div></td>
+                        <td><div class="exit-velo" style="{exit_velo_style}">{row['Exit Velo']}</div></td>
+                        <td>{row['Launch Angle']}°</td>
+                        <td><div class="distance-cell">{row['Distance (ft)']} ft</div></td>
+                        <td><div class="event-cell">{event_text}</div></td>
+                    </tr>
+            """
         
-        html_content += "</table>\n"
+        html_content += """
+                </tbody>
+            </table>
+        </div>
+        """
+
+if not any(len(final[final['Team'] == team]) > 0 for team in teams):
+    html_content += '<div class="no-data">No almost homers found for yesterday.</div>'
 
 html_content += """
+    </div>
 </body>
 </html>
 """
 
 # Write HTML file
-with open("almosthomers/index.html", "w") as f:
+with open("almosthomers/index.html", "w", encoding="utf-8") as f:
     f.write(html_content)
 
 print("HTML saved as almosthomers/index.html - open it in your browser.")
