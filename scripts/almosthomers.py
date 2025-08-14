@@ -59,12 +59,75 @@ merged['batter_with_logo'] = merged.apply(
 
 # Final selection
 final = merged[[
-    'batter_with_logo', 'launch_speed', 'launch_angle', 'hit_distance_sc', 'events'
+    'batter_with_logo', 'launch_speed', 'launch_angle', 'hit_distance_sc', 'events', 'team_abbr'
 ]].sort_values(by='hit_distance_sc', ascending=False).reset_index(drop=True)
 
 # Rename for clarity
-final.columns = ['Batter', 'Exit Velo', 'Launch Angle', 'Distance (ft)', 'Event']
+final.columns = ['Batter', 'Exit Velo', 'Launch Angle', 'Distance (ft)', 'Event', 'Team']
 
-# Export to HTML
-final.to_html("almosthomers/index.html", escape=False, index=False)
-print("✅ HTML saved as output.html — open it in your browser.")
+# Function to get exit velocity color
+def get_exit_velo_color(velo):
+    if velo > 98:
+        return 'background-color: #8B0000'  # Dark red
+    elif velo > 94:
+        return 'background-color: #FF0000'  # Red
+    elif velo > 85:
+        return 'background-color: #FFB6C1'  # Light red
+    else:
+        return 'background-color: #FFFFFF'  # White
+
+# Apply exit velocity coloring
+final['Exit Velo Style'] = final['Exit Velo'].apply(lambda x: get_exit_velo_color(x))
+
+# Group by team
+teams = final['Team'].unique()
+
+# Generate HTML with team tables
+html_content = """
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Almost Homers by Team</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { text-align: center; }
+        h2 { margin-top: 30px; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 30px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .exit-velo { color: white; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Almost Homers by Team</h1>
+"""
+
+for team in sorted(teams):
+    team_data = final[final['Team'] == team].copy()
+    if len(team_data) > 0:
+        html_content += f"<h2>{team}</h2>\n"
+        html_content += "<table>\n"
+        html_content += "<tr><th>Batter</th><th>Exit Velo</th><th>Launch Angle</th><th>Distance (ft)</th><th>Event</th></tr>\n"
+        
+        for _, row in team_data.iterrows():
+            exit_velo_style = get_exit_velo_color(row['Exit Velo'])
+            html_content += f"""<tr>
+                <td>{row['Batter']}</td>
+                <td class="exit-velo" style="{exit_velo_style}">{row['Exit Velo']}</td>
+                <td>{row['Launch Angle']}</td>
+                <td>{row['Distance (ft)']}</td>
+                <td>{row['Event']}</td>
+            </tr>\n"""
+        
+        html_content += "</table>\n"
+
+html_content += """
+</body>
+</html>
+"""
+
+# Write HTML file
+with open("almosthomers/index.html", "w") as f:
+    f.write(html_content)
+
+print("HTML saved as almosthomers/index.html - open it in your browser.")
