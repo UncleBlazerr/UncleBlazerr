@@ -4,7 +4,7 @@ import pandas as pd
 import os
 
 #make os dir
-os.makedirs("almosthomers", exist_ok=True)
+os.makedirs("../almosthomers", exist_ok=True)
 
 # Use yesterday's date
 yesterday = (datetime.today() - timedelta(days=1)).strftime('%Y-%m-%d')
@@ -181,7 +181,7 @@ html_content += """
 """
 
 # Write HTML file
-with open("almosthomers/index.html", "w", encoding="utf-8") as f:
+with open("../almosthomers/index.html", "w", encoding="utf-8") as f:
     f.write(html_content)
 
 print("HTML saved as almosthomers/index.html - open it in your browser.")
