@@ -204,14 +204,20 @@ def is_barrel(exit_velo, launch_angle):
     
     return min_angle <= launch_angle <= max_angle
 
-# Updated launch angle color function to incorporate barrel zones
+# Updated launch angle color function with detailed ranges
 def get_launch_angle_color(angle, exit_velo):
     if is_barrel(exit_velo, angle):
         return 'background-color: #FF6B35'  # Orange for barrel
-    elif 18 <= angle <= 30:
-        return 'background-color: #00FF00'  # Bright green for good angle
-    else:
-        return 'background-color: #FFFF00'  # Yellow for suboptimal
+    elif 31 <= angle <= 35:
+        return 'background-color: #006400'  # Dark green
+    elif 20 <= angle <= 30:
+        return 'background-color: #00FF00'  # Green
+    elif 14 <= angle <= 19:
+        return 'background-color: #90EE90'  # Light green
+    elif 8 <= angle <= 13:
+        return 'background-color: #FFFF00'  # Yellow
+    else:  # Below 8
+        return 'background-color: #FF0000'  # Red
 
 # Apply exit velocity coloring and add barrel qualification
 final['Exit Velo Style'] = final['Exit Velo'].apply(lambda x: get_exit_velo_color(x))
