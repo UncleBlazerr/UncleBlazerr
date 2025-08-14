@@ -18,11 +18,12 @@ data = statcast(start_dt=yesterday, end_dt=yesterday)
 
 print(f"Total batted balls found: {len(data)}")
 
-# Filter valid batted-ball data, exclude home runs, require exit velo >= 93
+# Filter valid batted-ball data, exclude home runs, require exit velo >= 93, exclude null events
 filtered = data[
     (data['launch_speed'].notna()) &
     (data['launch_angle'].notna()) &
     (data['hit_distance_sc'].notna()) &
+    (data['events'].notna()) &
     (data['events'] != 'home_run') &
     (data['launch_speed'] >= 93)
 ]
@@ -63,6 +64,9 @@ if 'bat_speed' not in subset.columns:
 batter_ids = subset['batter'].unique()
 print(f"\nLooking up names for {len(batter_ids)} unique batter IDs...")
 batter_names = playerid_reverse_lookup(batter_ids, key_type='mlbam')[['key_mlbam', 'name_first', 'name_last']]
+# Properly capitalize names
+batter_names['name_first'] = batter_names['name_first'].str.title()
+batter_names['name_last'] = batter_names['name_last'].str.title()
 batter_names['batter_name'] = batter_names['name_first'] + ' ' + batter_names['name_last']
 
 print(f"Found names for {len(batter_names)} batters")
@@ -141,6 +145,19 @@ final['HR_Parks'] = final.apply(
 
 # Reorder columns to include HR_Parks
 final = final[['Batter', 'Exit Velo', 'Launch Angle', 'Distance (ft)', 'Bat Speed', 'HR_Parks', 'Event', 'Team']]
+
+# Create elite contact leaderboard
+print("Creating elite contact leaderboard...")
+elite_criteria = final[(final['Exit Velo'] > 98) & (final['Distance (ft)'] > 200)].copy()
+
+# Count occurrences per player to determine sort order
+player_counts = elite_criteria.groupby('Batter').size().reset_index(name='Count')
+
+# Add count to each row for sorting
+elite_criteria = elite_criteria.merge(player_counts, on='Batter', how='left')
+
+# Sort by count (descending), then by exit velocity (descending)
+elite_leaderboard = elite_criteria.sort_values(['Count', 'Exit Velo'], ascending=[False, False]).reset_index(drop=True)
 
 # Function to get exit velocity color
 def get_exit_velo_color(velo):
@@ -278,7 +295,7 @@ html_content = """
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             background: rgba(40, 40, 40, 0.95);
             border-radius: 20px;
@@ -286,6 +303,96 @@ html_content = """
             padding: 40px;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .top-hitters {
+            margin-bottom: 40px;
+            background: rgba(50, 50, 50, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .top-hitters-title {
+            color: #ffffff;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 15px;
+        }
+
+        .top-hitters-subtitle {
+            text-align: center;
+            color: #b0b0b0;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+        }
+
+        .top-hitters-table {
+            max-height: 400px;
+            overflow-y: auto;
+            background: rgba(60, 60, 60, 0.5);
+            border-radius: 10px;
+        }
+
+        .top-hitters-table::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .top-hitters-table::-webkit-scrollbar-track {
+            background: rgba(40, 40, 40, 0.5);
+            border-radius: 4px;
+        }
+
+        .top-hitters-table::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+        }
+
+        .top-hitters-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .top-hitters-table th {
+            background: linear-gradient(135deg, #3a3a3a, #2a2a2a);
+            padding: 12px 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #ffffff;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            position: sticky;
+            top: 0;
+        }
+
+        .top-hitters-table td {
+            padding: 10px 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: #e0e0e0;
+        }
+
+        .top-hitters-table tr:hover td {
+            background-color: rgba(80, 80, 80, 0.3);
+        }
+
+        .team-tables {
+            width: 100%;
+        }
+
+
+        .extra-base-hit {
+            background-color: rgba(0, 255, 0, 0.2) !important;
+            border-left: 3px solid #00FF00;
+        }
+
+        .single-hit {
+            background-color: rgba(255, 255, 0, 0.2) !important;
+            border-left: 3px solid #FFFF00;
         }
 
         .header {
@@ -448,6 +555,26 @@ html_content = """
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
+        .player-name {
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .leaderboard-player-name {
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            background: linear-gradient(135deg, #ffffff 0%, #d0d0d0 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 0.85rem;
+        }
+
         .distance-cell {
             font-weight: 600;
             color: #ffffff;
@@ -497,6 +624,15 @@ html_content = """
                 font-size: 2rem;
             }
             
+            .top-hitters-table {
+                max-height: 300px;
+            }
+            
+            .top-hitters-table th, .top-hitters-table td {
+                padding: 8px 6px;
+                font-size: 0.8rem;
+            }
+            
             .team-header {
                 flex-direction: column;
                 gap: 15px;
@@ -509,14 +645,18 @@ html_content = """
             }
             
             th, td {
-                padding: 10px 15px;
-                font-size: 0.9rem;
+                padding: 8px 6px;
+                font-size: 0.8rem;
             }
             
             .batter-cell {
                 flex-direction: column;
                 text-align: center;
                 gap: 5px;
+            }
+            
+            .batter-cell img {
+                width: 20px;
             }
         }
     </style>
@@ -539,6 +679,68 @@ for team in sorted(teams):
 
 html_content += """            </select>
         </div>
+        <div class="top-hitters">
+            <div class="top-hitters-title">Top Hitters</div>
+            <p class="top-hitters-subtitle">Exit Velo >98 mph & Distance >200 ft</p>
+            <div class="top-hitters-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Exit Velo</th>
+                            <th>Distance</th>
+                            <th>Event</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+"""
+
+# Add top hitters rows
+for _, row in elite_leaderboard.head(50).iterrows():  # Show top 50 hitters to include single occurrences
+    # Extract player info
+    batter_with_logo = str(row['Batter'])
+    player_name = batter_with_logo.split('> ')[-1] if '> ' in batter_with_logo else batter_with_logo
+    
+    # Extract team logo
+    team_logo = ""
+    if 'src="' in batter_with_logo:
+        start = batter_with_logo.find('src="') + 5
+        end = batter_with_logo.find('"', start)
+        logo_url = batter_with_logo[start:end]
+        team_logo = f'<img src="{logo_url}" width="20" style="vertical-align:middle; margin-right: 8px;">'
+    
+    event_text = str(row['Event']).replace('_', ' ').title() if str(row['Event']) != 'nan' else 'In Play'
+    
+    # Determine event styling
+    row_class = ""
+    star_prefix = ""
+    if row['Event'] == 'triple':
+        row_class = 'style="background-color: rgba(0, 255, 0, 0.2); border-left: 3px solid #00FF00;"'
+        star_prefix = "⭐ "
+    elif row['Event'] == 'double':
+        row_class = 'style="background-color: rgba(0, 200, 0, 0.2); border-left: 3px solid #00AA00;"'
+        star_prefix = "⭐ "
+    elif row['Event'] == 'single':
+        row_class = 'style="background-color: rgba(255, 255, 0, 0.2); border-left: 3px solid #FFFF00;"'
+    
+    # Style the player name
+    styled_player_name = f'<span class="leaderboard-player-name">{player_name}</span>'
+    
+    html_content += f"""
+                        <tr {row_class}>
+                            <td><div class="batter-cell">{team_logo}{styled_player_name}</div></td>
+                            <td style="text-align: center; font-weight: bold;">{row['Exit Velo']} mph</td>
+                            <td style="text-align: center;">{int(row['Distance (ft)'])} ft</td>
+                            <td style="text-align: center;">{star_prefix}{event_text}</td>
+                        </tr>
+    """
+
+html_content += """
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="team-tables">
 """
 
 for team in sorted(teams):
@@ -592,9 +794,18 @@ for team in sorted(teams):
             hr_parks_display = format_hr_parks(row['HR_Parks'])
             event_text = str(row['Event']).replace('_', ' ').title() if str(row['Event']) != 'nan' else 'In Play'
             
+            # Extract player name for styling
+            batter_html = str(row['Batter'])
+            if '> ' in batter_html:
+                logo_part = batter_html.split('> ')[0] + '> '
+                name_part = batter_html.split('> ')[1]
+                styled_batter = f'{logo_part}<span class="player-name">{name_part}</span>'
+            else:
+                styled_batter = f'<span class="player-name">{batter_html}</span>'
+            
             html_content += f"""
                     <tr>
-                        <td><div class="batter-cell">{row['Batter']}</div></td>
+                        <td><div class="batter-cell">{styled_batter}</div></td>
                         <td><div class="exit-velo" style="{exit_velo_style}">{row['Exit Velo']}</div></td>
                         <td><div class="launch-angle" style="{launch_angle_style}">{row['Launch Angle']}°</div></td>
                         <td><div class="bat-speed-cell">{bat_speed_display}</div></td>
@@ -615,6 +826,7 @@ if not any(len(final[final['Team'] == team]) > 0 for team in teams):
     html_content += '<div class="no-data">No almost homers found for yesterday.</div>'
 
 html_content += """
+        </div>
     </div>
     <script>
         function filterTeams() {
