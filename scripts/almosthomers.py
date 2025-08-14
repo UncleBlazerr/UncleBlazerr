@@ -8,7 +8,7 @@ import time
 #make os dir
 os.makedirs("../almosthomers", exist_ok=True)
 
-# Use yesterday's date
+# Use yesterday's date (when games actually occurred)
 yesterday = (datetime.today() - timedelta(days=1)).strftime('%Y-%m-%d')
 
 print(f"Pulling Statcast data for: {yesterday}")
@@ -35,15 +35,6 @@ print(f"Estimated probability columns: {[col for col in data.columns if 'estimat
 
 print(f"Filtered batted balls (no HRs): {len(filtered)}")
 
-# Debug: Check for Vidal Brujan specifically
-if len(data) > 0:
-    brujan_data = data[data['player_name'].str.contains('brujan', case=False, na=False)]
-    if len(brujan_data) > 0:
-        print(f"\nVidal Bruján data found:")
-        for _, row in brujan_data.iterrows():
-            print(f"  Game: {row.get('game_pk', 'N/A')}, Distance: {row.get('hit_distance_sc', 'N/A')}, Exit Velo: {row.get('launch_speed', 'N/A')}, Event: {row.get('events', 'N/A')}")
-    else:
-        print("\nNo Vidal Bruján data found in raw data")
 
 # Select useful columns (include bat_speed and estimated_slg if available)
 columns_to_select = [
@@ -71,15 +62,6 @@ batter_names['batter_name'] = batter_names['name_first'] + ' ' + batter_names['n
 
 print(f"Found names for {len(batter_names)} batters")
 
-# Check if Vidal Bruján is in the lookup results
-brujan_in_lookup = batter_names[batter_names['batter_name'].str.contains('brujan', case=False, na=False)]
-if len(brujan_in_lookup) > 0:
-    print(f"Vidal Bruján found in lookup with ID: {brujan_in_lookup['key_mlbam'].iloc[0]}")
-    # Check what data exists for this ID in our subset
-    brujan_subset = subset[subset['batter'] == brujan_in_lookup['key_mlbam'].iloc[0]]
-    print(f"Data rows for Bruján: {len(brujan_subset)}")
-    if len(brujan_subset) > 0:
-        print(brujan_subset[['batter', 'launch_speed', 'launch_angle', 'hit_distance_sc', 'events']].head())
 
 # Merge names
 merged = subset.merge(
@@ -665,7 +647,7 @@ html_content = """
     <div class="container">
         <div class="header">
             <h1>Almost Homers by Team</h1>
-            <p class="subtitle">Yesterday's closest calls that didn't leave the yard</p>
+            <p class="subtitle">Latest games' closest calls that didn't leave the yard</p>
             <p style="font-size: 0.9rem; color: #95a5a6; margin-top: 10px;">Last updated: """ + timestamp + """</p>
         </div>
         <div class="filters">
