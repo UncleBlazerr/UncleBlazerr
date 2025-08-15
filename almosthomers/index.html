@@ -340,6 +340,111 @@
             font-style: italic;
         }
 
+        /* Favorites Sidebar */
+        .favorites-sidebar {
+            background: rgba(45, 52, 54, 0.95);
+            border: 1px solid #34495e;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            max-width: 100%;
+        }
+
+        .favorites-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .favorites-header h3 {
+            margin: 0;
+            color: #f39c12;
+            font-size: 1.2rem;
+        }
+
+        #clear-favorites {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: background 0.3s;
+        }
+
+        #clear-favorites:hover {
+            background: #c0392b;
+        }
+
+        .favorites-list {
+            min-height: 50px;
+        }
+
+        .favorite-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(52, 73, 94, 0.7);
+            border-radius: 8px;
+            padding: 10px;
+            margin: 8px 0;
+            border-left: 3px solid #f39c12;
+        }
+
+        .favorite-player {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+
+        .remove-favorite {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: background 0.3s;
+        }
+
+        .remove-favorite:hover {
+            background: #c0392b;
+        }
+
+        .no-favorites {
+            color: #95a5a6;
+            font-style: italic;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        /* Heart Button */
+        .heart-btn {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: #95a5a6;
+            transition: all 0.3s;
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        .heart-btn:hover {
+            color: #e74c3c;
+            background: rgba(231, 76, 60, 0.1);
+        }
+
+        .heart-btn.favorited {
+            color: #e74c3c;
+            background: rgba(231, 76, 60, 0.1);
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 15px;
@@ -486,8 +591,19 @@
         <div class="header">
             <h1>Almost Homers by Team</h1>
             <p class="subtitle">Latest games' closest calls that didn't leave the yard</p>
-            <p style="font-size: 0.9rem; color: #95a5a6; margin-top: 10px;">Last updated: August 14, 2025 at 09:16 PM</p>
+            <p style="font-size: 0.9rem; color: #95a5a6; margin-top: 10px;">Last updated: August 14, 2025 at 09:27 PM</p>
         </div>
+        
+        <div id="favorites-sidebar" class="favorites-sidebar">
+            <div class="favorites-header">
+                <h3>⭐ My Favorites</h3>
+                <button id="clear-favorites" onclick="clearAllFavorites()">Clear All</button>
+            </div>
+            <div id="favorites-list" class="favorites-list">
+                <p class="no-favorites">Click the ♡ button next to any player to add them to your favorites!</p>
+            </div>
+        </div>
+        
         <div class="filters">
             <select id="teamFilter" class="filter-dropdown" onchange="filterTeams()">
                 <option value="">All Teams</option>
@@ -500,6 +616,7 @@
                 <table>
                     <thead>
                         <tr>
+                            <th>♥</th>
                             <th>Player</th>
                             <th># Times Elite Contact</th>
                             <th>Best Exit Velo</th>
@@ -511,6 +628,7 @@
                     <tbody>
 
                         <tr style="background-color: rgba(255, 255, 0, 0.2); border-left: 3px solid #FFFF00;">
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Heliot Ramos" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/sf.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/sf.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Heliot Ramos</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">3</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">104.5 mph</td>
@@ -520,6 +638,7 @@
                         </tr>
     
                         <tr style="background-color: rgba(0, 200, 0, 0.2); border-left: 3px solid #00AA00;">
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Junior Caminero" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/tb.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/tb.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Junior Caminero</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">2</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">112.3 mph</td>
@@ -529,6 +648,7 @@
                         </tr>
     
                         <tr style="background-color: rgba(0, 200, 0, 0.2); border-left: 3px solid #00AA00;">
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Joey Bart" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/pit.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/pit.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Joey Bart</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">2</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">111.6 mph</td>
@@ -538,6 +658,7 @@
                         </tr>
     
                         <tr style="background-color: rgba(255, 255, 0, 0.2); border-left: 3px solid #FFFF00;">
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Brady House" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Brady House</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">2</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">108.6 mph</td>
@@ -547,6 +668,7 @@
                         </tr>
     
                         <tr >
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Dansby Swanson" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/chc.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/chc.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Dansby Swanson</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">2</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">108.3 mph</td>
@@ -556,6 +678,7 @@
                         </tr>
     
                         <tr style="background-color: rgba(0, 255, 0, 0.2); border-left: 3px solid #00FF00;">
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Julio Rodríguez" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/sea.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/sea.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Julio Rodríguez</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">2</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">108.0 mph</td>
@@ -565,6 +688,7 @@
                         </tr>
     
                         <tr >
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Thomas Saggese" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/stl.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/stl.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Thomas Saggese</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">2</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">106.4 mph</td>
@@ -574,6 +698,7 @@
                         </tr>
     
                         <tr style="background-color: rgba(255, 255, 0, 0.2); border-left: 3px solid #FFFF00;">
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Pete Alonso" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/nym.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/nym.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Pete Alonso</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">2</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">104.4 mph</td>
@@ -583,6 +708,7 @@
                         </tr>
     
                         <tr style="background-color: rgba(0, 200, 0, 0.2); border-left: 3px solid #00AA00;">
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Josh Jung" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/tex.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/tex.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Josh Jung</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">2</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">103.6 mph</td>
@@ -592,6 +718,7 @@
                         </tr>
     
                         <tr style="background-color: rgba(255, 255, 0, 0.2); border-left: 3px solid #FFFF00;">
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Ronny Simon" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/pit.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/pit.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Ronny Simon</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">2</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">103.5 mph</td>
@@ -601,6 +728,7 @@
                         </tr>
     
                         <tr >
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Trent Grisham" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Trent Grisham</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">2</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">103.4 mph</td>
@@ -610,6 +738,7 @@
                         </tr>
     
                         <tr style="background-color: rgba(0, 200, 0, 0.2); border-left: 3px solid #00AA00;">
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Francisco Lindor" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/nym.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/nym.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Francisco Lindor</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">2</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">103.0 mph</td>
@@ -619,6 +748,7 @@
                         </tr>
     
                         <tr style="background-color: rgba(255, 255, 0, 0.2); border-left: 3px solid #FFFF00;">
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Bobby Witt" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/kc.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/kc.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Bobby Witt</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">2</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">100.7 mph</td>
@@ -628,6 +758,7 @@
                         </tr>
     
                         <tr style="background-color: rgba(0, 200, 0, 0.2); border-left: 3px solid #00AA00;">
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Gunnar Henderson" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/bal.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/bal.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Gunnar Henderson</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">2</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">100.1 mph</td>
@@ -637,6 +768,7 @@
                         </tr>
     
                         <tr >
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Brendan Donovan" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/stl.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/stl.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Brendan Donovan</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">2</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">99.2 mph</td>
@@ -646,6 +778,7 @@
                         </tr>
     
                         <tr style="background-color: rgba(0, 200, 0, 0.2); border-left: 3px solid #00AA00;">
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Byron Buxton" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/min.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/min.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Byron Buxton</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">1</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">114.0 mph</td>
@@ -655,6 +788,7 @@
                         </tr>
     
                         <tr style="background-color: rgba(0, 200, 0, 0.2); border-left: 3px solid #00AA00;">
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Otto Lopez" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/mia.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/mia.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Otto Lopez</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">1</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">109.9 mph</td>
@@ -664,6 +798,7 @@
                         </tr>
     
                         <tr style="background-color: rgba(0, 200, 0, 0.2); border-left: 3px solid #00AA00;">
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Xander Bogaerts" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/sd.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/sd.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Xander Bogaerts</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">1</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">108.9 mph</td>
@@ -673,6 +808,7 @@
                         </tr>
     
                         <tr >
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Jesús Sánchez" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/hou.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/hou.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Jesús Sánchez</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">1</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">108.8 mph</td>
@@ -682,6 +818,7 @@
                         </tr>
     
                         <tr >
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Giancarlo Stanton" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Giancarlo Stanton</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">1</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">108.4 mph</td>
@@ -691,6 +828,7 @@
                         </tr>
     
                         <tr style="background-color: rgba(0, 200, 0, 0.2); border-left: 3px solid #00AA00;">
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Kody Clemens" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/min.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/min.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Kody Clemens</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">1</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">107.5 mph</td>
@@ -700,6 +838,7 @@
                         </tr>
     
                         <tr style="background-color: rgba(0, 255, 0, 0.2); border-left: 3px solid #00FF00;">
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Shohei Ohtani" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/lad.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/lad.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Shohei Ohtani</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">1</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">107.2 mph</td>
@@ -709,6 +848,7 @@
                         </tr>
     
                         <tr >
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Jacob Melton" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/hou.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/hou.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Jacob Melton</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">1</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">106.9 mph</td>
@@ -718,6 +858,7 @@
                         </tr>
     
                         <tr >
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Ezequiel Tovar" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/col.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/col.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Ezequiel Tovar</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">1</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">106.9 mph</td>
@@ -727,6 +868,7 @@
                         </tr>
     
                         <tr style="background-color: rgba(0, 200, 0, 0.2); border-left: 3px solid #00AA00;">
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Spencer Torkelson" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/det.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/det.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Spencer Torkelson</span></div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">1</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">106.6 mph</td>
@@ -747,6 +889,7 @@
                 <table>
                     <thead>
                         <tr>
+                            <th>♥</th>
                             <th>Player</th>
                             <th>Exit Velo</th>
                             <th>Distance</th>
@@ -767,6 +910,7 @@
                 <table>
                     <thead>
                         <tr>
+                            <th>♥</th>
                             <th>Player</th>
                             <th>Exit Velo</th>
                             <th>Distance</th>
@@ -776,6 +920,7 @@
                     <tbody>
 
                             <tr style="background-color: rgba(255, 255, 0, 0.2); border-left: 3px solid #FFFF00;">
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Heliot Ramos" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/sf.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/sf.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Heliot Ramos</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">104.5 mph</td>
                                 <td data-label="Distance" style="text-align: center;">290 ft</td>
@@ -783,6 +928,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Heliot Ramos" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/sf.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/sf.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Heliot Ramos</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">103.5 mph</td>
                                 <td data-label="Distance" style="text-align: center;">273 ft</td>
@@ -790,6 +936,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Heliot Ramos" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/sf.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/sf.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Heliot Ramos</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">102.1 mph</td>
                                 <td data-label="Distance" style="text-align: center;">358 ft</td>
@@ -797,6 +944,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Dansby Swanson" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/chc.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/chc.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Dansby Swanson</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">108.3 mph</td>
                                 <td data-label="Distance" style="text-align: center;">291 ft</td>
@@ -804,6 +952,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Dansby Swanson" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/chc.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/chc.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Dansby Swanson</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">102.7 mph</td>
                                 <td data-label="Distance" style="text-align: center;">389 ft</td>
@@ -811,6 +960,7 @@
                             </tr>
         
                             <tr style="background-color: rgba(255, 255, 0, 0.2); border-left: 3px solid #FFFF00;">
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Pete Alonso" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/nym.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/nym.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Pete Alonso</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">104.4 mph</td>
                                 <td data-label="Distance" style="text-align: center;">232 ft</td>
@@ -818,6 +968,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Pete Alonso" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/nym.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/nym.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Pete Alonso</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">103.3 mph</td>
                                 <td data-label="Distance" style="text-align: center;">235 ft</td>
@@ -825,6 +976,7 @@
                             </tr>
         
                             <tr style="background-color: rgba(0, 200, 0, 0.2); border-left: 3px solid #00AA00;">
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Joey Bart" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/pit.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/pit.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Joey Bart</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">111.6 mph</td>
                                 <td data-label="Distance" style="text-align: center;">372 ft</td>
@@ -832,6 +984,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Joey Bart" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/pit.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/pit.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Joey Bart</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">98.6 mph</td>
                                 <td data-label="Distance" style="text-align: center;">265 ft</td>
@@ -839,6 +992,7 @@
                             </tr>
         
                             <tr style="background-color: rgba(0, 255, 0, 0.2); border-left: 3px solid #00FF00;">
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Julio Rodríguez" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/sea.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/sea.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Julio Rodríguez</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">108.0 mph</td>
                                 <td data-label="Distance" style="text-align: center;">402 ft</td>
@@ -846,6 +1000,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Julio Rodríguez" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/sea.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/sea.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Julio Rodríguez</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">100.9 mph</td>
                                 <td data-label="Distance" style="text-align: center;">269 ft</td>
@@ -853,6 +1008,7 @@
                             </tr>
         
                             <tr style="background-color: rgba(255, 255, 0, 0.2); border-left: 3px solid #FFFF00;">
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Brady House" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Brady House</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">108.6 mph</td>
                                 <td data-label="Distance" style="text-align: center;">222 ft</td>
@@ -860,6 +1016,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Brady House" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Brady House</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">99.0 mph</td>
                                 <td data-label="Distance" style="text-align: center;">370 ft</td>
@@ -867,6 +1024,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Brendan Donovan" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/stl.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/stl.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Brendan Donovan</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">99.2 mph</td>
                                 <td data-label="Distance" style="text-align: center;">393 ft</td>
@@ -874,6 +1032,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Brendan Donovan" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/stl.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/stl.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Brendan Donovan</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">98.4 mph</td>
                                 <td data-label="Distance" style="text-align: center;">368 ft</td>
@@ -881,6 +1040,7 @@
                             </tr>
         
                             <tr style="background-color: rgba(0, 200, 0, 0.2); border-left: 3px solid #00AA00;">
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Josh Jung" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/tex.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/tex.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Josh Jung</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">103.6 mph</td>
                                 <td data-label="Distance" style="text-align: center;">228 ft</td>
@@ -888,6 +1048,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Josh Jung" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/tex.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/tex.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Josh Jung</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">98.3 mph</td>
                                 <td data-label="Distance" style="text-align: center;">350 ft</td>
@@ -895,6 +1056,7 @@
                             </tr>
         
                             <tr style="background-color: rgba(0, 200, 0, 0.2); border-left: 3px solid #00AA00;">
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Junior Caminero" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/tb.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/tb.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Junior Caminero</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">112.3 mph</td>
                                 <td data-label="Distance" style="text-align: center;">227 ft</td>
@@ -902,6 +1064,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Junior Caminero" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/tb.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/tb.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Junior Caminero</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">101.5 mph</td>
                                 <td data-label="Distance" style="text-align: center;">335 ft</td>
@@ -909,6 +1072,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Thomas Saggese" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/stl.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/stl.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Thomas Saggese</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">106.4 mph</td>
                                 <td data-label="Distance" style="text-align: center;">374 ft</td>
@@ -916,6 +1080,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Thomas Saggese" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/stl.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/stl.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Thomas Saggese</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">102.1 mph</td>
                                 <td data-label="Distance" style="text-align: center;">390 ft</td>
@@ -923,6 +1088,7 @@
                             </tr>
         
                             <tr style="background-color: rgba(255, 255, 0, 0.2); border-left: 3px solid #FFFF00;">
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Francisco Lindor" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/nym.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/nym.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Francisco Lindor</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">103.0 mph</td>
                                 <td data-label="Distance" style="text-align: center;">257 ft</td>
@@ -930,6 +1096,7 @@
                             </tr>
         
                             <tr style="background-color: rgba(0, 200, 0, 0.2); border-left: 3px solid #00AA00;">
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Francisco Lindor" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/nym.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/nym.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Francisco Lindor</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">98.2 mph</td>
                                 <td data-label="Distance" style="text-align: center;">258 ft</td>
@@ -937,6 +1104,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Trent Grisham" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Trent Grisham</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">103.4 mph</td>
                                 <td data-label="Distance" style="text-align: center;">338 ft</td>
@@ -944,6 +1112,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Trent Grisham" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Trent Grisham</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">100.9 mph</td>
                                 <td data-label="Distance" style="text-align: center;">370 ft</td>
@@ -951,6 +1120,7 @@
                             </tr>
         
                             <tr style="background-color: rgba(255, 255, 0, 0.2); border-left: 3px solid #FFFF00;">
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Bobby Witt" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/kc.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/kc.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Bobby Witt</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">100.7 mph</td>
                                 <td data-label="Distance" style="text-align: center;">264 ft</td>
@@ -958,6 +1128,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Bobby Witt" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/kc.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/kc.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Bobby Witt</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">99.9 mph</td>
                                 <td data-label="Distance" style="text-align: center;">370 ft</td>
@@ -965,6 +1136,7 @@
                             </tr>
         
                             <tr style="background-color: rgba(255, 255, 0, 0.2); border-left: 3px solid #FFFF00;">
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Ronny Simon" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/pit.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/pit.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Ronny Simon</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">103.5 mph</td>
                                 <td data-label="Distance" style="text-align: center;">206 ft</td>
@@ -972,6 +1144,7 @@
                             </tr>
         
                             <tr style="background-color: rgba(255, 255, 0, 0.2); border-left: 3px solid #FFFF00;">
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Ronny Simon" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/pit.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/pit.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Ronny Simon</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">103.0 mph</td>
                                 <td data-label="Distance" style="text-align: center;">244 ft</td>
@@ -979,6 +1152,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Gunnar Henderson" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/bal.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/bal.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Gunnar Henderson</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">100.1 mph</td>
                                 <td data-label="Distance" style="text-align: center;">343 ft</td>
@@ -986,6 +1160,7 @@
                             </tr>
         
                             <tr style="background-color: rgba(0, 200, 0, 0.2); border-left: 3px solid #00AA00;">
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Gunnar Henderson" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/bal.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/bal.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Gunnar Henderson</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">98.8 mph</td>
                                 <td data-label="Distance" style="text-align: center;">209 ft</td>
@@ -993,6 +1168,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Jurickson Profar" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/atl.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/atl.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Jurickson Profar</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">98.5 mph</td>
                                 <td data-label="Distance" style="text-align: center;">335 ft</td>
@@ -1000,6 +1176,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Daniel Johnson" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/bal.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/bal.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Daniel Johnson</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">102.0 mph</td>
                                 <td data-label="Distance" style="text-align: center;">342 ft</td>
@@ -1007,6 +1184,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Brent Rooker" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/ath.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/ath.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Brent Rooker</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">101.7 mph</td>
                                 <td data-label="Distance" style="text-align: center;">344 ft</td>
@@ -1014,6 +1192,7 @@
                             </tr>
         
                             <tr style="background-color: rgba(0, 200, 0, 0.2); border-left: 3px solid #00AA00;">
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Austin Hays" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/cin.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/cin.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Austin Hays</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">102.7 mph</td>
                                 <td data-label="Distance" style="text-align: center;">212 ft</td>
@@ -1021,6 +1200,7 @@
                             </tr>
         
                             <tr style="background-color: rgba(255, 255, 0, 0.2); border-left: 3px solid #FFFF00;">
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Elly De La Cruz" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/cin.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/cin.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Elly De La Cruz</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">99.4 mph</td>
                                 <td data-label="Distance" style="text-align: center;">263 ft</td>
@@ -1028,6 +1208,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Gabriel Arias" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/cle.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/cle.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Gabriel Arias</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">101.7 mph</td>
                                 <td data-label="Distance" style="text-align: center;">297 ft</td>
@@ -1035,6 +1216,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Corbin Carroll" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/az.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/az.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Corbin Carroll</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">104.4 mph</td>
                                 <td data-label="Distance" style="text-align: center;">316 ft</td>
@@ -1042,6 +1224,7 @@
                             </tr>
         
                             <tr style="background-color: rgba(255, 255, 0, 0.2); border-left: 3px solid #FFFF00;">
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Dylan Carlson" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/bal.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/bal.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Dylan Carlson</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">100.1 mph</td>
                                 <td data-label="Distance" style="text-align: center;">232 ft</td>
@@ -1049,6 +1232,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Jackson Holliday" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/bal.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/bal.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Jackson Holliday</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">103.1 mph</td>
                                 <td data-label="Distance" style="text-align: center;">314 ft</td>
@@ -1056,6 +1240,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Jordan Westburg" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/bal.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/bal.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Jordan Westburg</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">99.5 mph</td>
                                 <td data-label="Distance" style="text-align: center;">289 ft</td>
@@ -1063,6 +1248,7 @@
                             </tr>
         
                             <tr style="background-color: rgba(255, 255, 0, 0.2); border-left: 3px solid #FFFF00;">
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Coby Mayo" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/bal.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/bal.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Coby Mayo</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">98.3 mph</td>
                                 <td data-label="Distance" style="text-align: center;">332 ft</td>
@@ -1070,6 +1256,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Ryan Mountcastle" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/bal.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/bal.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Ryan Mountcastle</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">99.5 mph</td>
                                 <td data-label="Distance" style="text-align: center;">366 ft</td>
@@ -1077,6 +1264,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Alex Bregman" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/bos.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/bos.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Alex Bregman</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">99.4 mph</td>
                                 <td data-label="Distance" style="text-align: center;">374 ft</td>
@@ -1084,6 +1272,7 @@
                             </tr>
         
                             <tr style="background-color: rgba(255, 255, 0, 0.2); border-left: 3px solid #FFFF00;">
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Romy Gonzalez" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/bos.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/bos.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Romy Gonzalez</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">105.1 mph</td>
                                 <td data-label="Distance" style="text-align: center;">262 ft</td>
@@ -1091,6 +1280,7 @@
                             </tr>
         
                             <tr style="background-color: rgba(0, 200, 0, 0.2); border-left: 3px solid #00AA00;">
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Trevor Story" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/bos.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/bos.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Trevor Story</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">99.7 mph</td>
                                 <td data-label="Distance" style="text-align: center;">260 ft</td>
@@ -1098,6 +1288,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Kyle Tucker" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/chc.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/chc.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Kyle Tucker</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">102.7 mph</td>
                                 <td data-label="Distance" style="text-align: center;">387 ft</td>
@@ -1105,6 +1296,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Matt Shaw" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/chc.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/chc.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Matt Shaw</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">100.1 mph</td>
                                 <td data-label="Distance" style="text-align: center;">303 ft</td>
@@ -1112,6 +1304,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Nico Hoerner" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/chc.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/chc.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Nico Hoerner</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">102.3 mph</td>
                                 <td data-label="Distance" style="text-align: center;">278 ft</td>
@@ -1119,6 +1312,7 @@
                             </tr>
         
                             <tr >
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Pete Crow-Armstrong" data-logo="<img src=&quot;https://a.espncdn.com/i/teamlogos/mlb/500/chc.png&quot; width=&quot;20&quot; style=&quot;vertical-align:middle; margin-right: 8px;&quot;>" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell"><img src="https://a.espncdn.com/i/teamlogos/mlb/500/chc.png" width="20" style="vertical-align:middle; margin-right: 8px;"><span class="leaderboard-player-name">Pete Crow-Armstrong</span></div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">101.4 mph</td>
                                 <td data-label="Distance" style="text-align: center;">311 ft</td>
@@ -1146,6 +1340,100 @@
                 }
             });
         }
+
+        // Favorites functionality
+        let favorites = JSON.parse(localStorage.getItem('baseballFavorites') || '[]');
+
+        function saveFavorites() {
+            localStorage.setItem('baseballFavorites', JSON.stringify(favorites));
+        }
+
+        function toggleFavoriteBtn(button) {
+            const playerName = button.getAttribute('data-player');
+            const teamLogo = button.getAttribute('data-logo').replace(/&quot;/g, '"');
+            
+            const existingIndex = favorites.findIndex(fav => fav.name === playerName);
+            
+            if (existingIndex > -1) {
+                // Remove from favorites
+                favorites.splice(existingIndex, 1);
+                updateHeartButtons(playerName, false);
+            } else {
+                // Add to favorites
+                favorites.push({
+                    name: playerName,
+                    logo: teamLogo,
+                    dateAdded: new Date().toISOString()
+                });
+                updateHeartButtons(playerName, true);
+            }
+            
+            saveFavorites();
+            renderFavorites();
+        }
+
+        function updateHeartButtons(playerName, isFavorited) {
+            const buttons = document.querySelectorAll('.heart-btn');
+            buttons.forEach(btn => {
+                const btnPlayerName = btn.getAttribute('data-player');
+                if (btnPlayerName === playerName) {
+                    btn.textContent = isFavorited ? '♥' : '♡';
+                    btn.classList.toggle('favorited', isFavorited);
+                }
+            });
+        }
+
+        function removeFavorite(playerName) {
+            const index = favorites.findIndex(fav => fav.name === playerName);
+            if (index > -1) {
+                favorites.splice(index, 1);
+                saveFavorites();
+                renderFavorites();
+                updateHeartButtons(playerName, false);
+            }
+        }
+
+        function clearAllFavorites() {
+            if (confirm('Are you sure you want to clear all favorites?')) {
+                favorites = [];
+                saveFavorites();
+                renderFavorites();
+                // Update all heart buttons
+                document.querySelectorAll('.heart-btn').forEach(btn => {
+                    btn.textContent = '♡';
+                    btn.classList.remove('favorited');
+                });
+            }
+        }
+
+        function renderFavorites() {
+            const favoritesList = document.getElementById('favorites-list');
+            
+            if (favorites.length === 0) {
+                favoritesList.innerHTML = '<p class="no-favorites">Click the ♡ button next to any player to add them to your favorites!</p>';
+                return;
+            }
+            
+            favoritesList.innerHTML = favorites.map(fav => `
+                <div class="favorite-item">
+                    <div class="favorite-player">
+                        ${fav.logo}
+                        <span class="leaderboard-player-name">${fav.name}</span>
+                    </div>
+                    <button class="remove-favorite" onclick="removeFavorite('${fav.name}')">×</button>
+                </div>
+            `).join('');
+        }
+
+        // Initialize favorites on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            renderFavorites();
+            
+            // Update heart buttons based on saved favorites
+            favorites.forEach(fav => {
+                updateHeartButtons(fav.name, true);
+            });
+        });
     </script>
 </body>
 </html>

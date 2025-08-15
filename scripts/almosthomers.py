@@ -850,6 +850,111 @@ html_content = """
             font-style: italic;
         }
 
+        /* Favorites Sidebar */
+        .favorites-sidebar {
+            background: rgba(45, 52, 54, 0.95);
+            border: 1px solid #34495e;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            max-width: 100%;
+        }
+
+        .favorites-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .favorites-header h3 {
+            margin: 0;
+            color: #f39c12;
+            font-size: 1.2rem;
+        }
+
+        #clear-favorites {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: background 0.3s;
+        }
+
+        #clear-favorites:hover {
+            background: #c0392b;
+        }
+
+        .favorites-list {
+            min-height: 50px;
+        }
+
+        .favorite-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(52, 73, 94, 0.7);
+            border-radius: 8px;
+            padding: 10px;
+            margin: 8px 0;
+            border-left: 3px solid #f39c12;
+        }
+
+        .favorite-player {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+
+        .remove-favorite {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: background 0.3s;
+        }
+
+        .remove-favorite:hover {
+            background: #c0392b;
+        }
+
+        .no-favorites {
+            color: #95a5a6;
+            font-style: italic;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        /* Heart Button */
+        .heart-btn {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: #95a5a6;
+            transition: all 0.3s;
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        .heart-btn:hover {
+            color: #e74c3c;
+            background: rgba(231, 76, 60, 0.1);
+        }
+
+        .heart-btn.favorited {
+            color: #e74c3c;
+            background: rgba(231, 76, 60, 0.1);
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 15px;
@@ -998,6 +1103,17 @@ html_content = """
             <p class="subtitle">Latest games' closest calls that didn't leave the yard</p>
             <p style="font-size: 0.9rem; color: #95a5a6; margin-top: 10px;">Last updated: """ + timestamp + """</p>
         </div>
+        
+        <div id="favorites-sidebar" class="favorites-sidebar">
+            <div class="favorites-header">
+                <h3>⭐ My Favorites</h3>
+                <button id="clear-favorites" onclick="clearAllFavorites()">Clear All</button>
+            </div>
+            <div id="favorites-list" class="favorites-list">
+                <p class="no-favorites">Click the ♡ button next to any player to add them to your favorites!</p>
+            </div>
+        </div>
+        
         <div class="filters">
             <select id="teamFilter" class="filter-dropdown" onchange="filterTeams()">
                 <option value="">All Teams</option>
@@ -1016,6 +1132,7 @@ html_content += """            </select>
                 <table>
                     <thead>
                         <tr>
+                            <th>♥</th>
                             <th>Player</th>
                             <th># Times Elite Contact</th>
                             <th>Best Exit Velo</th>
@@ -1060,6 +1177,7 @@ for player_data in rolling_leaderboard[:25]:  # Show top 25 players
     
     html_content += f"""
                         <tr {row_class}>
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="{player_name}" data-logo="{team_logo.replace('"', '&quot;')}" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell">{team_logo}{styled_player_name}</div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">{player_data['Total_Count']}</td>
                             <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">{player_data['Best_Exit_Velo']} mph</td>
@@ -1082,6 +1200,7 @@ html_content += """
                 <table>
                     <thead>
                         <tr>
+                            <th>♥</th>
                             <th>Player</th>
                             <th>Exit Velo</th>
                             <th>Distance</th>
@@ -1135,6 +1254,7 @@ for row in grouped_rows[:50]:  # Show top 50 individual hits
     
     html_content += f"""
                         <tr {row_class}>
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="{player_name}" data-logo="{team_logo.replace('"', '&quot;')}" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell">{team_logo}{styled_player_name}</div></td>
                             <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">{row['Exit Velo']} mph</td>
                             <td data-label="Distance" style="text-align: center;">{int(row['Distance (ft)'])} ft</td>
@@ -1155,6 +1275,7 @@ html_content += """
                 <table>
                     <thead>
                         <tr>
+                            <th>♥</th>
                             <th>Player</th>
                             <th>Exit Velo</th>
                             <th>Distance</th>
@@ -1208,6 +1329,7 @@ if len(elite_leaderboard_day_before) > 0:
         
         html_content += f"""
                             <tr {row_class}>
+                                <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="{player_name}" data-logo="{team_logo.replace('"', '&quot;')}" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell">{team_logo}{styled_player_name}</div></td>
                                 <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">{row['Exit Velo']} mph</td>
                                 <td data-label="Distance" style="text-align: center;">{int(row['Distance (ft)'])} ft</td>
@@ -1329,6 +1451,100 @@ html_content += """
                 }
             });
         }
+
+        // Favorites functionality
+        let favorites = JSON.parse(localStorage.getItem('baseballFavorites') || '[]');
+
+        function saveFavorites() {
+            localStorage.setItem('baseballFavorites', JSON.stringify(favorites));
+        }
+
+        function toggleFavoriteBtn(button) {
+            const playerName = button.getAttribute('data-player');
+            const teamLogo = button.getAttribute('data-logo').replace(/&quot;/g, '"');
+            
+            const existingIndex = favorites.findIndex(fav => fav.name === playerName);
+            
+            if (existingIndex > -1) {
+                // Remove from favorites
+                favorites.splice(existingIndex, 1);
+                updateHeartButtons(playerName, false);
+            } else {
+                // Add to favorites
+                favorites.push({
+                    name: playerName,
+                    logo: teamLogo,
+                    dateAdded: new Date().toISOString()
+                });
+                updateHeartButtons(playerName, true);
+            }
+            
+            saveFavorites();
+            renderFavorites();
+        }
+
+        function updateHeartButtons(playerName, isFavorited) {
+            const buttons = document.querySelectorAll('.heart-btn');
+            buttons.forEach(btn => {
+                const btnPlayerName = btn.getAttribute('data-player');
+                if (btnPlayerName === playerName) {
+                    btn.textContent = isFavorited ? '♥' : '♡';
+                    btn.classList.toggle('favorited', isFavorited);
+                }
+            });
+        }
+
+        function removeFavorite(playerName) {
+            const index = favorites.findIndex(fav => fav.name === playerName);
+            if (index > -1) {
+                favorites.splice(index, 1);
+                saveFavorites();
+                renderFavorites();
+                updateHeartButtons(playerName, false);
+            }
+        }
+
+        function clearAllFavorites() {
+            if (confirm('Are you sure you want to clear all favorites?')) {
+                favorites = [];
+                saveFavorites();
+                renderFavorites();
+                // Update all heart buttons
+                document.querySelectorAll('.heart-btn').forEach(btn => {
+                    btn.textContent = '♡';
+                    btn.classList.remove('favorited');
+                });
+            }
+        }
+
+        function renderFavorites() {
+            const favoritesList = document.getElementById('favorites-list');
+            
+            if (favorites.length === 0) {
+                favoritesList.innerHTML = '<p class="no-favorites">Click the ♡ button next to any player to add them to your favorites!</p>';
+                return;
+            }
+            
+            favoritesList.innerHTML = favorites.map(fav => `
+                <div class="favorite-item">
+                    <div class="favorite-player">
+                        ${fav.logo}
+                        <span class="leaderboard-player-name">${fav.name}</span>
+                    </div>
+                    <button class="remove-favorite" onclick="removeFavorite('${fav.name}')">×</button>
+                </div>
+            `).join('');
+        }
+
+        // Initialize favorites on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            renderFavorites();
+            
+            // Update heart buttons based on saved favorites
+            favorites.forEach(fav => {
+                updateHeartButtons(fav.name, true);
+            });
+        });
     </script>
 </body>
 </html>
