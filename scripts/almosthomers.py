@@ -598,47 +598,141 @@ html_content = """
 
         @media (max-width: 768px) {
             .container {
-                padding: 20px;
-                margin: 10px;
+                padding: 15px;
+                margin: 5px;
             }
             
             h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             
-            .top-hitters-table {
-                max-height: 300px;
-            }
-            
-            .top-hitters-table th, .top-hitters-table td {
-                padding: 8px 6px;
+            .top-hitters-subtitle {
                 font-size: 0.8rem;
             }
             
+            /* Mobile responsive table design */
+            .top-hitters-table table,
+            .team-section table {
+                border: 0;
+            }
+            
+            .top-hitters-table thead,
+            .team-section thead {
+                display: none;
+            }
+            
+            .top-hitters-table tr,
+            .team-section tr {
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                border-radius: 8px;
+                padding: 10px;
+                display: block;
+                margin-bottom: 10px;
+                background: rgba(40, 40, 40, 0.8);
+            }
+            
+            .top-hitters-table td,
+            .team-section td {
+                border: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                display: block;
+                padding: 8px 10px;
+                text-align: left !important;
+                font-size: 0.9rem;
+            }
+            
+            .top-hitters-table td:before,
+            .team-section td:before {
+                content: attr(data-label) ": ";
+                font-weight: bold;
+                color: #b0b0b0;
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+            
+            .top-hitters-table td:last-child,
+            .team-section td:last-child {
+                border-bottom: none;
+            }
+            
+            /* Mobile specific styling for batter cells */
+            .batter-cell {
+                flex-direction: row !important;
+                align-items: center;
+                gap: 8px;
+                text-align: left !important;
+            }
+            
+            .batter-cell img {
+                width: 16px;
+                height: 16px;
+            }
+            
+            /* Hide team filter on very small screens */
+            .filters {
+                margin-bottom: 20px;
+            }
+            
+            .filter-dropdown {
+                width: 100%;
+                max-width: none;
+                font-size: 0.9rem;
+                padding: 8px;
+            }
+            
+            /* Mobile team headers */
             .team-header {
                 flex-direction: column;
-                gap: 15px;
+                gap: 10px;
                 text-align: center;
+                padding: 15px;
             }
             
             .team-stats {
                 flex-wrap: wrap;
                 justify-content: center;
+                gap: 8px;
             }
             
-            th, td {
-                padding: 8px 6px;
+            .team-stat {
                 font-size: 0.8rem;
+                padding: 4px 8px;
             }
             
-            .batter-cell {
-                flex-direction: column;
-                text-align: center;
-                gap: 5px;
+            /* Reduce top hitters table height on mobile */
+            .top-hitters-table {
+                max-height: 400px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+                margin: 0;
+            }
+            
+            h1 {
+                font-size: 1.6rem;
+            }
+            
+            .top-hitters-title {
+                font-size: 1.5rem;
+            }
+            
+            .team-name {
+                font-size: 1.3rem;
+            }
+            
+            .top-hitters-table td,
+            .team-section td {
+                padding: 6px 8px;
+                font-size: 0.85rem;
             }
             
             .batter-cell img {
-                width: 20px;
+                width: 14px;
+                height: 14px;
             }
         }
     </style>
@@ -677,8 +771,27 @@ html_content += """            </select>
                     <tbody>
 """
 
-# Add top hitters rows
-for _, row in elite_leaderboard.head(50).iterrows():  # Show top 50 hitters to include single occurrences
+# Group by player and sort by count, but show all individual hits
+# Create a custom sort key that groups players by their count
+def get_player_sort_key(row):
+    return (row['Count'], row['Exit Velo'])
+
+# Sort the elite leaderboard by count (descending), then by exit velocity (descending)
+# But this will keep all individual hits - they'll just be grouped by player
+elite_leaderboard_grouped = elite_leaderboard.copy()
+
+# Create a custom sorting approach to group players together
+# First get unique players sorted by their count
+player_order = elite_leaderboard_grouped.groupby('Batter')['Count'].first().sort_values(ascending=False).index.tolist()
+
+# Now reconstruct the dataframe with players grouped together
+grouped_rows = []
+for player in player_order:
+    player_hits = elite_leaderboard_grouped[elite_leaderboard_grouped['Batter'] == player].sort_values('Exit Velo', ascending=False)
+    grouped_rows.extend(player_hits.to_dict('records'))
+
+# Add top hitters rows (all individual hits, but grouped by player)
+for row in grouped_rows[:50]:  # Show top 50 individual hits
     # Extract player info
     batter_with_logo = str(row['Batter'])
     player_name = batter_with_logo.split('> ')[-1] if '> ' in batter_with_logo else batter_with_logo
@@ -710,10 +823,10 @@ for _, row in elite_leaderboard.head(50).iterrows():  # Show top 50 hitters to i
     
     html_content += f"""
                         <tr {row_class}>
-                            <td><div class="batter-cell">{team_logo}{styled_player_name}</div></td>
-                            <td style="text-align: center; font-weight: bold;">{row['Exit Velo']} mph</td>
-                            <td style="text-align: center;">{int(row['Distance (ft)'])} ft</td>
-                            <td style="text-align: center;">{star_prefix}{event_text}</td>
+                            <td data-label="Player"><div class="batter-cell">{team_logo}{styled_player_name}</div></td>
+                            <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">{row['Exit Velo']} mph</td>
+                            <td data-label="Distance" style="text-align: center;">{int(row['Distance (ft)'])} ft</td>
+                            <td data-label="Event" style="text-align: center;">{star_prefix}{event_text}</td>
                         </tr>
     """
 
@@ -787,14 +900,14 @@ for team in sorted(teams):
             
             html_content += f"""
                     <tr>
-                        <td><div class="batter-cell">{styled_batter}</div></td>
-                        <td><div class="exit-velo" style="{exit_velo_style}">{row['Exit Velo']}</div></td>
-                        <td><div class="launch-angle" style="{launch_angle_style}">{row['Launch Angle']}°</div></td>
-                        <td><div class="bat-speed-cell">{bat_speed_display}</div></td>
-                        <td><div class="barrel-cell">{barrel_indicator}</div></td>
-                        <td><div class="hr-prob-cell">{hr_parks_display}</div></td>
-                        <td><div class="distance-cell">{row['Distance (ft)']} ft</div></td>
-                        <td><div class="event-cell">{event_text}</div></td>
+                        <td data-label="Batter"><div class="batter-cell">{styled_batter}</div></td>
+                        <td data-label="Exit Velo"><div class="exit-velo" style="{exit_velo_style}">{row['Exit Velo']}</div></td>
+                        <td data-label="Launch Angle"><div class="launch-angle" style="{launch_angle_style}">{row['Launch Angle']}°</div></td>
+                        <td data-label="Bat Speed"><div class="bat-speed-cell">{bat_speed_display}</div></td>
+                        <td data-label="Barrel"><div class="barrel-cell">{barrel_indicator}</div></td>
+                        <td data-label="HR/Park"><div class="hr-prob-cell">{hr_parks_display}</div></td>
+                        <td data-label="Distance"><div class="distance-cell">{row['Distance (ft)']} ft</div></td>
+                        <td data-label="Event"><div class="event-cell">{event_text}</div></td>
                     </tr>
             """
         
