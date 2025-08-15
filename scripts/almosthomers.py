@@ -1203,7 +1203,7 @@ for player_data in rolling_leaderboard[:25]:  # Show top 25 players
                             <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="{player_name}" data-logo="{team_logo.replace('"', '&quot;')}" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell">{team_logo}{styled_player_name}</div></td>
                             <td data-label="# Times Elite Contact" style="text-align: center; font-weight: bold; color: #4CAF50;">{player_data['Total_Count']}</td>
-                            <td data-label="Best Exit Velo" style="text-align: center; font-weight: bold;">{player_data['Best_Exit_Velo']} mph</td>
+                            <td data-label="Best Exit Velo" style="text-align: center; {get_exit_velo_color(player_data['Best_Exit_Velo'])}">{player_data['Best_Exit_Velo']} mph</td>
                             <td data-label="Best Distance" style="text-align: center;">{int(player_data['Best_Distance'])} ft</td>
                             <td data-label="Best Event" style="text-align: center;">{star_prefix}{event_text}</td>
                             <td data-label="Days Active" style="text-align: center; color: #FFA500;">{player_data['Days_Active']}</td>
@@ -1279,7 +1279,7 @@ for row in grouped_rows[:50]:  # Show top 50 individual hits
                         <tr {row_class}>
                             <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="{player_name}" data-logo="{team_logo.replace('"', '&quot;')}" onclick="toggleFavoriteBtn(this)">♡</button></td>
                             <td data-label="Player"><div class="batter-cell">{team_logo}{styled_player_name}</div></td>
-                            <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">{row['Exit Velo']} mph</td>
+                            <td data-label="Exit Velo" style="text-align: center; {get_exit_velo_color(row['Exit Velo'])}">{row['Exit Velo']} mph</td>
                             <td data-label="Distance" style="text-align: center;">{int(row['Distance (ft)'])} ft</td>
                             <td data-label="Event" style="text-align: center;">{star_prefix}{event_text}</td>
                         </tr>
@@ -1354,7 +1354,7 @@ if len(elite_leaderboard_day_before) > 0:
                             <tr {row_class}>
                                 <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="{player_name}" data-logo="{team_logo.replace('"', '&quot;')}" onclick="toggleFavoriteBtn(this)">♡</button></td>
                                 <td data-label="Player"><div class="batter-cell">{team_logo}{styled_player_name}</div></td>
-                                <td data-label="Exit Velo" style="text-align: center; font-weight: bold;">{row['Exit Velo']} mph</td>
+                                <td data-label="Exit Velo" style="text-align: center; {get_exit_velo_color(row['Exit Velo'])}">{row['Exit Velo']} mph</td>
                                 <td data-label="Distance" style="text-align: center;">{int(row['Distance (ft)'])} ft</td>
                                 <td data-label="Event" style="text-align: center;">{star_prefix}{event_text}</td>
                             </tr>
