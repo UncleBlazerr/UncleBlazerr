@@ -476,6 +476,14 @@ else:
     final['Exit Velo Style'] = []
     final['Is_Barrel'] = []
 
+# Apply same processing to day-before data
+if len(final_day_before) > 0:
+    final_day_before['Exit Velo Style'] = final_day_before['Exit Velo'].apply(lambda x: get_exit_velo_color(x))
+    final_day_before['Is_Barrel'] = final_day_before.apply(lambda row: is_barrel(row['Exit Velo'], row['Launch Angle']), axis=1)
+else:
+    final_day_before['Exit Velo Style'] = []
+    final_day_before['Is_Barrel'] = []
+
 def format_barrel(is_barrel_bool):
     return '🛢️' if is_barrel_bool else ''
 
@@ -503,6 +511,21 @@ for team in final['Team'].unique():
         'max_distance': team_data['Distance (ft)'].max(),
         'avg_exit_velo': team_data['Exit Velo'].mean()
     }
+
+# Group by team for day-before data
+teams_day_before = final_day_before['Team'].unique() if len(final_day_before) > 0 else []
+
+# Calculate team statistics for day-before data
+team_stats_day_before = {}
+if len(final_day_before) > 0:
+    for team in final_day_before['Team'].unique():
+        team_data = final_day_before[final_day_before['Team'] == team]
+        team_stats_day_before[team] = {
+            'count': len(team_data),
+            'avg_distance': team_data['Distance (ft)'].mean(),
+            'max_distance': team_data['Distance (ft)'].max(),
+            'avg_exit_velo': team_data['Exit Velo'].mean()
+        }
 
 # Generate timestamp
 timestamp = datetime.now().strftime('%B %d, %Y at %I:%M %p')
@@ -1353,10 +1376,15 @@ html_content += """
         <div class="team-tables">
 """
 
-for team in sorted(teams):
-    team_data = final[final['Team'] == team].copy()
+# Use today's data if available, otherwise use yesterday's data for team tables
+team_data_source = final if len(final) > 0 else final_day_before
+team_stats_source = team_stats if len(final) > 0 else team_stats_day_before  
+teams_source = teams if len(final) > 0 else teams_day_before
+
+for team in sorted(teams_source):
+    team_data = team_data_source[team_data_source['Team'] == team].copy()
     if len(team_data) > 0:
-        stats = team_stats[team]
+        stats = team_stats_source[team]
         html_content += f"""
         <div class="team-section" data-team="{team}">
             <div class="team-header">
@@ -1432,7 +1460,7 @@ for team in sorted(teams):
         </div>
         """
 
-if not any(len(final[final['Team'] == team]) > 0 for team in teams):
+if not any(len(team_data_source[team_data_source['Team'] == team]) > 0 for team in teams_source):
     html_content += '<div class="no-data">No almost homers found for yesterday.</div>'
 
 html_content += """
