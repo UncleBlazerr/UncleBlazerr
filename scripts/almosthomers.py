@@ -345,7 +345,7 @@ else:
 
 # Create elite contact leaderboard for today
 print("Creating elite contact leaderboard...")
-elite_criteria = final[(final['Exit Velo'] > 98) & (final['Distance (ft)'] > 200)].copy()
+elite_criteria = final[(final['Exit Velo'] > 95) & (final['Distance (ft)'] > 200)].copy()
 
 # Count occurrences per player to determine sort order
 player_counts = elite_criteria.groupby('Batter').size().reset_index(name='Count')
@@ -359,7 +359,7 @@ elite_leaderboard = elite_criteria.sort_values(['Count', 'Exit Velo'], ascending
 # Create elite contact leaderboard for day before
 print("Creating day-before elite contact leaderboard...")
 if len(final_day_before) > 0:
-    elite_criteria_day_before = final_day_before[(final_day_before['Exit Velo'] > 98) & (final_day_before['Distance (ft)'] > 200)].copy()
+    elite_criteria_day_before = final_day_before[(final_day_before['Exit Velo'] > 95) & (final_day_before['Distance (ft)'] > 200)].copy()
     
     # Count occurrences per player to determine sort order
     player_counts_day_before = elite_criteria_day_before.groupby('Batter').size().reset_index(name='Count')
@@ -391,10 +391,10 @@ if date_keys:
 else:
     date_range = "No data available"
 
-# Function to get exit velocity color
+# Function to get exit velocity color with enhanced 98+ mph highlighting
 def get_exit_velo_color(velo):
     if velo > 98:
-        return 'background-color: #8B0000'  # Dark red
+        return 'background-color: #8B0000; color: #FFD700; font-weight: bold; box-shadow: 0 0 10px #FFD700; border: 2px solid #FFD700'  # Dark red with gold glow
     elif velo > 94:
         return 'background-color: #FF0000'  # Red
     else:
@@ -1150,7 +1150,7 @@ html_content += """            </select>
         </div>
         <div class="top-hitters">
             <div class="top-hitters-title">4-Day Rolling Leaders</div>
-            <p class="top-hitters-subtitle">Exit Velo >98 mph & Distance >200 ft (""" + date_range + """)</p>
+            <p class="top-hitters-subtitle">Exit Velo >95 mph & Distance >200 ft (""" + date_range + """)</p>
             <div class="top-hitters-table">
                 <table>
                     <thead>
@@ -1218,7 +1218,7 @@ html_content += """
         
         <div class="top-hitters">
             <div class="top-hitters-title">Today's Top Hitters</div>
-            <p class="top-hitters-subtitle">Individual hits from today's games</p>
+            <p class="top-hitters-subtitle">Individual hits from today's games (Exit Velo >95 mph & Distance >200 ft)</p>
             <div class="top-hitters-table">
                 <table>
                     <thead>
@@ -1293,7 +1293,7 @@ html_content += """
         
         <div class="top-hitters">
             <div class="top-hitters-title">Yesterday's Top Hitters</div>
-            <p class="top-hitters-subtitle">Individual hits from """ + yesterday + """</p>
+            <p class="top-hitters-subtitle">Individual hits from """ + yesterday + """ (Exit Velo >95 mph & Distance >200 ft)</p>
             <div class="top-hitters-table">
                 <table>
                     <thead>
