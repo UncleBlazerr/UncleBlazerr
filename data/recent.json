@@ -1,5 +1,12 @@
 [
   {
+    "name": "Heat Waves",
+    "artist": "Glass Animals",
+    "url": "https://open.spotify.com/track/3USxtqRwSYz57Ewm6wWRMp",
+    "image": "https://i.scdn.co/image/ab67616d0000b273712701c5e263efc8726b1464",
+    "preview_url": null
+  },
+  {
     "name": "Miss You - Bonus Track",
     "artist": "Oliver Tree, Robin Schulz",
     "url": "https://open.spotify.com/track/1ypwNj8eK2qAMDEs4EiIIX",
@@ -25,13 +32,6 @@
     "artist": "Mungo Jerry",
     "url": "https://open.spotify.com/track/2uzlv8PjqsVvF1DhEahyhy",
     "image": "https://i.scdn.co/image/ab67616d0000b2739c71f323289b18028b82b822",
-    "preview_url": null
-  },
-  {
-    "name": "Thank God I'm a Country Boy",
-    "artist": "John Denver",
-    "url": "https://open.spotify.com/track/69HICMmc6nNLucAx3aJX9M",
-    "image": "https://i.scdn.co/image/ab67616d0000b2733c16761584c4015495bdda87",
     "preview_url": null
   }
 ]
