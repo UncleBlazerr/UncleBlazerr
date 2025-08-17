@@ -1,9 +1,23 @@
 [
   {
-    "name": "Sold (The Grundy County Auction Incident)",
-    "artist": "John Michael Montgomery",
-    "url": "https://open.spotify.com/track/0NLBwQBYJhEM9t3KAMPFVR",
-    "image": "https://i.scdn.co/image/ab67616d0000b273c3fe0ccfeacabfd43e586de3",
+    "name": "That Don't Impress Me Much - Edit",
+    "artist": "Shania Twain",
+    "url": "https://open.spotify.com/track/1wneerMXqozDjikFAKSUlw",
+    "image": "https://i.scdn.co/image/ab67616d0000b273f4fc5ce3068e340f35037770",
+    "preview_url": null
+  },
+  {
+    "name": "Brain Stew",
+    "artist": "Little Stranger, Pepper",
+    "url": "https://open.spotify.com/track/2SBgrhlfBGZ1bPfXd9bqIo",
+    "image": "https://i.scdn.co/image/ab67616d0000b273a1027e2a942cac7aa9c5f040",
+    "preview_url": null
+  },
+  {
+    "name": "Hard Workin' Man",
+    "artist": "Brooks & Dunn",
+    "url": "https://open.spotify.com/track/51uGoXB3PbXLyeH0aPGo7H",
+    "image": "https://i.scdn.co/image/ab67616d0000b273cd61e14a58287b221ca18821",
     "preview_url": null
   },
   {
@@ -14,24 +28,10 @@
     "preview_url": null
   },
   {
-    "name": "Nothing to Hide",
-    "artist": "Caskets",
-    "url": "https://open.spotify.com/track/1XlKHZ3SkYa7Ea0fQBpjHv",
-    "image": "https://i.scdn.co/image/ab67616d0000b2736bbd5c58e7be013e8e83dcb3",
-    "preview_url": null
-  },
-  {
-    "name": "Save A Little Love",
-    "artist": "Don Diablo",
-    "url": "https://open.spotify.com/track/2UmLTsY9Z4kqpNNxKGQBkM",
-    "image": "https://i.scdn.co/image/ab67616d0000b273b72b72dbe84285db0339f0ea",
-    "preview_url": null
-  },
-  {
-    "name": "Monkey Ate My Mango",
-    "artist": "Pops, Beach Fly",
-    "url": "https://open.spotify.com/track/5u1iXHzud5pmP1tP9Uyx73",
-    "image": "https://i.scdn.co/image/ab67616d0000b273294c6caa0fc89529dc933627",
+    "name": "Sold (The Grundy County Auction Incident)",
+    "artist": "John Michael Montgomery",
+    "url": "https://open.spotify.com/track/0NLBwQBYJhEM9t3KAMPFVR",
+    "image": "https://i.scdn.co/image/ab67616d0000b273c3fe0ccfeacabfd43e586de3",
     "preview_url": null
   }
 ]
