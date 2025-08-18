@@ -1,5 +1,12 @@
 [
   {
+    "name": "Life is a Highway",
+    "artist": "Rascal Flatts",
+    "url": "https://open.spotify.com/track/5gB2IrxOCX2j9bMnHKP38i",
+    "image": "https://i.scdn.co/image/ab67616d0000b273a73bb6afa8cb999aafb3c150",
+    "preview_url": null
+  },
+  {
     "name": "John Deere Green",
     "artist": "Joe Diffie",
     "url": "https://open.spotify.com/track/2evFJQfQVcDEXyOiyEV6OW",
@@ -25,13 +32,6 @@
     "artist": "Shania Twain",
     "url": "https://open.spotify.com/track/1wneerMXqozDjikFAKSUlw",
     "image": "https://i.scdn.co/image/ab67616d0000b273f4fc5ce3068e340f35037770",
-    "preview_url": null
-  },
-  {
-    "name": "Brain Stew",
-    "artist": "Little Stranger, Pepper",
-    "url": "https://open.spotify.com/track/2SBgrhlfBGZ1bPfXd9bqIo",
-    "image": "https://i.scdn.co/image/ab67616d0000b273a1027e2a942cac7aa9c5f040",
     "preview_url": null
   }
 ]
