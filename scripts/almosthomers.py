@@ -425,9 +425,10 @@ def create_elite_players_table(combined_data, min_batted_balls=10):
     
     return elite_players
 
-# Use today's date for current games
-today = datetime.today().strftime('%Y-%m-%d')
-yesterday = (datetime.today() - timedelta(days=1)).strftime('%Y-%m-%d')
+# Use yesterday's date as "today" since Statcast data has delays
+# This ensures we get the most recent complete day of data
+today = (datetime.today() - timedelta(days=1)).strftime('%Y-%m-%d')  # 8/18 when run on 8/19
+yesterday = (datetime.today() - timedelta(days=2)).strftime('%Y-%m-%d')  # 8/17 when run on 8/19
 
 print(f"Pulling Statcast data for: {today}")
 

@@ -846,5 +846,1178 @@
       ]
     }
   },
-  "2025-08-18": {}
+  "2025-08-18": {
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/bal.png\" width=\"24\" style=\"vertical-align:middle\"> Ryan Mountcastle": {
+      "count": 2,
+      "best_exit_velo": 107.2,
+      "best_distance": 403,
+      "best_event": "single",
+      "hits": [
+        {
+          "exit_velo": 107.2,
+          "distance": 403,
+          "event": "field_out"
+        },
+        {
+          "exit_velo": 106.1,
+          "distance": 267,
+          "event": "single"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/laa.png\" width=\"24\" style=\"vertical-align:middle\"> Zach Neto": {
+      "count": 2,
+      "best_exit_velo": 108.3,
+      "best_distance": 393,
+      "best_event": "double",
+      "hits": [
+        {
+          "exit_velo": 103.2,
+          "distance": 393,
+          "event": "field_out"
+        },
+        {
+          "exit_velo": 108.3,
+          "distance": 362,
+          "event": "double"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/det.png\" width=\"24\" style=\"vertical-align:middle\"> Trey Sweeney": {
+      "count": 1,
+      "best_exit_velo": 106.4,
+      "best_distance": 390,
+      "best_event": "triple",
+      "hits": [
+        {
+          "exit_velo": 106.4,
+          "distance": 390,
+          "event": "triple"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/cws.png\" width=\"24\" style=\"vertical-align:middle\"> Miguel Vargas": {
+      "count": 1,
+      "best_exit_velo": 101.6,
+      "best_distance": 384,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 101.6,
+          "distance": 384,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/col.png\" width=\"24\" style=\"vertical-align:middle\"> Mickey Moniak": {
+      "count": 1,
+      "best_exit_velo": 100.8,
+      "best_distance": 383,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 100.8,
+          "distance": 383,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/pit.png\" width=\"24\" style=\"vertical-align:middle\"> Henry Davis": {
+      "count": 1,
+      "best_exit_velo": 100.9,
+      "best_distance": 378,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 100.9,
+          "distance": 378,
+          "event": "sac_fly"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/lad.png\" width=\"24\" style=\"vertical-align:middle\"> Dalton Rushing": {
+      "count": 1,
+      "best_exit_velo": 100.0,
+      "best_distance": 376,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 100.0,
+          "distance": 376,
+          "event": "sac_fly"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/az.png\" width=\"24\" style=\"vertical-align:middle\"> Pavin Smith": {
+      "count": 1,
+      "best_exit_velo": 95.9,
+      "best_distance": 375,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 95.9,
+          "distance": 375,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/bos.png\" width=\"24\" style=\"vertical-align:middle\"> Jarren Duran": {
+      "count": 2,
+      "best_exit_velo": 103.4,
+      "best_distance": 375,
+      "best_event": "double",
+      "hits": [
+        {
+          "exit_velo": 103.4,
+          "distance": 375,
+          "event": "double"
+        },
+        {
+          "exit_velo": 99.2,
+          "distance": 363,
+          "event": "sac_fly"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/kc.png\" width=\"24\" style=\"vertical-align:middle\"> Adam Frazier": {
+      "count": 2,
+      "best_exit_velo": 97.5,
+      "best_distance": 372,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 95.9,
+          "distance": 372,
+          "event": "field_out"
+        },
+        {
+          "exit_velo": 97.5,
+          "distance": 269,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/sd.png\" width=\"24\" style=\"vertical-align:middle\"> Bryce Johnson": {
+      "count": 1,
+      "best_exit_velo": 100.2,
+      "best_distance": 371,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 100.2,
+          "distance": 371,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/tor.png\" width=\"24\" style=\"vertical-align:middle\"> Ernie Clement": {
+      "count": 1,
+      "best_exit_velo": 97.4,
+      "best_distance": 369,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 97.4,
+          "distance": 369,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/sd.png\" width=\"24\" style=\"vertical-align:middle\"> Xander Bogaerts": {
+      "count": 1,
+      "best_exit_velo": 105.6,
+      "best_distance": 368,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 105.6,
+          "distance": 368,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/mia.png\" width=\"24\" style=\"vertical-align:middle\"> Derek Hill": {
+      "count": 2,
+      "best_exit_velo": 108.1,
+      "best_distance": 367,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 99.4,
+          "distance": 367,
+          "event": "field_out"
+        },
+        {
+          "exit_velo": 108.1,
+          "distance": 341,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/sf.png\" width=\"24\" style=\"vertical-align:middle\"> Christian Koss": {
+      "count": 1,
+      "best_exit_velo": 100.7,
+      "best_distance": 365,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 100.7,
+          "distance": 365,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/cin.png\" width=\"24\" style=\"vertical-align:middle\"> Jose Trevino": {
+      "count": 1,
+      "best_exit_velo": 99.8,
+      "best_distance": 364,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 99.8,
+          "distance": 364,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/tex.png\" width=\"24\" style=\"vertical-align:middle\"> Joc Pederson": {
+      "count": 2,
+      "best_exit_velo": 105.4,
+      "best_distance": 363,
+      "best_event": "single",
+      "hits": [
+        {
+          "exit_velo": 99.4,
+          "distance": 363,
+          "event": "field_out"
+        },
+        {
+          "exit_velo": 105.4,
+          "distance": 236,
+          "event": "single"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/kc.png\" width=\"24\" style=\"vertical-align:middle\"> Jonathan India": {
+      "count": 1,
+      "best_exit_velo": 101.2,
+      "best_distance": 363,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 101.2,
+          "distance": 363,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/stl.png\" width=\"24\" style=\"vertical-align:middle\"> Thomas Saggese": {
+      "count": 1,
+      "best_exit_velo": 99.7,
+      "best_distance": 362,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 99.7,
+          "distance": 362,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/bal.png\" width=\"24\" style=\"vertical-align:middle\"> Colton Cowser": {
+      "count": 1,
+      "best_exit_velo": 96.2,
+      "best_distance": 361,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 96.2,
+          "distance": 361,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/sf.png\" width=\"24\" style=\"vertical-align:middle\"> Rafael Devers": {
+      "count": 1,
+      "best_exit_velo": 97.0,
+      "best_distance": 361,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 97.0,
+          "distance": 361,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/cle.png\" width=\"24\" style=\"vertical-align:middle\"> Nolan Jones": {
+      "count": 1,
+      "best_exit_velo": 103.2,
+      "best_distance": 361,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 103.2,
+          "distance": 361,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/lad.png\" width=\"24\" style=\"vertical-align:middle\"> Buddy Kennedy": {
+      "count": 1,
+      "best_exit_velo": 97.6,
+      "best_distance": 360,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 97.6,
+          "distance": 360,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/mil.png\" width=\"24\" style=\"vertical-align:middle\"> Caleb Durbin": {
+      "count": 2,
+      "best_exit_velo": 102.2,
+      "best_distance": 360,
+      "best_event": "double",
+      "hits": [
+        {
+          "exit_velo": 96.4,
+          "distance": 360,
+          "event": "field_out"
+        },
+        {
+          "exit_velo": 102.2,
+          "distance": 219,
+          "event": "double"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/az.png\" width=\"24\" style=\"vertical-align:middle\"> Corbin Carroll": {
+      "count": 1,
+      "best_exit_velo": 99.0,
+      "best_distance": 358,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 99.0,
+          "distance": 358,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/sd.png\" width=\"24\" style=\"vertical-align:middle\"> Jose Iglesias": {
+      "count": 1,
+      "best_exit_velo": 99.6,
+      "best_distance": 357,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 99.6,
+          "distance": 357,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/sd.png\" width=\"24\" style=\"vertical-align:middle\"> Fernando Tat\u00eds": {
+      "count": 1,
+      "best_exit_velo": 96.1,
+      "best_distance": 354,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 96.1,
+          "distance": 354,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/det.png\" width=\"24\" style=\"vertical-align:middle\"> Colt Keith": {
+      "count": 3,
+      "best_exit_velo": 107.1,
+      "best_distance": 351,
+      "best_event": "double",
+      "hits": [
+        {
+          "exit_velo": 101.6,
+          "distance": 351,
+          "event": "sac_fly"
+        },
+        {
+          "exit_velo": 107.1,
+          "distance": 336,
+          "event": "double"
+        },
+        {
+          "exit_velo": 97.2,
+          "distance": 261,
+          "event": "single"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/bal.png\" width=\"24\" style=\"vertical-align:middle\"> Luis V\u00e1zquez": {
+      "count": 2,
+      "best_exit_velo": 105.2,
+      "best_distance": 350,
+      "best_event": "double",
+      "hits": [
+        {
+          "exit_velo": 99.5,
+          "distance": 350,
+          "event": "field_out"
+        },
+        {
+          "exit_velo": 105.2,
+          "distance": 249,
+          "event": "double"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/chc.png\" width=\"24\" style=\"vertical-align:middle\"> Pete Crow-Armstrong": {
+      "count": 1,
+      "best_exit_velo": 95.2,
+      "best_distance": 350,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 95.2,
+          "distance": 350,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/mil.png\" width=\"24\" style=\"vertical-align:middle\"> Danny Jansen": {
+      "count": 1,
+      "best_exit_velo": 97.4,
+      "best_distance": 348,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 97.4,
+          "distance": 348,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/cin.png\" width=\"24\" style=\"vertical-align:middle\"> Tj Friedl": {
+      "count": 1,
+      "best_exit_velo": 96.5,
+      "best_distance": 347,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 96.5,
+          "distance": 347,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/tex.png\" width=\"24\" style=\"vertical-align:middle\"> Marcus Semien": {
+      "count": 1,
+      "best_exit_velo": 95.5,
+      "best_distance": 347,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 95.5,
+          "distance": 347,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/hou.png\" width=\"24\" style=\"vertical-align:middle\"> V\u00edctor Caratini": {
+      "count": 2,
+      "best_exit_velo": 95.7,
+      "best_distance": 345,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 95.7,
+          "distance": 345,
+          "event": "field_out"
+        },
+        {
+          "exit_velo": 95.1,
+          "distance": 333,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/tor.png\" width=\"24\" style=\"vertical-align:middle\"> Ty France": {
+      "count": 1,
+      "best_exit_velo": 100.3,
+      "best_distance": 343,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 100.3,
+          "distance": 343,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/cws.png\" width=\"24\" style=\"vertical-align:middle\"> Mike Tauchman": {
+      "count": 1,
+      "best_exit_velo": 102.5,
+      "best_distance": 342,
+      "best_event": "double",
+      "hits": [
+        {
+          "exit_velo": 102.5,
+          "distance": 342,
+          "event": "double"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/bos.png\" width=\"24\" style=\"vertical-align:middle\"> Trevor Story": {
+      "count": 2,
+      "best_exit_velo": 106.7,
+      "best_distance": 340,
+      "best_event": "double",
+      "hits": [
+        {
+          "exit_velo": 106.4,
+          "distance": 340,
+          "event": "double"
+        },
+        {
+          "exit_velo": 106.7,
+          "distance": 235,
+          "event": "single"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/stl.png\" width=\"24\" style=\"vertical-align:middle\"> Iv\u00e1n Herrera": {
+      "count": 1,
+      "best_exit_velo": 98.1,
+      "best_distance": 339,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 98.1,
+          "distance": 339,
+          "event": "field_error"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/bos.png\" width=\"24\" style=\"vertical-align:middle\"> Carlos Narv\u00e1ez": {
+      "count": 1,
+      "best_exit_velo": 101.6,
+      "best_distance": 339,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 101.6,
+          "distance": 339,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/bal.png\" width=\"24\" style=\"vertical-align:middle\"> nan": {
+      "count": 1,
+      "best_exit_velo": 98.9,
+      "best_distance": 338,
+      "best_event": "double",
+      "hits": [
+        {
+          "exit_velo": 98.9,
+          "distance": 338,
+          "event": "double"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/cin.png\" width=\"24\" style=\"vertical-align:middle\"> Ke'Bryan Hayes": {
+      "count": 1,
+      "best_exit_velo": 103.5,
+      "best_distance": 335,
+      "best_event": "triple",
+      "hits": [
+        {
+          "exit_velo": 103.5,
+          "distance": 335,
+          "event": "triple"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/mia.png\" width=\"24\" style=\"vertical-align:middle\"> Jakob Marsee": {
+      "count": 1,
+      "best_exit_velo": 101.0,
+      "best_distance": 335,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 101.0,
+          "distance": 335,
+          "event": "sac_fly"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/sea.png\" width=\"24\" style=\"vertical-align:middle\"> Josh Naylor": {
+      "count": 1,
+      "best_exit_velo": 95.1,
+      "best_distance": 332,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 95.1,
+          "distance": 332,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/tex.png\" width=\"24\" style=\"vertical-align:middle\"> Corey Seager": {
+      "count": 3,
+      "best_exit_velo": 106.5,
+      "best_distance": 329,
+      "best_event": "double",
+      "hits": [
+        {
+          "exit_velo": 95.8,
+          "distance": 329,
+          "event": "double"
+        },
+        {
+          "exit_velo": 106.5,
+          "distance": 309,
+          "event": "field_out"
+        },
+        {
+          "exit_velo": 100.0,
+          "distance": 259,
+          "event": "single"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/lad.png\" width=\"24\" style=\"vertical-align:middle\"> Teoscar Hern\u00e1ndez": {
+      "count": 1,
+      "best_exit_velo": 99.5,
+      "best_distance": 329,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 99.5,
+          "distance": 329,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/mia.png\" width=\"24\" style=\"vertical-align:middle\"> Agust\u00edn Ram\u00edrez": {
+      "count": 1,
+      "best_exit_velo": 109.2,
+      "best_distance": 325,
+      "best_event": "double",
+      "hits": [
+        {
+          "exit_velo": 109.2,
+          "distance": 325,
+          "event": "double"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/bos.png\" width=\"24\" style=\"vertical-align:middle\"> Abraham Toro": {
+      "count": 1,
+      "best_exit_velo": 98.3,
+      "best_distance": 323,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 98.3,
+          "distance": 323,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/stl.png\" width=\"24\" style=\"vertical-align:middle\"> Masyn Winn": {
+      "count": 1,
+      "best_exit_velo": 95.2,
+      "best_distance": 321,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 95.2,
+          "distance": 321,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/phi.png\" width=\"24\" style=\"vertical-align:middle\"> J. T. Realmuto": {
+      "count": 1,
+      "best_exit_velo": 98.7,
+      "best_distance": 321,
+      "best_event": "double",
+      "hits": [
+        {
+          "exit_velo": 98.7,
+          "distance": 321,
+          "event": "double"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/tor.png\" width=\"24\" style=\"vertical-align:middle\"> Addison Barger": {
+      "count": 1,
+      "best_exit_velo": 115.8,
+      "best_distance": 318,
+      "best_event": "double",
+      "hits": [
+        {
+          "exit_velo": 115.8,
+          "distance": 318,
+          "event": "double"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/stl.png\" width=\"24\" style=\"vertical-align:middle\"> Willson Contreras": {
+      "count": 1,
+      "best_exit_velo": 100.3,
+      "best_distance": 315,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 100.3,
+          "distance": 315,
+          "event": "sac_fly"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/stl.png\" width=\"24\" style=\"vertical-align:middle\"> Nolan Gorman": {
+      "count": 1,
+      "best_exit_velo": 95.5,
+      "best_distance": 313,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 95.5,
+          "distance": 313,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/det.png\" width=\"24\" style=\"vertical-align:middle\"> Riley Greene": {
+      "count": 1,
+      "best_exit_velo": 102.0,
+      "best_distance": 313,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 102.0,
+          "distance": 313,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/sd.png\" width=\"24\" style=\"vertical-align:middle\"> Ram\u00f3n Laureano": {
+      "count": 1,
+      "best_exit_velo": 97.4,
+      "best_distance": 312,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 97.4,
+          "distance": 312,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/az.png\" width=\"24\" style=\"vertical-align:middle\"> James Mccann": {
+      "count": 2,
+      "best_exit_velo": 105.6,
+      "best_distance": 310,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 96.5,
+          "distance": 310,
+          "event": "field_out"
+        },
+        {
+          "exit_velo": 105.6,
+          "distance": 305,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/bal.png\" width=\"24\" style=\"vertical-align:middle\"> Jackson Holliday": {
+      "count": 2,
+      "best_exit_velo": 98.8,
+      "best_distance": 309,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 98.8,
+          "distance": 309,
+          "event": "field_out"
+        },
+        {
+          "exit_velo": 97.1,
+          "distance": 309,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/tor.png\" width=\"24\" style=\"vertical-align:middle\"> Tyler Heineman": {
+      "count": 1,
+      "best_exit_velo": 95.4,
+      "best_distance": 304,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 95.4,
+          "distance": 304,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/cle.png\" width=\"24\" style=\"vertical-align:middle\"> Daniel Schneemann": {
+      "count": 1,
+      "best_exit_velo": 97.6,
+      "best_distance": 299,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 97.6,
+          "distance": 299,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/laa.png\" width=\"24\" style=\"vertical-align:middle\"> Jo Adell": {
+      "count": 1,
+      "best_exit_velo": 110.0,
+      "best_distance": 298,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 110.0,
+          "distance": 298,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/az.png\" width=\"24\" style=\"vertical-align:middle\"> Ketel Marte": {
+      "count": 1,
+      "best_exit_velo": 111.9,
+      "best_distance": 295,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 111.9,
+          "distance": 295,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/sea.png\" width=\"24\" style=\"vertical-align:middle\"> Julio Rodr\u00edguez": {
+      "count": 1,
+      "best_exit_velo": 102.1,
+      "best_distance": 294,
+      "best_event": "double",
+      "hits": [
+        {
+          "exit_velo": 102.1,
+          "distance": 294,
+          "event": "double"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/phi.png\" width=\"24\" style=\"vertical-align:middle\"> Bryson Stott": {
+      "count": 1,
+      "best_exit_velo": 98.6,
+      "best_distance": 288,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 98.6,
+          "distance": 288,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/bal.png\" width=\"24\" style=\"vertical-align:middle\"> Dylan Beavers": {
+      "count": 1,
+      "best_exit_velo": 101.9,
+      "best_distance": 284,
+      "best_event": "single",
+      "hits": [
+        {
+          "exit_velo": 101.9,
+          "distance": 284,
+          "event": "single"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/sf.png\" width=\"24\" style=\"vertical-align:middle\"> Willy Adames": {
+      "count": 1,
+      "best_exit_velo": 96.5,
+      "best_distance": 283,
+      "best_event": "single",
+      "hits": [
+        {
+          "exit_velo": 96.5,
+          "distance": 283,
+          "event": "single"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/atl.png\" width=\"24\" style=\"vertical-align:middle\"> Ronald Acu\u00f1a": {
+      "count": 1,
+      "best_exit_velo": 95.6,
+      "best_distance": 281,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 95.6,
+          "distance": 281,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/det.png\" width=\"24\" style=\"vertical-align:middle\"> Gleyber Torres": {
+      "count": 1,
+      "best_exit_velo": 97.7,
+      "best_distance": 274,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 97.7,
+          "distance": 274,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/det.png\" width=\"24\" style=\"vertical-align:middle\"> Wenceel P\u00e9rez": {
+      "count": 1,
+      "best_exit_velo": 101.2,
+      "best_distance": 270,
+      "best_event": "single",
+      "hits": [
+        {
+          "exit_velo": 101.2,
+          "distance": 270,
+          "event": "single"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/mia.png\" width=\"24\" style=\"vertical-align:middle\"> Dane Myers": {
+      "count": 1,
+      "best_exit_velo": 106.6,
+      "best_distance": 260,
+      "best_event": "single",
+      "hits": [
+        {
+          "exit_velo": 106.6,
+          "distance": 260,
+          "event": "single"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/pit.png\" width=\"24\" style=\"vertical-align:middle\"> Alexander Canario": {
+      "count": 1,
+      "best_exit_velo": 99.9,
+      "best_distance": 258,
+      "best_event": "single",
+      "hits": [
+        {
+          "exit_velo": 99.9,
+          "distance": 258,
+          "event": "single"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/bal.png\" width=\"24\" style=\"vertical-align:middle\"> Gunnar Henderson": {
+      "count": 1,
+      "best_exit_velo": 110.6,
+      "best_distance": 251,
+      "best_event": "triple",
+      "hits": [
+        {
+          "exit_velo": 110.6,
+          "distance": 251,
+          "event": "triple"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/hou.png\" width=\"24\" style=\"vertical-align:middle\"> Jeremy Pe\u00f1a": {
+      "count": 1,
+      "best_exit_velo": 95.3,
+      "best_distance": 248,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 95.3,
+          "distance": 248,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/mil.png\" width=\"24\" style=\"vertical-align:middle\"> Sal Frelick": {
+      "count": 1,
+      "best_exit_velo": 97.6,
+      "best_distance": 248,
+      "best_event": "double",
+      "hits": [
+        {
+          "exit_velo": 97.6,
+          "distance": 248,
+          "event": "double"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/chc.png\" width=\"24\" style=\"vertical-align:middle\"> Owen Caissie": {
+      "count": 1,
+      "best_exit_velo": 99.0,
+      "best_distance": 240,
+      "best_event": "single",
+      "hits": [
+        {
+          "exit_velo": 99.0,
+          "distance": 240,
+          "event": "single"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/sf.png\" width=\"24\" style=\"vertical-align:middle\"> Casey Schmitt": {
+      "count": 1,
+      "best_exit_velo": 96.7,
+      "best_distance": 234,
+      "best_event": "field_out",
+      "hits": [
+        {
+          "exit_velo": 96.7,
+          "distance": 234,
+          "event": "field_out"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/mia.png\" width=\"24\" style=\"vertical-align:middle\"> Otto Lopez": {
+      "count": 1,
+      "best_exit_velo": 109.6,
+      "best_distance": 232,
+      "best_event": "double",
+      "hits": [
+        {
+          "exit_velo": 109.6,
+          "distance": 232,
+          "event": "double"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/tor.png\" width=\"24\" style=\"vertical-align:middle\"> Andr\u00e9s Gim\u00e9nez": {
+      "count": 1,
+      "best_exit_velo": 97.2,
+      "best_distance": 231,
+      "best_event": "single",
+      "hits": [
+        {
+          "exit_velo": 97.2,
+          "distance": 231,
+          "event": "single"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/cws.png\" width=\"24\" style=\"vertical-align:middle\"> Kyle Teel": {
+      "count": 1,
+      "best_exit_velo": 99.8,
+      "best_distance": 229,
+      "best_event": "single",
+      "hits": [
+        {
+          "exit_velo": 99.8,
+          "distance": 229,
+          "event": "single"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/stl.png\" width=\"24\" style=\"vertical-align:middle\"> Alec Burleson": {
+      "count": 1,
+      "best_exit_velo": 99.7,
+      "best_distance": 228,
+      "best_event": "single",
+      "hits": [
+        {
+          "exit_velo": 99.7,
+          "distance": 228,
+          "event": "single"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/lad.png\" width=\"24\" style=\"vertical-align:middle\"> Freddie Freeman": {
+      "count": 1,
+      "best_exit_velo": 97.0,
+      "best_distance": 228,
+      "best_event": "double",
+      "hits": [
+        {
+          "exit_velo": 97.0,
+          "distance": 228,
+          "event": "double"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/laa.png\" width=\"24\" style=\"vertical-align:middle\"> Nolan Schanuel": {
+      "count": 1,
+      "best_exit_velo": 96.0,
+      "best_distance": 226,
+      "best_event": "single",
+      "hits": [
+        {
+          "exit_velo": 96.0,
+          "distance": 226,
+          "event": "single"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/det.png\" width=\"24\" style=\"vertical-align:middle\"> Spencer Torkelson": {
+      "count": 1,
+      "best_exit_velo": 101.5,
+      "best_distance": 222,
+      "best_event": "single",
+      "hits": [
+        {
+          "exit_velo": 101.5,
+          "distance": 222,
+          "event": "single"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/phi.png\" width=\"24\" style=\"vertical-align:middle\"> Kyle Schwarber": {
+      "count": 1,
+      "best_exit_velo": 106.5,
+      "best_distance": 204,
+      "best_event": "single",
+      "hits": [
+        {
+          "exit_velo": 106.5,
+          "distance": 204,
+          "event": "single"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/lad.png\" width=\"24\" style=\"vertical-align:middle\"> Shohei Ohtani": {
+      "count": 1,
+      "best_exit_velo": 110.9,
+      "best_distance": 202,
+      "best_event": "single",
+      "hits": [
+        {
+          "exit_velo": 110.9,
+          "distance": 202,
+          "event": "single"
+        }
+      ]
+    },
+    "<img src=\"https://a.espncdn.com/i/teamlogos/mlb/500/cle.png\" width=\"24\" style=\"vertical-align:middle\"> Jos\u00e9 Ram\u00edrez": {
+      "count": 1,
+      "best_exit_velo": 109.5,
+      "best_distance": 202,
+      "best_event": "single",
+      "hits": [
+        {
+          "exit_velo": 109.5,
+          "distance": 202,
+          "event": "single"
+        }
+      ]
+    }
+  }
 }
