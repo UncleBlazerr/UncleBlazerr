@@ -134,14 +134,327 @@ def create_rolling_leaderboard(historical_data):
     
     return leaderboard
 
+# Hybrid MLB API functions for real-time data
+def get_todays_game_ids(date_str):
+    """Get all MLB game IDs for a specific date"""
+    import requests
+    
+    url = f'https://statsapi.mlb.com/api/v1/schedule?sportId=1&date={date_str}'
+    try:
+        response = requests.get(url, timeout=10)
+        if response.status_code == 200:
+            data = response.json()
+            if 'dates' in data and len(data['dates']) > 0:
+                games = data['dates'][0].get('games', [])
+                # Only return completed games
+                completed_games = [
+                    game['gamePk'] for game in games 
+                    if game.get('status', {}).get('detailedState') in ['Final', 'Game Over']
+                ]
+                return completed_games
+    except Exception as e:
+        print(f"Error getting game IDs: {e}")
+    return []
+
+def fetch_game_statcast_data(game_pk):
+    """Fetch Statcast data from a specific game using MLB API"""
+    import requests
+    
+    # First get game info including team abbreviations
+    game_info_url = f'https://statsapi.mlb.com/api/v1/game/{game_pk}/linescore'
+    try:
+        info_response = requests.get(game_info_url, timeout=10)
+        if info_response.status_code == 200:
+            game_info = info_response.json()
+            home_team_abbr = game_info.get('teams', {}).get('home', {}).get('team', {}).get('abbreviation', 'UNK')
+            away_team_abbr = game_info.get('teams', {}).get('away', {}).get('team', {}).get('abbreviation', 'UNK')
+        else:
+            home_team_abbr = away_team_abbr = 'UNK'
+    except:
+        home_team_abbr = away_team_abbr = 'UNK'
+    
+    url = f'https://statsapi.mlb.com/api/v1/game/{game_pk}/playByPlay'
+    try:
+        response = requests.get(url, timeout=15)
+        if response.status_code == 200:
+            data = response.json()
+            
+            
+            statcast_hits = []
+            if 'allPlays' in data:
+                for play in data['allPlays']:
+                    if 'playEvents' in play:
+                        for event in play['playEvents']:
+                            if 'hitData' in event:
+                                hit_data = event['hitData']
+                                if 'launchSpeed' in hit_data and 'launchAngle' in hit_data:
+                                    # Extract batter info
+                                    batter_id = None
+                                    batter_name = None
+                                    if 'player' in event and 'id' in event['player']:
+                                        batter_id = event['player']['id']
+                                        batter_name = event['player'].get('fullName')
+                                        # If no fullName, try other name fields
+                                        if not batter_name:
+                                            batter_name = event['player'].get('firstName', '') + ' ' + event['player'].get('lastName', '')
+                                            batter_name = batter_name.strip()
+                                        # If still no name, use the batter ID as fallback
+                                        if not batter_name or batter_name == ' ':
+                                            batter_name = f"Player {batter_id}"
+                                        
+                                    
+                                    # Extract team info
+                                    team = None
+                                    if 'about' in play and 'inning' in play['about']:
+                                        # Home team bats in bottom, away in top
+                                        if play['about']['halfInning'] == 'bottom':
+                                            team = home_team_abbr
+                                        else:
+                                            team = away_team_abbr
+                                    
+                                    # Extract event type
+                                    event_type = event.get('details', {}).get('event', 'field_out')
+                                    
+                                    statcast_hit = {
+                                        'batter': batter_id,
+                                        'player_name': batter_name,
+                                        'team': team,
+                                        'launch_speed': hit_data['launchSpeed'],
+                                        'launch_angle': hit_data['launchAngle'],
+                                        'hit_distance_sc': hit_data.get('totalDistance', 0),
+                                        'events': event_type,
+                                        'bat_speed': hit_data.get('batSpeed', None),
+                                        'game_date': data.get('gameData', {}).get('datetime', {}).get('originalDate', ''),
+                                        'home_team': home_team_abbr,
+                                        'away_team': away_team_abbr
+                                    }
+                                    statcast_hits.append(statcast_hit)
+            
+            return statcast_hits
+    except Exception as e:
+        print(f"Error fetching game {game_pk}: {e}")
+    return []
+
+def get_realtime_statcast_data(date_str):
+    """Get real-time Statcast data for a date using MLB API"""
+    import pandas as pd
+    
+    print(f"Fetching real-time data for {date_str}...")
+    
+    # Get today's game IDs
+    game_ids = get_todays_game_ids(date_str)
+    print(f"Found {len(game_ids)} completed games")
+    
+    if not game_ids:
+        return pd.DataFrame()
+    
+    # Fetch data from all games
+    all_hits = []
+    for game_id in game_ids:
+        print(f"Fetching game {game_id}...")
+        hits = fetch_game_statcast_data(game_id)
+        all_hits.extend(hits)
+    
+    if not all_hits:
+        return pd.DataFrame()
+    
+    # Convert to DataFrame and format like pybaseball
+    df = pd.DataFrame(all_hits)
+    
+    # Rename columns to match pybaseball format
+    df = df.rename(columns={
+        'launch_speed': 'launch_speed',
+        'launch_angle': 'launch_angle', 
+        'hit_distance_sc': 'hit_distance_sc',
+        'events': 'events',
+        'bat_speed': 'bat_speed',
+        'team': 'team'
+    })
+    
+    print(f"Retrieved {len(df)} total batted balls from MLB API")
+    return df
+
+# Elite player analysis functions (defined here for use later)
+def extract_player_name_from_batter(batter_text):
+    """Extract clean player name from batter column (which may contain HTML)"""
+    if pd.isna(batter_text):
+        return "Unknown Player"
+    
+    batter_str = str(batter_text)
+    
+    # If it contains HTML with img tag, extract the text after it
+    if '<img' in batter_str and '>' in batter_str:
+        # Find the last > of the img tag and get text after it
+        last_gt = batter_str.rfind('>')
+        if last_gt != -1:
+            name = batter_str[last_gt + 1:].strip()
+            # If we get 'nan', try to find a better name
+            if name == 'nan' or name == '':
+                return "Unknown Player"
+            return name
+    
+    # If it contains HTML span, extract the text content
+    if '<span class="leaderboard-player-name">' in batter_str:
+        import re
+        match = re.search(r'<span class="leaderboard-player-name">(.*?)</span>', batter_str)
+        if match:
+            name = match.group(1)
+            if name == 'nan':
+                return "Unknown Player"
+            return name
+    
+    # If it's already clean text, return as is
+    result = batter_str.strip()
+    if result == 'nan':
+        return "Unknown Player"
+    return result
+
+def calculate_player_elite_metrics(player_data):
+    """Calculate elite metrics for a player based on their batted balls"""
+    # Import is_barrel locally to avoid circular dependency
+    def is_barrel_local(exit_velo, launch_angle):
+        if exit_velo < 98:
+            return False
+        
+        # Barrel qualification ranges based on exit velocity
+        barrel_ranges = {
+            98: (26, 30), 99: (25, 31), 100: (24, 33), 101: (23, 34),
+            102: (22, 36), 103: (21, 37), 104: (20, 38), 105: (19, 39), 106: (18, 41)
+        }
+        
+        # For 107+ mph, use the widest range
+        if exit_velo >= 107:
+            min_angle, max_angle = 8, 50
+        else:
+            # Find the appropriate range for this exit velocity
+            ev_floor = int(exit_velo)
+            if ev_floor in barrel_ranges:
+                min_angle, max_angle = barrel_ranges[ev_floor]
+            else:
+                # For speeds between defined ranges, use the lower speed's range
+                for speed in sorted(barrel_ranges.keys(), reverse=True):
+                    if exit_velo >= speed:
+                        min_angle, max_angle = barrel_ranges[speed]
+                        break
+                else:
+                    return False
+        
+        return min_angle <= launch_angle <= max_angle
+    
+    if len(player_data) == 0:
+        return None
+    
+    total_batted_balls = len(player_data)
+    
+    # Barrel rate: % of batted balls that are barrels (98+ mph + optimal launch angle)
+    barrels = player_data.apply(lambda row: is_barrel_local(row['Exit Velo'], row['Launch Angle']), axis=1).sum()
+    barrel_rate = (barrels / total_batted_balls) * 100 if total_batted_balls > 0 else 0
+    
+    # Hard hit rate: % of batted balls 95+ mph
+    hard_hits = (player_data['Exit Velo'] >= 95).sum()
+    hard_hit_rate = (hard_hits / total_batted_balls) * 100 if total_batted_balls > 0 else 0
+    
+    # Fly ball rate: % of batted balls with launch angle suggesting fly ball (10+ degrees)
+    fly_balls = (player_data['Launch Angle'] >= 10).sum()
+    fly_ball_rate = (fly_balls / total_batted_balls) * 100 if total_batted_balls > 0 else 0
+    
+    # Additional elite metrics
+    avg_exit_velo = player_data['Exit Velo'].mean()
+    max_exit_velo = player_data['Exit Velo'].max()
+    avg_distance = player_data['Distance (ft)'].mean()
+    max_distance = player_data['Distance (ft)'].max()
+    
+    # Home run rate (if any HRs in the data)
+    home_runs = (player_data['Event'] == 'home_run').sum()
+    hr_rate = (home_runs / total_batted_balls) * 100 if total_batted_balls > 0 else 0
+    
+    return {
+        'total_batted_balls': total_batted_balls,
+        'barrel_rate': round(barrel_rate, 1),
+        'hard_hit_rate': round(hard_hit_rate, 1),
+        'fly_ball_rate': round(fly_ball_rate, 1),
+        'avg_exit_velo': round(avg_exit_velo, 1),
+        'max_exit_velo': round(max_exit_velo, 1),
+        'avg_distance': round(avg_distance, 1),
+        'max_distance': round(max_distance, 1),
+        'hr_rate': round(hr_rate, 1),
+        'barrels': barrels,
+        'hard_hits': hard_hits,
+        'fly_balls': fly_balls,
+        'home_runs': home_runs
+    }
+
+def create_elite_players_table(combined_data, min_batted_balls=10):
+    """Create table of elite players with 15%+ barrel rate"""
+    if len(combined_data) == 0:
+        return []
+    
+    # Group by player and calculate metrics
+    elite_players = []
+    total_players_checked = 0
+    players_with_enough_batted_balls = 0
+    
+    # Create a clean player name column for grouping
+    combined_data['Clean_Player_Name'] = combined_data['Batter'].apply(extract_player_name_from_batter)
+    
+    
+    for player_name in combined_data['Clean_Player_Name'].unique():
+        player_data = combined_data[combined_data['Clean_Player_Name'] == player_name]
+        total_players_checked += 1
+        
+        # Skip players with too few batted balls
+        if len(player_data) < min_batted_balls:
+            continue
+            
+        players_with_enough_batted_balls += 1
+        metrics = calculate_player_elite_metrics(player_data)
+        
+        
+        if metrics and metrics['barrel_rate'] >= 15.0:  # Elite threshold: 15%+ barrel rate
+            # Get player info with team logo
+            first_hit = player_data.iloc[0]
+            elite_players.append({
+                'Batter': player_name,  # This is already the clean name from the loop
+                'Team': first_hit['Team'],
+                **metrics
+            })
+    
+    
+    # Sort by barrel rate (descending)
+    elite_players.sort(key=lambda x: x['barrel_rate'], reverse=True)
+    
+    return elite_players
+
 # Use today's date for current games
 today = datetime.today().strftime('%Y-%m-%d')
 yesterday = (datetime.today() - timedelta(days=1)).strftime('%Y-%m-%d')
 
 print(f"Pulling Statcast data for: {today}")
 
-# Pull Statcast data for today
+# Pull Statcast data for today - try pybaseball first, then real-time API
 data = statcast(start_dt=today, end_dt=today)
+
+# If no data from pybaseball, skip real-time API for now (has issues with team/player names)
+if len(data) == 0:
+    print("No data from pybaseball, using yesterday's data as primary...")
+    # realtime_data = get_realtime_statcast_data(today)  # Disabled due to team/player issues
+    realtime_data = pd.DataFrame()
+    if len(realtime_data) > 0:
+        print(f"Successfully retrieved {len(realtime_data)} hits from MLB API")
+        
+        # Add missing columns to match pybaseball format
+        realtime_data['game_pk'] = 0  # Placeholder
+        realtime_data['inning_topbot'] = 'top'  # Placeholder
+        realtime_data['game_year'] = 2025
+        realtime_data['estimated_ba_using_speedangle'] = float('nan')
+        realtime_data['estimated_woba_using_speedangle'] = float('nan')
+        realtime_data['woba_value'] = float('nan')
+        realtime_data['babip_value'] = float('nan')
+        realtime_data['iso_value'] = float('nan')
+        
+        data = realtime_data
+    else:
+        print("No real-time data available either")
 
 print(f"Pulling Statcast data for day before: {yesterday}")
 
@@ -207,7 +520,7 @@ batter_names['batter_name'] = batter_names['name_first'] + ' ' + batter_names['n
 print(f"Found names for {len(batter_names)} batters")
 
 
-# Merge names
+# Merge names, but preserve original names from MLB API if lookup fails
 merged = subset.merge(
     batter_names[['key_mlbam', 'batter_name']],
     left_on='batter',
@@ -215,11 +528,17 @@ merged = subset.merge(
     how='left'
 )
 
+# If we have original batter names from MLB API (hybrid data), preserve them when lookup fails
+if 'player_name' in subset.columns:
+    # Fill missing batter_name with original player_name from MLB API
+    merged['batter_name'] = merged['batter_name'].fillna(merged['player_name'])
+
 # Infer batting team from inning
 merged['team_abbr'] = merged.apply(
     lambda row: row['away_team'] if row['inning_topbot'] == 'Top' else row['home_team'],
     axis=1
 )
+
 
 # Map logos from ESPN CDN
 def get_logo_url(team_abbr):
@@ -382,6 +701,69 @@ save_historical_data(historical_data)
 rolling_leaderboard = create_rolling_leaderboard(historical_data)
 print(f"Rolling 4-day leaderboard has {len(rolling_leaderboard)} players")
 
+# Create Elite Players table (15%+ barrel rate)
+print("Creating Elite Players table...")
+# Pull additional days of data for comprehensive barrel rate analysis
+try:
+    print("Pulling additional Statcast data for comprehensive Elite analysis...")
+    # Get data from the last 4 days
+    end_date = datetime.now()
+    start_date = end_date - timedelta(days=4)
+    
+    additional_data = pybaseball.statcast(
+        start_dt=start_date.strftime('%Y-%m-%d'),
+        end_dt=end_date.strftime('%Y-%m-%d')
+    )
+    
+    if len(additional_data) > 0:
+        # Filter for batted balls and add required columns
+        additional_filtered = additional_data[
+            (additional_data['type'] == 'X') & 
+            (additional_data['events'].notna()) & 
+            (additional_data['launch_speed'].notna()) & 
+            (additional_data['launch_angle'].notna())
+        ].copy()
+        
+        # Rename columns to match our format
+        additional_filtered['Exit Velo'] = additional_filtered['launch_speed']
+        additional_filtered['Launch Angle'] = additional_filtered['launch_angle']
+        additional_filtered['Distance (ft)'] = additional_filtered['hit_distance_sc']
+        additional_filtered['Event'] = additional_filtered['events']
+        additional_filtered['Batter'] = additional_filtered['player_name']
+        
+        # Lookup team info
+        team_mapping = {}
+        for _, row in additional_filtered.iterrows():
+            if row['home_team'] not in team_mapping:
+                team_mapping[row['home_team']] = f"https://a.espncdn.com/i/teamlogos/mlb/500/{row['home_team'].lower()}.png"
+            if row['away_team'] not in team_mapping:
+                team_mapping[row['away_team']] = f"https://a.espncdn.com/i/teamlogos/mlb/500/{row['away_team'].lower()}.png"
+        
+        # Add team logos (simplified)
+        def get_team_logo(home_team, away_team, inning_topbot):
+            team = home_team if inning_topbot == 'Bot' else away_team
+            return f'<img src="https://a.espncdn.com/i/teamlogos/mlb/500/{team.lower()}.png" width="24" style="vertical-align:middle">'
+        
+        additional_filtered['Team'] = additional_filtered.apply(
+            lambda row: get_team_logo(row['home_team'], row['away_team'], row['inning_topbot']), axis=1
+        )
+        
+        combined_data = additional_filtered
+        print(f"Using {len(combined_data)} batted balls from 4-day Statcast data for Elite analysis")
+    else:
+        # Fallback to today/yesterday if no additional data
+        combined_data = pd.concat([final, final_day_before], ignore_index=True) if len(final) > 0 or len(final_day_before) > 0 else pd.DataFrame()
+        print(f"Using {len(combined_data)} batted balls from today/yesterday for Elite analysis")
+
+except Exception as e:
+    print(f"Could not pull additional data: {e}")
+    # Fallback to today/yesterday data
+    combined_data = pd.concat([final, final_day_before], ignore_index=True) if len(final) > 0 or len(final_day_before) > 0 else pd.DataFrame()
+    print(f"Using {len(combined_data)} batted balls from today/yesterday for Elite analysis")
+
+elite_players = create_elite_players_table(combined_data, min_batted_balls=8)  # Adjusted threshold for recent data
+print(f"Found {len(elite_players)} elite players with 15%+ barrel rate")
+
 # Get date range for display
 date_keys = sorted(historical_data.keys())
 if date_keys:
@@ -452,6 +834,7 @@ def is_barrel(exit_velo, launch_angle):
                 return False
     
     return min_angle <= launch_angle <= max_angle
+
 
 # Updated launch angle color function with detailed ranges
 def get_launch_angle_color(angle, exit_velo):
@@ -580,6 +963,23 @@ html_content = """
             text-align: center;
             border-bottom: 2px solid #ffffff;
             padding-bottom: 15px;
+        }
+
+        /* Elite Table Special Styling */
+        .elite-table {
+            background: linear-gradient(135deg, #2c1810 0%, #1a1a1a 100%);
+            border: 2px solid #FFD700;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+
+        .elite-table .top-hitters-title {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: #FFD700;
+            font-size: 2rem;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
         }
 
         .top-hitters-subtitle {
@@ -1148,6 +1548,89 @@ for team in sorted(teams):
 
 html_content += """            </select>
         </div>
+        
+        <div class="top-hitters elite-table">
+            <div class="top-hitters-title">🏆 Elite Hitters</div>
+            <p class="top-hitters-subtitle">Players with 15%+ Barrel Rate (minimum 8 batted balls)</p>
+            <div class="top-hitters-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>♥</th>
+                            <th>Player</th>
+                            <th>Barrel %</th>
+                            <th>Hard Hit %</th>
+                            <th>Fly Ball %</th>
+                            <th>Avg EV</th>
+                            <th>Max EV</th>
+                            <th>Avg Dist</th>
+                            <th>Max Dist</th>
+                            <th>AB</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+"""
+
+# Add Elite Players rows
+for player_data in elite_players:
+    # Extract player info (with team logo)
+    batter_with_logo = str(player_data['Batter'])
+    player_name = batter_with_logo.split('> ')[-1] if '> ' in batter_with_logo else batter_with_logo
+    
+    # Extract team logo
+    team_logo = ""
+    if 'src="' in batter_with_logo:
+        start = batter_with_logo.find('src="') + 5
+        end = batter_with_logo.find('"', start)
+        logo_url = batter_with_logo[start:end]
+        team_logo = f'<img src="{logo_url}" width="20" style="vertical-align:middle; margin-right: 8px;">'
+    
+    # Style the player name
+    styled_player_name = f'<span class="leaderboard-player-name">{player_name}</span>'
+    
+    # Color code barrel rate - elite highlighting for 20%+
+    barrel_style = ""
+    if player_data['barrel_rate'] >= 25.0:
+        barrel_style = 'style="background-color: #FFD700; color: #000; font-weight: bold;"'  # Gold for 25%+
+    elif player_data['barrel_rate'] >= 20.0:
+        barrel_style = 'style="background-color: #8B0000; color: #FFD700; font-weight: bold;"'  # Dark red with gold text for 20%+
+    elif player_data['barrel_rate'] >= 15.0:
+        barrel_style = 'style="background-color: #4CAF50; color: white; font-weight: bold;"'  # Green for 15%+
+    
+    # Color code avg exit velocity
+    avg_ev_style = get_exit_velo_color(player_data['avg_exit_velo'])
+    max_ev_style = get_exit_velo_color(player_data['max_exit_velo'])
+    
+    html_content += f"""
+                        <tr>
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="{player_name}" data-logo="{team_logo.replace('"', '&quot;')}" onclick="toggleFavoriteBtn(this)">♡</button></td>
+                            <td data-label="Player"><div class="batter-cell">{team_logo}{styled_player_name}</div></td>
+                            <td data-label="Barrel %" {barrel_style} style="text-align: center;">{player_data['barrel_rate']}%</td>
+                            <td data-label="Hard Hit %" style="text-align: center; font-weight: bold;">{player_data['hard_hit_rate']}%</td>
+                            <td data-label="Fly Ball %" style="text-align: center;">{player_data['fly_ball_rate']}%</td>
+                            <td data-label="Avg EV" style="text-align: center; {avg_ev_style}">{player_data['avg_exit_velo']} mph</td>
+                            <td data-label="Max EV" style="text-align: center; {max_ev_style}">{player_data['max_exit_velo']} mph</td>
+                            <td data-label="Avg Dist" style="text-align: center;">{int(player_data['avg_distance'])} ft</td>
+                            <td data-label="Max Dist" style="text-align: center;">{int(player_data['max_distance'])} ft</td>
+                            <td data-label="AB" style="text-align: center; color: #95a5a6;">{player_data['total_batted_balls']}</td>
+                        </tr>
+    """
+
+if not elite_players:
+    html_content += """
+                        <tr>
+                            <td colspan="10" style="text-align: center; color: #7f8c8d; font-style: italic; padding: 20px;">
+                                No players currently meet the elite 15% barrel rate threshold with minimum batted balls
+                            </td>
+                        </tr>
+    """
+
+html_content += """
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
         <div class="top-hitters">
             <div class="top-hitters-title">4-Day Rolling Leaders</div>
             <p class="top-hitters-subtitle">Exit Velo >95 mph & Distance >200 ft (""" + date_range + """)</p>
