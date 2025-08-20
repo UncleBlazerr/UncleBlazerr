@@ -399,6 +399,10 @@ def create_elite_players_table(combined_data, min_batted_balls=10, barrel_thresh
     
     
     for player_name in combined_data['Clean_Player_Name'].unique():
+        # Skip "Unknown Player" entries
+        if player_name == 'Unknown Player':
+            continue
+            
         player_data = combined_data[combined_data['Clean_Player_Name'] == player_name]
         total_players_checked += 1
         
