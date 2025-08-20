@@ -384,7 +384,7 @@ def calculate_player_elite_metrics(player_data):
         'home_runs': home_runs
     }
 
-def create_elite_players_table(combined_data, min_batted_balls=10):
+def create_elite_players_table(combined_data, min_batted_balls=10, barrel_threshold=15.0):
     """Create table of elite players with 15%+ barrel rate"""
     if len(combined_data) == 0:
         return []
@@ -410,7 +410,7 @@ def create_elite_players_table(combined_data, min_batted_balls=10):
         metrics = calculate_player_elite_metrics(player_data)
         
         
-        if metrics and metrics['barrel_rate'] >= 15.0:  # Elite threshold: 15%+ barrel rate
+        if metrics and metrics['barrel_rate'] >= barrel_threshold:  # Elite threshold configurable
             # Get player info with team logo
             first_hit = player_data.iloc[0]
             elite_players.append({
@@ -702,68 +702,19 @@ save_historical_data(historical_data)
 rolling_leaderboard = create_rolling_leaderboard(historical_data)
 print(f"Rolling 4-day leaderboard has {len(rolling_leaderboard)} players")
 
-# Create Elite Players table (15%+ barrel rate)
+# Create Elite Players table with more realistic thresholds
 print("Creating Elite Players table...")
-# Pull additional days of data for comprehensive barrel rate analysis
-try:
-    print("Pulling additional Statcast data for comprehensive Elite analysis...")
-    # Get data from the last 4 days
-    end_date = datetime.now()
-    start_date = end_date - timedelta(days=4)
-    
-    additional_data = pybaseball.statcast(
-        start_dt=start_date.strftime('%Y-%m-%d'),
-        end_dt=end_date.strftime('%Y-%m-%d')
-    )
-    
-    if len(additional_data) > 0:
-        # Filter for batted balls and add required columns
-        additional_filtered = additional_data[
-            (additional_data['type'] == 'X') & 
-            (additional_data['events'].notna()) & 
-            (additional_data['launch_speed'].notna()) & 
-            (additional_data['launch_angle'].notna())
-        ].copy()
-        
-        # Rename columns to match our format
-        additional_filtered['Exit Velo'] = additional_filtered['launch_speed']
-        additional_filtered['Launch Angle'] = additional_filtered['launch_angle']
-        additional_filtered['Distance (ft)'] = additional_filtered['hit_distance_sc']
-        additional_filtered['Event'] = additional_filtered['events']
-        additional_filtered['Batter'] = additional_filtered['player_name']
-        
-        # Lookup team info
-        team_mapping = {}
-        for _, row in additional_filtered.iterrows():
-            if row['home_team'] not in team_mapping:
-                team_mapping[row['home_team']] = f"https://a.espncdn.com/i/teamlogos/mlb/500/{row['home_team'].lower()}.png"
-            if row['away_team'] not in team_mapping:
-                team_mapping[row['away_team']] = f"https://a.espncdn.com/i/teamlogos/mlb/500/{row['away_team'].lower()}.png"
-        
-        # Add team logos (simplified)
-        def get_team_logo(home_team, away_team, inning_topbot):
-            team = home_team if inning_topbot == 'Bot' else away_team
-            return f'<img src="https://a.espncdn.com/i/teamlogos/mlb/500/{team.lower()}.png" width="24" style="vertical-align:middle">'
-        
-        additional_filtered['Team'] = additional_filtered.apply(
-            lambda row: get_team_logo(row['home_team'], row['away_team'], row['inning_topbot']), axis=1
-        )
-        
-        combined_data = additional_filtered
-        print(f"Using {len(combined_data)} batted balls from 4-day Statcast data for Elite analysis")
-    else:
-        # Fallback to today/yesterday if no additional data
-        combined_data = pd.concat([final, final_day_before], ignore_index=True) if len(final) > 0 or len(final_day_before) > 0 else pd.DataFrame()
-        print(f"Using {len(combined_data)} batted balls from today/yesterday for Elite analysis")
+# Use today and yesterday data with more achievable thresholds for short-term analysis
+combined_data = pd.concat([final, final_day_before], ignore_index=True) if len(final) > 0 or len(final_day_before) > 0 else pd.DataFrame()
+print(f"Using {len(combined_data)} batted balls from today/yesterday for Elite analysis")
 
-except Exception as e:
-    print(f"Could not pull additional data: {e}")
-    # Fallback to today/yesterday data
-    combined_data = pd.concat([final, final_day_before], ignore_index=True) if len(final) > 0 or len(final_day_before) > 0 else pd.DataFrame()
-    print(f"Using {len(combined_data)} batted balls from today/yesterday for Elite analysis")
-
-elite_players = create_elite_players_table(combined_data, min_batted_balls=8)  # Adjusted threshold for recent data
-print(f"Found {len(elite_players)} elite players with 15%+ barrel rate")
+# Use 10% threshold with 5 minimum batted balls for more realistic Elite table
+if len(combined_data) > 0:
+    elite_players = create_elite_players_table(combined_data, min_batted_balls=5, barrel_threshold=10.0)
+    print(f"Found {len(elite_players)} elite players with 10%+ barrel rate")
+else:
+    elite_players = []
+    print("No data available for Elite analysis")
 
 # Get date range for display
 date_keys = sorted(historical_data.keys())
@@ -1552,7 +1503,7 @@ html_content += """            </select>
         
         <div class="top-hitters elite-table">
             <div class="top-hitters-title">🏆 Elite Hitters</div>
-            <p class="top-hitters-subtitle">Players with 15%+ Barrel Rate (minimum 8 batted balls)</p>
+            <p class="top-hitters-subtitle">Players with 10%+ Barrel Rate (minimum 5 batted balls)</p>
             <div class="top-hitters-table">
                 <table>
                     <thead>

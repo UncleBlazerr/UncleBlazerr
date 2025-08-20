@@ -608,7 +608,7 @@
         <div class="header">
             <h1>Almost Homers by Team</h1>
             <p class="subtitle">Latest games' closest calls that didn't leave the yard</p>
-            <p style="font-size: 0.9rem; color: #95a5a6; margin-top: 10px;">Last updated: August 19, 2025 at 01:45 PM</p>
+            <p style="font-size: 0.9rem; color: #95a5a6; margin-top: 10px;">Last updated: August 19, 2025 at 08:52 PM</p>
         </div>
         
         <div id="favorites-sidebar" class="favorites-sidebar">
@@ -653,7 +653,7 @@
         
         <div class="top-hitters elite-table">
             <div class="top-hitters-title">🏆 Elite Hitters</div>
-            <p class="top-hitters-subtitle">Players with 15%+ Barrel Rate (minimum 8 batted balls)</p>
+            <p class="top-hitters-subtitle">Players with 10%+ Barrel Rate (minimum 5 batted balls)</p>
             <div class="top-hitters-table">
                 <table>
                     <thead>
@@ -673,9 +673,68 @@
                     <tbody>
 
                         <tr>
-                            <td colspan="10" style="text-align: center; color: #7f8c8d; font-style: italic; padding: 20px;">
-                                No players currently meet the elite 15% barrel rate threshold with minimum batted balls
-                            </td>
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Corey Seager" data-logo="" onclick="toggleFavoriteBtn(this)">♡</button></td>
+                            <td data-label="Player"><div class="batter-cell"><span class="leaderboard-player-name">Corey Seager</span></div></td>
+                            <td data-label="Barrel %" style="background-color: #FFD700; color: #000; font-weight: bold;" style="text-align: center;">33.3%</td>
+                            <td data-label="Hard Hit %" style="text-align: center; font-weight: bold;">100.0%</td>
+                            <td data-label="Fly Ball %" style="text-align: center;">83.3%</td>
+                            <td data-label="Avg EV" style="text-align: center; background-color: #8B0000; color: #FFD700; font-weight: bold; box-shadow: 0 0 10px #FFD700; border: 2px solid #FFD700">101.7 mph</td>
+                            <td data-label="Max EV" style="text-align: center; background-color: #8B0000; color: #FFD700; font-weight: bold; box-shadow: 0 0 10px #FFD700; border: 2px solid #FFD700">106.5 mph</td>
+                            <td data-label="Avg Dist" style="text-align: center;">280 ft</td>
+                            <td data-label="Max Dist" style="text-align: center;">375 ft</td>
+                            <td data-label="AB" style="text-align: center; color: #95a5a6;">6</td>
+                        </tr>
+    
+                        <tr>
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Shohei Ohtani" data-logo="" onclick="toggleFavoriteBtn(this)">♡</button></td>
+                            <td data-label="Player"><div class="batter-cell"><span class="leaderboard-player-name">Shohei Ohtani</span></div></td>
+                            <td data-label="Barrel %" style="background-color: #FFD700; color: #000; font-weight: bold;" style="text-align: center;">33.3%</td>
+                            <td data-label="Hard Hit %" style="text-align: center; font-weight: bold;">100.0%</td>
+                            <td data-label="Fly Ball %" style="text-align: center;">66.7%</td>
+                            <td data-label="Avg EV" style="text-align: center; background-color: #8B0000; color: #FFD700; font-weight: bold; box-shadow: 0 0 10px #FFD700; border: 2px solid #FFD700">104.2 mph</td>
+                            <td data-label="Max EV" style="text-align: center; background-color: #8B0000; color: #FFD700; font-weight: bold; box-shadow: 0 0 10px #FFD700; border: 2px solid #FFD700">110.9 mph</td>
+                            <td data-label="Avg Dist" style="text-align: center;">233 ft</td>
+                            <td data-label="Max Dist" style="text-align: center;">380 ft</td>
+                            <td data-label="AB" style="text-align: center; color: #95a5a6;">6</td>
+                        </tr>
+    
+                        <tr>
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Iván Herrera" data-logo="" onclick="toggleFavoriteBtn(this)">♡</button></td>
+                            <td data-label="Player"><div class="batter-cell"><span class="leaderboard-player-name">Iván Herrera</span></div></td>
+                            <td data-label="Barrel %" style="background-color: #8B0000; color: #FFD700; font-weight: bold;" style="text-align: center;">20.0%</td>
+                            <td data-label="Hard Hit %" style="text-align: center; font-weight: bold;">100.0%</td>
+                            <td data-label="Fly Ball %" style="text-align: center;">40.0%</td>
+                            <td data-label="Avg EV" style="text-align: center; background-color: #8B0000; color: #FFD700; font-weight: bold; box-shadow: 0 0 10px #FFD700; border: 2px solid #FFD700">102.3 mph</td>
+                            <td data-label="Max EV" style="text-align: center; background-color: #8B0000; color: #FFD700; font-weight: bold; box-shadow: 0 0 10px #FFD700; border: 2px solid #FFD700">110.0 mph</td>
+                            <td data-label="Avg Dist" style="text-align: center;">158 ft</td>
+                            <td data-label="Max Dist" style="text-align: center;">378 ft</td>
+                            <td data-label="AB" style="text-align: center; color: #95a5a6;">5</td>
+                        </tr>
+    
+                        <tr>
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Julio Rodríguez" data-logo="" onclick="toggleFavoriteBtn(this)">♡</button></td>
+                            <td data-label="Player"><div class="batter-cell"><span class="leaderboard-player-name">Julio Rodríguez</span></div></td>
+                            <td data-label="Barrel %" style="background-color: #8B0000; color: #FFD700; font-weight: bold;" style="text-align: center;">20.0%</td>
+                            <td data-label="Hard Hit %" style="text-align: center; font-weight: bold;">80.0%</td>
+                            <td data-label="Fly Ball %" style="text-align: center;">40.0%</td>
+                            <td data-label="Avg EV" style="text-align: center; background-color: #8B0000; color: #FFD700; font-weight: bold; box-shadow: 0 0 10px #FFD700; border: 2px solid #FFD700">102.7 mph</td>
+                            <td data-label="Max EV" style="text-align: center; background-color: #8B0000; color: #FFD700; font-weight: bold; box-shadow: 0 0 10px #FFD700; border: 2px solid #FFD700">112.7 mph</td>
+                            <td data-label="Avg Dist" style="text-align: center;">171 ft</td>
+                            <td data-label="Max Dist" style="text-align: center;">345 ft</td>
+                            <td data-label="AB" style="text-align: center; color: #95a5a6;">5</td>
+                        </tr>
+    
+                        <tr>
+                            <td data-label="♥" style="text-align: center;"><button class="heart-btn" data-player="Unknown Player" data-logo="" onclick="toggleFavoriteBtn(this)">♡</button></td>
+                            <td data-label="Player"><div class="batter-cell"><span class="leaderboard-player-name">Unknown Player</span></div></td>
+                            <td data-label="Barrel %"  style="text-align: center;">11.1%</td>
+                            <td data-label="Hard Hit %" style="text-align: center; font-weight: bold;">88.9%</td>
+                            <td data-label="Fly Ball %" style="text-align: center;">55.6%</td>
+                            <td data-label="Avg EV" style="text-align: center; background-color: #8B0000; color: #FFD700; font-weight: bold; box-shadow: 0 0 10px #FFD700; border: 2px solid #FFD700">99.3 mph</td>
+                            <td data-label="Max EV" style="text-align: center; background-color: #8B0000; color: #FFD700; font-weight: bold; box-shadow: 0 0 10px #FFD700; border: 2px solid #FFD700">108.3 mph</td>
+                            <td data-label="Avg Dist" style="text-align: center;">211 ft</td>
+                            <td data-label="Max Dist" style="text-align: center;">348 ft</td>
+                            <td data-label="AB" style="text-align: center; color: #95a5a6;">9</td>
                         </tr>
     
                     </tbody>
