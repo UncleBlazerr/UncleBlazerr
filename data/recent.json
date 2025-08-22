@@ -1,5 +1,26 @@
 [
   {
+    "name": "Autopilot",
+    "artist": "Cassadee Pope, Silverstein",
+    "url": "https://open.spotify.com/track/5ZTFhPucwVWNd1C3kHMAWM",
+    "image": "https://i.scdn.co/image/ab67616d0000b273bf0f62ac57c18bced1c233d1",
+    "preview_url": null
+  },
+  {
+    "name": "Still Waiting",
+    "artist": "Electric Callboy, FRANK ZUMMO",
+    "url": "https://open.spotify.com/track/4omQCDK1Q3ypzkKHZmQaPt",
+    "image": "https://i.scdn.co/image/ab67616d0000b273b259a190030bb40fc7ddfdc4",
+    "preview_url": null
+  },
+  {
+    "name": "Confessions",
+    "artist": "Sonic Syndicate",
+    "url": "https://open.spotify.com/track/1hZgHvico1PKDPhXIN17Fu",
+    "image": "https://i.scdn.co/image/ab67616d0000b27365561d3156e1276aef5b87af",
+    "preview_url": null
+  },
+  {
     "name": "All About Us",
     "artist": "Sonic Syndicate",
     "url": "https://open.spotify.com/track/7wJf6JqjAyQaHPGOPKZoar",
@@ -11,27 +32,6 @@
     "artist": "Sonic Syndicate",
     "url": "https://open.spotify.com/track/46yLDRDDqWf8hxWcQChZtM",
     "image": "https://i.scdn.co/image/ab67616d0000b2738ece903deddfa2a4ee9ea94d",
-    "preview_url": null
-  },
-  {
-    "name": "Aftermath",
-    "artist": "Sonic Syndicate",
-    "url": "https://open.spotify.com/track/09Ho29EpJsDUTt9EBnwQI5",
-    "image": "https://i.scdn.co/image/ab67616d0000b2738ece903deddfa2a4ee9ea94d",
-    "preview_url": null
-  },
-  {
-    "name": "Turn It Up",
-    "artist": "Sonic Syndicate",
-    "url": "https://open.spotify.com/track/6wvAaVbRjYjxzjeA4B1Ep4",
-    "image": "https://i.scdn.co/image/ab67616d0000b273b5aea31d325d7fd489116897",
-    "preview_url": null
-  },
-  {
-    "name": "Beat City (From \"Ferris Bueller's Day Off\")",
-    "artist": "The Flowerpot Men",
-    "url": "https://open.spotify.com/track/3Whgdrt7mGtx4w5cZ1mhTH",
-    "image": "https://i.scdn.co/image/ab67616d0000b273b768974d9bb29a67efcf77b0",
     "preview_url": null
   }
 ]
