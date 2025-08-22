@@ -1,5 +1,12 @@
 [
   {
+    "name": "Big Wiggly Style",
+    "artist": "The Devil Wears Prada",
+    "url": "https://open.spotify.com/track/3mpHOCy0ePkRoHJ5PI3dJn",
+    "image": "https://i.scdn.co/image/ab67616d0000b273584436351167d3a7fa27376f",
+    "preview_url": null
+  },
+  {
     "name": "Assistant To The Regional Manager",
     "artist": "The Devil Wears Prada",
     "url": "https://open.spotify.com/track/1ZS0Lgc8Esdg0Bf1JO6KF0",
@@ -25,13 +32,6 @@
     "artist": "Pops, Beach Fly",
     "url": "https://open.spotify.com/track/5u1iXHzud5pmP1tP9Uyx73",
     "image": "https://i.scdn.co/image/ab67616d0000b273294c6caa0fc89529dc933627",
-    "preview_url": null
-  },
-  {
-    "name": "Steh auf",
-    "artist": "Lindemann",
-    "url": "https://open.spotify.com/track/2cwwUYTPOEfz0pam6tiVZz",
-    "image": "https://i.scdn.co/image/ab67616d0000b273e675d7e4970918b5e0fb3052",
     "preview_url": null
   }
 ]
