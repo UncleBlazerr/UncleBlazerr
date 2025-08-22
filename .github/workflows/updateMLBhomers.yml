@@ -28,7 +28,9 @@ jobs:
 
 
       - name: Run update script
-        run: python scripts/almosthomers.py
+        run: |
+          cd scripts
+          python almosthomers.py
         
       - name: Commit updated data
         run: |
