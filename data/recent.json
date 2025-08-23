@@ -1,9 +1,23 @@
 [
   {
-    "name": "I Remember U",
-    "artist": "Cartoon, Jéja, Jüri Pootsmann",
-    "url": "https://open.spotify.com/track/2FTaTyEHyMQXPbaxorcKfE",
-    "image": "https://i.scdn.co/image/ab67616d0000b273f9909783cb4dd82e02810519",
+    "name": "Trust the Path (with The Hip Abduction)",
+    "artist": "Coyote Island, The Hip Abduction",
+    "url": "https://open.spotify.com/track/1ajLihStvm4xClsn6rsFLn",
+    "image": "https://i.scdn.co/image/ab67616d0000b273305b8c25c33da7a7620205f6",
+    "preview_url": null
+  },
+  {
+    "name": "Airplane Mode!",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/3SiijksKZyytWUhHftvctc",
+    "image": "https://i.scdn.co/image/ab67616d0000b2730cc842d078721e39adb11c80",
+    "preview_url": null
+  },
+  {
+    "name": "I Love Ice Cream! (La Cucaracha Song)",
+    "artist": "Steve and Maggie",
+    "url": "https://open.spotify.com/track/6wjtt9qNtLCLuGKcJDHzgI",
+    "image": "https://i.scdn.co/image/ab67616d0000b273467b3c1306489627060a3551",
     "preview_url": null
   },
   {
@@ -14,24 +28,10 @@
     "preview_url": null
   },
   {
-    "name": "I Like It, I Love It",
-    "artist": "Tim McGraw",
-    "url": "https://open.spotify.com/track/3IvcWWehbBcBR4YZxlGM9R",
-    "image": "https://i.scdn.co/image/ab67616d0000b2733069894b5d58159a103dd169",
-    "preview_url": null
-  },
-  {
-    "name": "Don't Be Stupid (You Know I Love You)",
-    "artist": "Shania Twain",
-    "url": "https://open.spotify.com/track/6qHg6trMgxUz7TuAgc4gnC",
-    "image": "https://i.scdn.co/image/ab67616d0000b273f4fc5ce3068e340f35037770",
-    "preview_url": null
-  },
-  {
-    "name": "How Do You Like Me Now?!",
-    "artist": "Toby Keith",
-    "url": "https://open.spotify.com/track/7rDcULv8vV16vetBjPJhuE",
-    "image": "https://i.scdn.co/image/ab67616d0000b273829f42844519e667aa17cbe7",
+    "name": "I Remember U",
+    "artist": "Cartoon, Jéja, Jüri Pootsmann",
+    "url": "https://open.spotify.com/track/2FTaTyEHyMQXPbaxorcKfE",
+    "image": "https://i.scdn.co/image/ab67616d0000b273f9909783cb4dd82e02810519",
     "preview_url": null
   }
 ]
