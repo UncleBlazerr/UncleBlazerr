@@ -1,5 +1,12 @@
 [
   {
+    "name": "Hard Workin' Man",
+    "artist": "Brooks & Dunn",
+    "url": "https://open.spotify.com/track/51uGoXB3PbXLyeH0aPGo7H",
+    "image": "https://i.scdn.co/image/ab67616d0000b273cd61e14a58287b221ca18821",
+    "preview_url": null
+  },
+  {
     "name": "Third Rock from the Sun",
     "artist": "Joe Diffie",
     "url": "https://open.spotify.com/track/7nfPLTcf3UwAADE1X25PdR",
@@ -25,13 +32,6 @@
     "artist": "The Tractors",
     "url": "https://open.spotify.com/track/2kQtKFkPMdL5Jf7xk4T9SI",
     "image": "https://i.scdn.co/image/ab67616d0000b273136db8859483e783b8e270d7",
-    "preview_url": null
-  },
-  {
-    "name": "Pickup Man",
-    "artist": "Joe Diffie",
-    "url": "https://open.spotify.com/track/60w5eL1G4Or7LlTSrR5r8a",
-    "image": "https://i.scdn.co/image/ab67616d0000b2736066a4456dc39273b2c9698a",
     "preview_url": null
   }
 ]
