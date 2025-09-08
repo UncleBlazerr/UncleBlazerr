@@ -1,0 +1,22 @@
+<div class="top-hitters">
+    <div class="top-hitters-title">4-Day Rolling Leaders</div>
+    <p class="top-hitters-subtitle">Exit Velo >95 mph & Distance >200 ft ({{ date_range }})</p>
+    <div class="top-hitters-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>♥</th>
+                    <th>Player</th>
+                    <th># Times Elite Contact</th>
+                    <th>Best Exit Velo</th>
+                    <th>Best Distance</th>
+                    <th>Best Event</th>
+                    <th>Days Active</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ rolling_leaderboard_rows }}
+            </tbody>
+        </table>
+    </div>
+</div>

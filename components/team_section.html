@@ -1,0 +1,40 @@
+<div class="team-section" data-team="{{ team }}">
+    <div class="team-header">
+        <div class="team-name">{{ team }}</div>
+        <div class="team-stats">
+            <div class="stat-item">
+                <div class="stat-value">{{ count }}</div>
+                <div class="stat-label">Almost HRs</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">{{ avg_distance }} ft</div>
+                <div class="stat-label">Avg Distance</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">{{ max_distance }} ft</div>
+                <div class="stat-label">Longest</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">{{ avg_exit_velo }}</div>
+                <div class="stat-label">Avg Exit Velo</div>
+            </div>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Batter</th>
+                <th>Exit Velo</th>
+                <th>Launch Angle</th>
+                <th>Bat Speed</th>
+                <th>Barrel</th>
+                <th>HR/Park</th>
+                <th>Distance</th>
+                <th>Event</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ team_rows }}
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,20 @@
+<div class="top-hitters">
+    <div class="top-hitters-title">Yesterday's Top Hitters</div>
+    <p class="top-hitters-subtitle">Individual hits from {{ yesterday }} (Exit Velo >95 mph & Distance >200 ft)</p>
+    <div class="top-hitters-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>♥</th>
+                    <th>Player</th>
+                    <th>Exit Velo</th>
+                    <th>Distance</th>
+                    <th>Event</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ yesterday_hitters_rows }}
+            </tbody>
+        </table>
+    </div>
+</div>

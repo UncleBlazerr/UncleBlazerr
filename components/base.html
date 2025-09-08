@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almost Homers by Team</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Almost Homers by Team</h1>
+            <p class="subtitle">Latest games' closest calls that didn't leave the yard</p>
+            <p style="font-size: 0.9rem; color: #95a5a6; margin-top: 10px;">Last updated: {{ timestamp }}</p>
+        </div>
+        
+        <div id="favorites-sidebar" class="favorites-sidebar">
+            <div class="favorites-header">
+                <h3>⭐ My Favorites</h3>
+                <button id="clear-favorites" onclick="clearAllFavorites()">Clear All</button>
+            </div>
+            <div id="favorites-list" class="favorites-list">
+                <p class="no-favorites">Click the ♡ button next to any player to add them to your favorites!</p>
+            </div>
+        </div>
+        
+        <div class="filters">
+            <select id="teamFilter" class="filter-dropdown" onchange="filterTeams()">
+                <option value="">All Teams</option>
+                {{ team_options }}
+            </select>
+        </div>
+        
+        {{ elite_players_section }}
+        
+        {{ rolling_leaderboard_section }}
+        
+        {{ today_hitters_section }}
+        
+        {{ yesterday_hitters_section }}
+        
+        <div class="team-tables">
+            {{ team_tables }}
+        </div>
+    </div>
+    <script src="favorites.js"></script>
+</body>
+</html>
