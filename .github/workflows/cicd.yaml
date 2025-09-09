@@ -4,11 +4,19 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'src/**'
+      - 'scripts/**'
+      - 'components/**'
+      - 'assets/**'
+      - 'Dockerfile'
+      - 'requirements.txt'
   pull_request:
     branches: [ main ]
     paths:
-      - 'src/**'
+      - 'scripts/**'
+      - 'components/**'
+      - 'assets/**'
+      - 'Dockerfile'
+      - 'requirements.txt'
   workflow_dispatch:
 
 jobs:
