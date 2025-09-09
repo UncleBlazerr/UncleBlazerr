@@ -12,7 +12,7 @@ os.makedirs("../assets/css", exist_ok=True)
 os.makedirs("../assets/js", exist_ok=True)
 os.makedirs("../components", exist_ok=True)
 
-# Component rendering functions
+# Component rendering functionz
 def load_component(component_name):
     """Load an HTML component file"""
     component_path = os.path.join("../components", component_name)
