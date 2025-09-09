@@ -599,3 +599,25 @@ except Exception as e:
         f.write(simple_html)
     
     print("Fallback HTML saved due to error.")
+
+# Start Flask web server to serve the HTML
+from flask import Flask, send_from_directory
+import threading
+
+app = Flask(__name__)
+
+@app.route('/')
+def serve_html():
+    return send_from_directory('../almosthomers', 'index.html')
+
+@app.route('/styles.css')
+def serve_css():
+    return send_from_directory('../almosthomers', 'styles.css')
+
+@app.route('/favorites.js')
+def serve_js():
+    return send_from_directory('../almosthomers', 'favorites.js')
+
+if __name__ == "__main__":
+    print("Starting web server on port 5000...")
+    app.run(host='0.0.0.0', port=5000, debug=False)
