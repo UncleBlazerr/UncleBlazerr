@@ -1,0 +1,50 @@
+replicaCount: 1
+image:
+  repository: eggystrone/almost-homers-app
+  tag: latest
+  pullPolicy: IfNotPresent
+imagePullSecrets:
+  - name: regcred
+nameOverride: ""
+fullnameOverride: ""
+serviceAccount:
+  create: false
+  automount: true
+  annotations: {}
+  name: ""
+podAnnotations: {}
+podLabels: {}
+podSecurityContext: {}
+securityContext: {}
+service:
+  type: ClusterIP
+  port: 5000
+ingress:
+  enabled: true
+  className: "nginx"
+  annotations: null
+  hosts:
+    - host: almost-homers-app.test.com
+      paths:
+        - path: /
+          pathType: Prefix
+  tls: []
+resources: {}
+livenessProbe:
+  httpGet:
+    path: /api/v1/healthz
+    port: 5000
+readinessProbe:
+  httpGet:
+    path: /api/v1/healthz
+    port: 5000
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+volumes: []
+volumeMounts: []
+nodeSelector: {}
+tolerations: []
+affinity: {}

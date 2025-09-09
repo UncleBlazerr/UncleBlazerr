@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: almost-homers-app
+spec:
+  selector:
+    app: almost-homers-app
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
