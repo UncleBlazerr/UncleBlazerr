@@ -618,6 +618,10 @@ def serve_css():
 def serve_js():
     return send_from_directory('../almosthomers', 'favorites.js')
 
+@app.route('/api/v1/healthz')
+def health_check():
+    return {'status': 'healthy'}, 200
+
 if __name__ == "__main__":
     print("Starting web server on port 5000...")
     app.run(host='0.0.0.0', port=5000, debug=False)
