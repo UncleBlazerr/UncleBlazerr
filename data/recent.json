@@ -1,5 +1,12 @@
 [
   {
+    "name": "Luminesce",
+    "artist": "ERRA",
+    "url": "https://open.spotify.com/track/2NR7jndnK1JtKviayAjcNK",
+    "image": "https://i.scdn.co/image/ab67616d0000b2732bbbe6355e56d6a51bff8baa",
+    "preview_url": null
+  },
+  {
     "name": "All You Ever Do Is Bring Me Down",
     "artist": "The Mavericks, Flaco Jimenez",
     "url": "https://open.spotify.com/track/4zE5bW9vH03RtNxkbayW4P",
@@ -25,13 +32,6 @@
     "artist": "Tracy Byrd",
     "url": "https://open.spotify.com/track/3Q9t1A12iUemHTAWnH7PjD",
     "image": "https://i.scdn.co/image/ab67616d0000b273e1229b124d3f72a9494a4e3b",
-    "preview_url": null
-  },
-  {
-    "name": "Sold (The Grundy County Auction Incident)",
-    "artist": "John Michael Montgomery",
-    "url": "https://open.spotify.com/track/0NLBwQBYJhEM9t3KAMPFVR",
-    "image": "https://i.scdn.co/image/ab67616d0000b273c3fe0ccfeacabfd43e586de3",
     "preview_url": null
   }
 ]
