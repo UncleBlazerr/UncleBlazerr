@@ -1,5 +1,12 @@
 [
   {
+    "name": "Welcome to the Sun",
+    "artist": "Stick Figure",
+    "url": "https://open.spotify.com/track/1Oblb5QTccCRUI4EtiuVTm",
+    "image": "https://i.scdn.co/image/ab67616d0000b273b051ce304d1eb1a6f340cd20",
+    "preview_url": null
+  },
+  {
     "name": "Running Wild",
     "artist": "Stick Figure",
     "url": "https://open.spotify.com/track/39onxiv9Cn7wsyxNl0bAyj",
@@ -25,13 +32,6 @@
     "artist": "Post Malone, Morgan Wallen",
     "url": "https://open.spotify.com/track/7221xIgOnuakPdLqT0F3nP",
     "image": "https://i.scdn.co/image/ab67616d0000b27397306976e3eb8aad53b754eb",
-    "preview_url": null
-  },
-  {
-    "name": "MILLION DOLLAR BABY",
-    "artist": "Tommy Richman",
-    "url": "https://open.spotify.com/track/5AJ9hqTS2wcFQCELCFRO7A",
-    "image": "https://i.scdn.co/image/ab67616d0000b27301c0cd5da820e6128655854f",
     "preview_url": null
   }
 ]
