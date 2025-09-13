@@ -1,5 +1,12 @@
 [
   {
+    "name": "Ka-Pow! Superhero Dance",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/6zH0M5FHKTqEebG5PgLSPm",
+    "image": "https://i.scdn.co/image/ab67616d0000b27358d2fc0a35af96bab74d0a35",
+    "preview_url": null
+  },
+  {
     "name": "Ka-Pow! 2: Attack of the Gravity Goldfish!",
     "artist": "Danny Go!",
     "url": "https://open.spotify.com/track/4Q2K0ZwwkafTcW1vwWSLOg",
@@ -25,13 +32,6 @@
     "artist": "Danny Go!",
     "url": "https://open.spotify.com/track/4Q2K0ZwwkafTcW1vwWSLOg",
     "image": "https://i.scdn.co/image/ab67616d0000b27358d2fc0a35af96bab74d0a35",
-    "preview_url": null
-  },
-  {
-    "name": "The Wiggle Dance",
-    "artist": "Danny Go!",
-    "url": "https://open.spotify.com/track/57qfCDMbmBzWHuVk3A9Iir",
-    "image": "https://i.scdn.co/image/ab67616d0000b2735be3817eee6153d5122a75c7",
     "preview_url": null
   }
 ]
