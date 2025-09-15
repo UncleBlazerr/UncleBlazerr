@@ -15,7 +15,7 @@ os.makedirs("../components", exist_ok=True)
 # Component rendering functionz
 def load_component(component_name):
     """Load an HTML component file"""
-    component_path = os.path.join("../components", component_name)
+    component_path = f"../components/{component_name}"
     with open(component_path, 'r', encoding='utf-8') as f:
         return f.read()
 
