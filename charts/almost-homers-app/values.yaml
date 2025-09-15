@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
   repository: eggystrone/almost-homers-app
-  tag: 25c0c9a8df7a87081e5801186d75416e0bfb6ea7
+  tag: 1a7cc064d2d8daa82547d1ce791d5e4a7729fa93
   pullPolicy: IfNotPresent
 imagePullSecrets:
   - name: regcred
