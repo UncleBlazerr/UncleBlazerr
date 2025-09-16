@@ -1,9 +1,30 @@
 [
   {
-    "name": "Ka-Pow! 2: Attack of the Gravity Goldfish!",
-    "artist": "Danny Go!",
-    "url": "https://open.spotify.com/track/4Q2K0ZwwkafTcW1vwWSLOg",
-    "image": "https://i.scdn.co/image/ab67616d0000b27358d2fc0a35af96bab74d0a35",
+    "name": "Break The Silence",
+    "artist": "Nevertel, Sleep Theory",
+    "url": "https://open.spotify.com/track/7xDqZut1vFgkkWdBGHBqDh",
+    "image": "https://i.scdn.co/image/ab67616d0000b273ec3ecf8f6002db566689fa90",
+    "preview_url": null
+  },
+  {
+    "name": "Crossing the Rubicon (feat. NOTHING MORE)",
+    "artist": "Sabaton, NOTHING MORE, Jonny Hawkins, Mark Vollelunga",
+    "url": "https://open.spotify.com/track/2EVeVyXH9mQ5IIGi9b3smP",
+    "image": "https://i.scdn.co/image/ab67616d0000b2731ab6d0a12340e209f63de1c7",
+    "preview_url": null
+  },
+  {
+    "name": "Impose",
+    "artist": "Bad Omens",
+    "url": "https://open.spotify.com/track/3kMc83bWNdcaX1dmARQIII",
+    "image": "https://i.scdn.co/image/ab67616d0000b273ae556ca83bfb43f60928cb66",
+    "preview_url": null
+  },
+  {
+    "name": "Glenwood",
+    "artist": "Lorna Shore",
+    "url": "https://open.spotify.com/track/1zMtEW4SE5s3VqrmTicJaY",
+    "image": "https://i.scdn.co/image/ab67616d0000b27375975758512ad84990dc3952",
     "preview_url": null
   },
   {
@@ -11,27 +32,6 @@
     "artist": "Danny Go!",
     "url": "https://open.spotify.com/track/4Q2K0ZwwkafTcW1vwWSLOg",
     "image": "https://i.scdn.co/image/ab67616d0000b27358d2fc0a35af96bab74d0a35",
-    "preview_url": null
-  },
-  {
-    "name": "In This Love",
-    "artist": "Stick Figure",
-    "url": "https://open.spotify.com/track/3u1bKblfqeghD3grk3Le2w",
-    "image": "https://i.scdn.co/image/ab67616d0000b27328292b2539f0ed722e58aa63",
-    "preview_url": null
-  },
-  {
-    "name": "Your House",
-    "artist": "Steel Pulse",
-    "url": "https://open.spotify.com/track/6PbtTwGUPPbnT7nRTA1gS3",
-    "image": "https://i.scdn.co/image/ab67616d0000b273575da312c2dbaf47c49ececb",
-    "preview_url": null
-  },
-  {
-    "name": "There I Go",
-    "artist": "Common Kings",
-    "url": "https://open.spotify.com/track/5maLNTxNa29qrB1qpBoh6y",
-    "image": "https://i.scdn.co/image/ab67616d0000b2735236c2e17a5a1856c0807c58",
     "preview_url": null
   }
 ]
