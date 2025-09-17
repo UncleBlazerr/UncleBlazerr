@@ -1,5 +1,26 @@
 [
   {
+    "name": "Tuesday",
+    "artist": "Burak Yeter, Danelle Sandoval",
+    "url": "https://open.spotify.com/track/7EVk9tRb6beJLTHrg6AkY9",
+    "image": "https://i.scdn.co/image/ab67616d0000b273ff31e0226f0601415801e8a5",
+    "preview_url": null
+  },
+  {
+    "name": "We Got the Moves",
+    "artist": "Electric Callboy",
+    "url": "https://open.spotify.com/track/0W4N0KzHKWQp2Wn1Mf6uMa",
+    "image": "https://i.scdn.co/image/ab67616d0000b273237fb58544c59034021c3e4b",
+    "preview_url": null
+  },
+  {
+    "name": "Pump It",
+    "artist": "Electric Callboy",
+    "url": "https://open.spotify.com/track/6emZMVNvIxW57fhxPlyxLp",
+    "image": "https://i.scdn.co/image/ab67616d0000b273237fb58544c59034021c3e4b",
+    "preview_url": null
+  },
+  {
     "name": "bad luck",
     "artist": "We Came As Romans, Currents, After The Burial",
     "url": "https://open.spotify.com/track/4l6m1x05ChXrZA7GEoQtO6",
@@ -11,27 +32,6 @@
     "artist": "PAIN",
     "url": "https://open.spotify.com/track/43pN1UPix91u8e4GLFQ9Yf",
     "image": "https://i.scdn.co/image/ab67616d0000b273e606a24df420df49afd851e2",
-    "preview_url": null
-  },
-  {
-    "name": "Die By The Blade",
-    "artist": "Beast In Black",
-    "url": "https://open.spotify.com/track/53h1ZSLWi8hVWF9DWKNXVh",
-    "image": "https://i.scdn.co/image/ab67616d0000b273086fd08b0a9e09401a634902",
-    "preview_url": null
-  },
-  {
-    "name": "I Don't Wanna Be Me",
-    "artist": "Trivium",
-    "url": "https://open.spotify.com/track/2tNx0sauNCGfpniMNu9hEh",
-    "image": "https://i.scdn.co/image/ab67616d0000b273ec6ceb0c5b6ed2c9dd93afc2",
-    "preview_url": null
-  },
-  {
-    "name": "carry on for you",
-    "artist": "I See Stars",
-    "url": "https://open.spotify.com/track/0nWa6iG5GO3msSXyjQImMA",
-    "image": "https://i.scdn.co/image/ab67616d0000b27339e218ccf7e285fa70e18ea2",
     "preview_url": null
   }
 ]
