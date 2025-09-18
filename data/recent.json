@@ -1,37 +1,37 @@
 [
   {
-    "name": "American Girl",
-    "artist": "Tom Petty and the Heartbreakers",
-    "url": "https://open.spotify.com/track/53LwBS4bovyljsMlLqGfd6",
-    "image": "https://i.scdn.co/image/ab67616d0000b273d38733f240ef69763120a469",
+    "name": "Pink Houses",
+    "artist": "John Mellencamp",
+    "url": "https://open.spotify.com/track/5JKQMoGmXwDHCodn5pFVHB",
+    "image": "https://i.scdn.co/image/ab67616d0000b273cd949894aa0df080ed50ff9b",
     "preview_url": null
   },
   {
-    "name": "Long Cool Woman (In a Black Dress) - 1999 Remaster",
-    "artist": "The Hollies",
-    "url": "https://open.spotify.com/track/1J5XEPamp7iQaCU0aFuMnd",
-    "image": "https://i.scdn.co/image/ab67616d0000b273c9fcb582633f59eaa501c4c9",
+    "name": "Gimme All Your Lovin'",
+    "artist": "ZZ Top",
+    "url": "https://open.spotify.com/track/29uKzagduhFDTWPCjqaGOg",
+    "image": "https://i.scdn.co/image/ab67616d0000b273a2b4f98f60e3cacf3866b2e3",
     "preview_url": null
   },
   {
-    "name": "Mama Told Me (Not To Come) - Single Version",
+    "name": "Squeeze Box",
+    "artist": "The Who",
+    "url": "https://open.spotify.com/track/4lzNP52B3CfeVr2drfPh6X",
+    "image": "https://i.scdn.co/image/ab67616d0000b273cc9dafab65a051efcf19a9ef",
+    "preview_url": null
+  },
+  {
+    "name": "Shambala - Single Version",
     "artist": "Three Dog Night",
-    "url": "https://open.spotify.com/track/1CAO7hiNOxJRPW4nFv2aRO",
-    "image": "https://i.scdn.co/image/ab67616d0000b2734a0f8a0e94f35094fe49228c",
+    "url": "https://open.spotify.com/track/0P6fEgTn3cxLLyYTJYoYGj",
+    "image": "https://i.scdn.co/image/ab67616d0000b2737bb514f05fc9913fc55fb6aa",
     "preview_url": null
   },
   {
-    "name": "Me and Julio Down by the Schoolyard",
-    "artist": "Paul Simon",
-    "url": "https://open.spotify.com/track/6vxHp3CDNo0afgKGp2yi1E",
-    "image": "https://i.scdn.co/image/ab67616d0000b27337a40ab12a4fb96319a9d96f",
-    "preview_url": null
-  },
-  {
-    "name": "Ramblin' Man",
-    "artist": "Allman Brothers Band",
-    "url": "https://open.spotify.com/track/7y4CK8bbzxpyKu73WOvgHJ",
-    "image": "https://i.scdn.co/image/ab67616d0000b2738119fff0dbdcd44e407d55ca",
+    "name": "Say You Love Me",
+    "artist": "Fleetwood Mac",
+    "url": "https://open.spotify.com/track/6lrQo6KAYvb92MGk6ZuZlt",
+    "image": "https://i.scdn.co/image/ab67616d0000b2734fb043195e8d07e72edc7226",
     "preview_url": null
   }
 ]
