@@ -1,9 +1,30 @@
 [
   {
-    "name": "Suge",
-    "artist": "DaBaby",
-    "url": "https://open.spotify.com/track/2gwkD6igEhQbDQegRCcdoB",
-    "image": "https://i.scdn.co/image/ab67616d0000b27374d72ebd51dd5781d5f83ffd",
+    "name": "Long Way Down",
+    "artist": "Haste The Day",
+    "url": "https://open.spotify.com/track/4PdVdHI9CYbTotC2TP7Hps",
+    "image": "https://i.scdn.co/image/ab67616d0000b273187eb31a4be256804d3e1d76",
+    "preview_url": null
+  },
+  {
+    "name": "How Did You Love - Neon Tribe Remix",
+    "artist": "Shinedown, Neon Tribe",
+    "url": "https://open.spotify.com/track/1iosx4Zs9m4tNTv5uF75SG",
+    "image": "https://i.scdn.co/image/ab67616d0000b2733f59abdb16b40d25e8079fa6",
+    "preview_url": null
+  },
+  {
+    "name": "Roses - Imanbek Remix",
+    "artist": "SAINt JHN, Imanbek",
+    "url": "https://open.spotify.com/track/72GVdRHK49beKrC1NqRCqj",
+    "image": "https://i.scdn.co/image/ab67616d0000b2738e51ad44471425be0ddcc6a0",
+    "preview_url": null
+  },
+  {
+    "name": "92 Explorer",
+    "artist": "Post Malone",
+    "url": "https://open.spotify.com/track/1D2L6MefbXon28PzIk9I3r",
+    "image": "https://i.scdn.co/image/ab67616d0000b273b1c4b76e23414c9f20242268",
     "preview_url": null
   },
   {
@@ -11,27 +32,6 @@
     "artist": "DaBaby",
     "url": "https://open.spotify.com/track/2gwkD6igEhQbDQegRCcdoB",
     "image": "https://i.scdn.co/image/ab67616d0000b27374d72ebd51dd5781d5f83ffd",
-    "preview_url": null
-  },
-  {
-    "name": "Nothing New (feat. Kaleena Zanders)",
-    "artist": "Dropgun, Kaleena Zanders",
-    "url": "https://open.spotify.com/track/5gSZ9J7hWSaCXPJWwmUjNu",
-    "image": "https://i.scdn.co/image/ab67616d0000b273f3a07ef5ee5b05fa3c86b00a",
-    "preview_url": null
-  },
-  {
-    "name": "Infinite",
-    "artist": "Ehrling",
-    "url": "https://open.spotify.com/track/5LEjP7aYG7ki1ihNEa13RZ",
-    "image": "https://i.scdn.co/image/ab67616d0000b27372d4d57950c898c3536e7ccc",
-    "preview_url": null
-  },
-  {
-    "name": "High Right Now",
-    "artist": "Tyla Yaweh",
-    "url": "https://open.spotify.com/track/18LhA0zBzAa2YnhcN3hWGa",
-    "image": "https://i.scdn.co/image/ab67616d0000b2736a59c3251231317dfdb9cd9c",
     "preview_url": null
   }
 ]
