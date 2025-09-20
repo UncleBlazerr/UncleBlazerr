@@ -1,5 +1,12 @@
 [
   {
+    "name": "End Of The Line",
+    "artist": "Traveling Wilburys",
+    "url": "https://open.spotify.com/track/4HA2jo7wkMdN1lmLO6ryzE",
+    "image": "https://i.scdn.co/image/ab67616d0000b273d9e06f988048ecf3c54ca749",
+    "preview_url": null
+  },
+  {
     "name": "Small Town",
     "artist": "John Mellencamp",
     "url": "https://open.spotify.com/track/2HsjJJL4DhPCzMlnaGv7ap",
@@ -25,13 +32,6 @@
     "artist": "The Who",
     "url": "https://open.spotify.com/track/3qiyyUfYe7CRYLucrPmulD",
     "image": "https://i.scdn.co/image/ab67616d0000b273fe24dcd263c08c6dd84b6e8c",
-    "preview_url": null
-  },
-  {
-    "name": "Sister Golden Hair",
-    "artist": "America",
-    "url": "https://open.spotify.com/track/5VSAonaAPhhGn0G7hMYwWK",
-    "image": "https://i.scdn.co/image/ab67616d0000b273865a956fe40cf54597e97fd2",
     "preview_url": null
   }
 ]
