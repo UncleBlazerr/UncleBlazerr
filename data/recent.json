@@ -1,26 +1,5 @@
 [
   {
-    "name": "Mercury Blues",
-    "artist": "Alan Jackson",
-    "url": "https://open.spotify.com/track/48JlBoXcuOj8hDDgbaZUxg",
-    "image": "https://i.scdn.co/image/ab67616d0000b273933cf67cacfab71afa20c6c4",
-    "preview_url": null
-  },
-  {
-    "name": "Mercury Blues",
-    "artist": "Alan Jackson",
-    "url": "https://open.spotify.com/track/48JlBoXcuOj8hDDgbaZUxg",
-    "image": "https://i.scdn.co/image/ab67616d0000b273933cf67cacfab71afa20c6c4",
-    "preview_url": null
-  },
-  {
-    "name": "I Remember U",
-    "artist": "Cartoon, Jéja, Jüri Pootsmann",
-    "url": "https://open.spotify.com/track/2FTaTyEHyMQXPbaxorcKfE",
-    "image": "https://i.scdn.co/image/ab67616d0000b273f9909783cb4dd82e02810519",
-    "preview_url": null
-  },
-  {
     "name": "Beat City (From \"Ferris Bueller's Day Off\")",
     "artist": "The Flowerpot Men",
     "url": "https://open.spotify.com/track/3Whgdrt7mGtx4w5cZ1mhTH",
@@ -32,6 +11,27 @@
     "artist": "Danny Go!",
     "url": "https://open.spotify.com/track/1fFZ0TRXThCKcVCJx5LLrf",
     "image": "https://i.scdn.co/image/ab67616d0000b27356d495bae8744b402266f1dc",
+    "preview_url": null
+  },
+  {
+    "name": "The Skeleton Shake",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/7mNPgGPb3hpbGuwcD2Rid6",
+    "image": "https://i.scdn.co/image/ab67616d0000b27356d495bae8744b402266f1dc",
+    "preview_url": null
+  },
+  {
+    "name": "The Bat Wing Beat",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/1fFZ0TRXThCKcVCJx5LLrf",
+    "image": "https://i.scdn.co/image/ab67616d0000b27356d495bae8744b402266f1dc",
+    "preview_url": null
+  },
+  {
+    "name": "Mercury Blues",
+    "artist": "Alan Jackson",
+    "url": "https://open.spotify.com/track/48JlBoXcuOj8hDDgbaZUxg",
+    "image": "https://i.scdn.co/image/ab67616d0000b273933cf67cacfab71afa20c6c4",
     "preview_url": null
   }
 ]
