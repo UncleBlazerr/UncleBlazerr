@@ -1,5 +1,12 @@
 [
   {
+    "name": "Treasure (with Stick Figure)",
+    "artist": "Stay High, Stick Figure",
+    "url": "https://open.spotify.com/track/3fpOS57qm6u5R0Pfi7JkVO",
+    "image": "https://i.scdn.co/image/ab67616d0000b273227b2be2db5a9f7bb9cd1f2a",
+    "preview_url": null
+  },
+  {
     "name": "I Remember U",
     "artist": "Cartoon, Jéja, Jüri Pootsmann",
     "url": "https://open.spotify.com/track/2FTaTyEHyMQXPbaxorcKfE",
@@ -24,13 +31,6 @@
     "name": "The Skeleton Shake",
     "artist": "Danny Go!",
     "url": "https://open.spotify.com/track/7mNPgGPb3hpbGuwcD2Rid6",
-    "image": "https://i.scdn.co/image/ab67616d0000b27356d495bae8744b402266f1dc",
-    "preview_url": null
-  },
-  {
-    "name": "The Bat Wing Beat",
-    "artist": "Danny Go!",
-    "url": "https://open.spotify.com/track/1fFZ0TRXThCKcVCJx5LLrf",
     "image": "https://i.scdn.co/image/ab67616d0000b27356d495bae8744b402266f1dc",
     "preview_url": null
   }
