@@ -1,5 +1,26 @@
 [
   {
+    "name": "Spooky Spiders Everywhere!",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/57LgRvOO6sDh5Mfqx4RY63",
+    "image": "https://i.scdn.co/image/ab67616d0000b2736d61fb4d74ba24d91647d64c",
+    "preview_url": null
+  },
+  {
+    "name": "The Bat Wing Beat",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/1fFZ0TRXThCKcVCJx5LLrf",
+    "image": "https://i.scdn.co/image/ab67616d0000b27356d495bae8744b402266f1dc",
+    "preview_url": null
+  },
+  {
+    "name": "The Skeleton Shake",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/7mNPgGPb3hpbGuwcD2Rid6",
+    "image": "https://i.scdn.co/image/ab67616d0000b27356d495bae8744b402266f1dc",
+    "preview_url": null
+  },
+  {
     "name": "The Bat Wing Beat",
     "artist": "Danny Go!",
     "url": "https://open.spotify.com/track/1fFZ0TRXThCKcVCJx5LLrf",
@@ -11,27 +32,6 @@
     "artist": "The Flowerpot Men",
     "url": "https://open.spotify.com/track/3Whgdrt7mGtx4w5cZ1mhTH",
     "image": "https://i.scdn.co/image/ab67616d0000b273b768974d9bb29a67efcf77b0",
-    "preview_url": null
-  },
-  {
-    "name": "Ka-Pow! 2: Attack of the Gravity Goldfish!",
-    "artist": "Danny Go!",
-    "url": "https://open.spotify.com/track/4Q2K0ZwwkafTcW1vwWSLOg",
-    "image": "https://i.scdn.co/image/ab67616d0000b27358d2fc0a35af96bab74d0a35",
-    "preview_url": null
-  },
-  {
-    "name": "We'll Be Alright",
-    "artist": "The Hip Abduction",
-    "url": "https://open.spotify.com/track/5k0U1CVgDmBZ6xutJVIU8r",
-    "image": "https://i.scdn.co/image/ab67616d0000b273c548f002e4f8d4aed5784d81",
-    "preview_url": null
-  },
-  {
-    "name": "Ka-Pow! 2: Attack of the Gravity Goldfish!",
-    "artist": "Danny Go!",
-    "url": "https://open.spotify.com/track/4Q2K0ZwwkafTcW1vwWSLOg",
-    "image": "https://i.scdn.co/image/ab67616d0000b27358d2fc0a35af96bab74d0a35",
     "preview_url": null
   }
 ]
