@@ -1,9 +1,30 @@
 [
   {
-    "name": "Oxygen",
-    "artist": "Dirty Heads",
-    "url": "https://open.spotify.com/track/1SamKkYJelI1ktQMrtBtfW",
-    "image": "https://i.scdn.co/image/ab67616d0000b2731d302a0029cc796197e1d185",
+    "name": "Same Thing",
+    "artist": "Coyote Island",
+    "url": "https://open.spotify.com/track/6h5PYOmwhPiesgMiY5BDPZ",
+    "image": "https://i.scdn.co/image/ab67616d0000b2735d67b0c04e1c05814783e1d8",
+    "preview_url": null
+  },
+  {
+    "name": "Reds and Blues (with SensaMotion)",
+    "artist": "Viren Neel, Sensamotion, Loud City",
+    "url": "https://open.spotify.com/track/3b9b2gQovsWsBXe7YyDGit",
+    "image": "https://i.scdn.co/image/ab67616d0000b27349cac50b401fcaf1c40a0cef",
+    "preview_url": null
+  },
+  {
+    "name": "Quarantine (with Abitemi)",
+    "artist": "Coyote Island, Abitemi",
+    "url": "https://open.spotify.com/track/54f2SmHhavDoI6eVRzzDyO",
+    "image": "https://i.scdn.co/image/ab67616d0000b273c0550d39e3efb4a158190ef7",
+    "preview_url": null
+  },
+  {
+    "name": "Step Into The Sun",
+    "artist": "Slightly Stoopid",
+    "url": "https://open.spotify.com/track/0V97fTBQ3DAQ9kuiceg02D",
+    "image": "https://i.scdn.co/image/ab67616d0000b273bab3c5e407fc9b9ae6a40879",
     "preview_url": null
   },
   {
@@ -11,27 +32,6 @@
     "artist": "Dirty Heads",
     "url": "https://open.spotify.com/track/1SamKkYJelI1ktQMrtBtfW",
     "image": "https://i.scdn.co/image/ab67616d0000b2731d302a0029cc796197e1d185",
-    "preview_url": null
-  },
-  {
-    "name": "I Believe in Bigfoot!",
-    "artist": "Steve and Maggie",
-    "url": "https://open.spotify.com/track/6qlUiLrC9bhVYQfYhcX4uV",
-    "image": "https://i.scdn.co/image/ab67616d0000b273467b3c1306489627060a3551",
-    "preview_url": null
-  },
-  {
-    "name": "Do the Spidey (Cast Version)",
-    "artist": "Marvel’s Spidey and His Amazing Friends - Cast",
-    "url": "https://open.spotify.com/track/1mxpgkZPwPptmLnh2D8KLf",
-    "image": "https://i.scdn.co/image/ab67616d0000b27301a9f9943e73f27d6fa5d106",
-    "preview_url": null
-  },
-  {
-    "name": "Hot Wheels Let's Race Theme Song",
-    "artist": "Hot Wheels, Mattel",
-    "url": "https://open.spotify.com/track/5Jp4vRhQ4TLXrp9cnJfXu6",
-    "image": "https://i.scdn.co/image/ab67616d0000b2737be19f2b83e28b9e5d5587c6",
     "preview_url": null
   }
 ]
