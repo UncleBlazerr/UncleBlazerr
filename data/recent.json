@@ -1,5 +1,12 @@
 [
   {
+    "name": "Bowl For Two",
+    "artist": "The Expendables",
+    "url": "https://open.spotify.com/track/7wCgKgkuthR3K568qESxDp",
+    "image": "https://i.scdn.co/image/ab67616d0000b2732943f5555a1b5b0899dac879",
+    "preview_url": null
+  },
+  {
     "name": "There I Go",
     "artist": "Common Kings",
     "url": "https://open.spotify.com/track/5maLNTxNa29qrB1qpBoh6y",
@@ -25,13 +32,6 @@
     "artist": "Stick Figure",
     "url": "https://open.spotify.com/track/0nEUaCsD5tDZjbY7tMAaea",
     "image": "https://i.scdn.co/image/ab67616d0000b273b051ce304d1eb1a6f340cd20",
-    "preview_url": null
-  },
-  {
-    "name": "Treasure (with Stick Figure)",
-    "artist": "Stay High, Stick Figure",
-    "url": "https://open.spotify.com/track/3fpOS57qm6u5R0Pfi7JkVO",
-    "image": "https://i.scdn.co/image/ab67616d0000b273227b2be2db5a9f7bb9cd1f2a",
     "preview_url": null
   }
 ]
