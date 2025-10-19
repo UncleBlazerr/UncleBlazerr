@@ -1,5 +1,19 @@
 [
   {
+    "name": "Ka-Pow! Superhero Dance",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/501TN2V1YvVfIfPLNafJnX",
+    "image": "https://i.scdn.co/image/ab67616d0000b2734d27fd6fb16853d299b3c885",
+    "preview_url": null
+  },
+  {
+    "name": "The Bat Wing Beat",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/1fFZ0TRXThCKcVCJx5LLrf",
+    "image": "https://i.scdn.co/image/ab67616d0000b27356d495bae8744b402266f1dc",
+    "preview_url": null
+  },
+  {
     "name": "Midnight Life",
     "artist": "White Panda",
     "url": "https://open.spotify.com/track/7sMaxqeEIeEVCgn2JvIe2P",
@@ -18,20 +32,6 @@
     "artist": "Stick Figure",
     "url": "https://open.spotify.com/track/15XJwvQe5KHO27dSiRLLgF",
     "image": "https://i.scdn.co/image/ab67616d0000b273448d51be584386f9ea7ee129",
-    "preview_url": null
-  },
-  {
-    "name": "Moon Palace",
-    "artist": "Stick Figure",
-    "url": "https://open.spotify.com/track/15XJwvQe5KHO27dSiRLLgF",
-    "image": "https://i.scdn.co/image/ab67616d0000b273448d51be584386f9ea7ee129",
-    "preview_url": null
-  },
-  {
-    "name": "Wicked Game",
-    "artist": "The Expendables",
-    "url": "https://open.spotify.com/track/588pbWob0xei2cCO4GyIT9",
-    "image": "https://i.scdn.co/image/ab67616d0000b273d8b5cdcbf7b08402d552f4be",
     "preview_url": null
   }
 ]
