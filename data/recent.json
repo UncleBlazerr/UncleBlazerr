@@ -1,5 +1,12 @@
 [
   {
+    "name": "Midnight Life",
+    "artist": "White Panda",
+    "url": "https://open.spotify.com/track/7sMaxqeEIeEVCgn2JvIe2P",
+    "image": "https://i.scdn.co/image/ab67616d0000b2738e1ac3138a71574799938c47",
+    "preview_url": null
+  },
+  {
     "name": "Never Let You Go",
     "artist": "Kalax",
     "url": "https://open.spotify.com/track/7ixjkQzQumFDuI9RlGgzkG",
@@ -25,13 +32,6 @@
     "artist": "The Expendables",
     "url": "https://open.spotify.com/track/588pbWob0xei2cCO4GyIT9",
     "image": "https://i.scdn.co/image/ab67616d0000b273d8b5cdcbf7b08402d552f4be",
-    "preview_url": null
-  },
-  {
-    "name": "Breathe",
-    "artist": "Stick Figure",
-    "url": "https://open.spotify.com/track/4Th9Lu8GK0mt5fZZ945FI7",
-    "image": "https://i.scdn.co/image/ab67616d0000b273d05956a2233c7be9340ae85b",
     "preview_url": null
   }
 ]
