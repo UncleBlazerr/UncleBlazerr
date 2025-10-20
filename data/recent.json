@@ -1,5 +1,19 @@
 [
   {
+    "name": "Superheroes Unite",
+    "artist": "Koo Koo",
+    "url": "https://open.spotify.com/track/2wszvTynYUgtdswbsEc8b2",
+    "image": "https://i.scdn.co/image/ab67616d0000b273ca6f9c14aeb8eace8c17fbdc",
+    "preview_url": null
+  },
+  {
+    "name": "Airplane Mode!",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/3SiijksKZyytWUhHftvctc",
+    "image": "https://i.scdn.co/image/ab67616d0000b2730cc842d078721e39adb11c80",
+    "preview_url": null
+  },
+  {
     "name": "Trust the Path (with The Hip Abduction)",
     "artist": "Coyote Island, The Hip Abduction",
     "url": "https://open.spotify.com/track/1ajLihStvm4xClsn6rsFLn",
@@ -18,20 +32,6 @@
     "artist": "White Panda",
     "url": "https://open.spotify.com/track/17FuWDOG0ROvc3U7Rw1FLY",
     "image": "https://i.scdn.co/image/ab67616d0000b2736e378799d5321bdaf7a3a378",
-    "preview_url": null
-  },
-  {
-    "name": "Flamingo Frenzy!",
-    "artist": "Danny Go!",
-    "url": "https://open.spotify.com/track/4XrKQR3F9zEik0jYbQZv1n",
-    "image": "https://i.scdn.co/image/ab67616d0000b273bfef3d73d8f94ad8895eee7a",
-    "preview_url": null
-  },
-  {
-    "name": "Mario Brothers Rap",
-    "artist": "Ali Dee",
-    "url": "https://open.spotify.com/track/5WWMIzuU1YQ5F8DVF9sogd",
-    "image": "https://i.scdn.co/image/ab67616d0000b273c21aa4015cb02b6b8eca09a4",
     "preview_url": null
   }
 ]
