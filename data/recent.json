@@ -1,5 +1,26 @@
 [
   {
+    "name": "Refugee",
+    "artist": "Tom Petty and the Heartbreakers",
+    "url": "https://open.spotify.com/track/4mcZYzoGwPRDdhWVlygiHf",
+    "image": "https://i.scdn.co/image/ab67616d0000b273ebca7d93f21ba366fe005966",
+    "preview_url": null
+  },
+  {
+    "name": "You Wreck Me",
+    "artist": "Tom Petty",
+    "url": "https://open.spotify.com/track/0YkbYk24ODhuewb79zZZzM",
+    "image": "https://i.scdn.co/image/ab67616d0000b27341be6d9cf0ec0067d095a072",
+    "preview_url": null
+  },
+  {
+    "name": "Small Town",
+    "artist": "John Mellencamp",
+    "url": "https://open.spotify.com/track/2HsjJJL4DhPCzMlnaGv7ap",
+    "image": "https://i.scdn.co/image/ab67616d0000b273b46e7ea6a6b2fa45caa23393",
+    "preview_url": null
+  },
+  {
     "name": "Sundown",
     "artist": "Gordon Lightfoot",
     "url": "https://open.spotify.com/track/0SjnBEHZVXgCKvOrpvzL2k",
@@ -7,31 +28,10 @@
     "preview_url": null
   },
   {
-    "name": "You Got Lucky",
-    "artist": "Tom Petty and the Heartbreakers",
-    "url": "https://open.spotify.com/track/5eMZ3EPIMGoWlrrVhxatdv",
-    "image": "https://i.scdn.co/image/ab67616d0000b273783b5cd3b6384497bcf4bb4d",
-    "preview_url": null
-  },
-  {
-    "name": "La Grange (2005 Remaster)",
-    "artist": "ZZ Top",
-    "url": "https://open.spotify.com/track/0u6JFVn0KHHlidZxNL9gVE",
-    "image": "https://i.scdn.co/image/ab67616d0000b273db9c5945ce3a3f873695d18a",
-    "preview_url": null
-  },
-  {
-    "name": "Magic - 2017 Remaster",
-    "artist": "The Cars",
-    "url": "https://open.spotify.com/track/0SAbkr0dS7WK3yJSjaZSZl",
-    "image": "https://i.scdn.co/image/ab67616d0000b273f607580794ed5b352884fd47",
-    "preview_url": null
-  },
-  {
-    "name": "Have You Ever Seen The Rain",
-    "artist": "Creedence Clearwater Revival",
-    "url": "https://open.spotify.com/track/2LawezPeJhN4AWuSB0GtAU",
-    "image": "https://i.scdn.co/image/ab67616d0000b27351f311c2fb06ad2789e3ff91",
+    "name": "Sundown",
+    "artist": "Gordon Lightfoot",
+    "url": "https://open.spotify.com/track/0SjnBEHZVXgCKvOrpvzL2k",
+    "image": "https://i.scdn.co/image/ab67616d0000b2738f2b3a1c0559ca6188de574b",
     "preview_url": null
   }
 ]
