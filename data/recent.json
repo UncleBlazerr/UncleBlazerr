@@ -1,5 +1,12 @@
 [
   {
+    "name": "Come Around",
+    "artist": "Slightly Stoopid",
+    "url": "https://open.spotify.com/track/1tEbbGSIDCaV3sExEUIndI",
+    "image": "https://i.scdn.co/image/ab67616d0000b2739cfa9a22fafff224802054ac",
+    "preview_url": null
+  },
+  {
     "name": "Margaritas (with Orange Grove)",
     "artist": "The Elovaters, Orange Grove",
     "url": "https://open.spotify.com/track/2c5fBn05SvBLF1GNmzNuTF",
@@ -25,13 +32,6 @@
     "artist": "Stick Figure",
     "url": "https://open.spotify.com/track/4Th9Lu8GK0mt5fZZ945FI7",
     "image": "https://i.scdn.co/image/ab67616d0000b273d05956a2233c7be9340ae85b",
-    "preview_url": null
-  },
-  {
-    "name": "Tides (with Pepper & Slightly Stoopid)",
-    "artist": "Shwayze, Pepper, Slightly Stoopid",
-    "url": "https://open.spotify.com/track/05XyeZ6TZEnQyWd7ksYERw",
-    "image": "https://i.scdn.co/image/ab67616d0000b27365dfcac1cc804c9acade0be9",
     "preview_url": null
   }
 ]
