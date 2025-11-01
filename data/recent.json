@@ -1,5 +1,19 @@
 [
   {
+    "name": "Thriller",
+    "artist": "Michael Jackson",
+    "url": "https://open.spotify.com/track/2LlQb7Uoj1kKyGhlkBf9aC",
+    "image": "https://i.scdn.co/image/ab67616d0000b273de437d960dda1ac0a3586d97",
+    "preview_url": null
+  },
+  {
+    "name": "This Is Halloween",
+    "artist": "The Citizens of Halloween",
+    "url": "https://open.spotify.com/track/3mhsDyQpX2L8sJMdWUHOi3",
+    "image": "https://i.scdn.co/image/ab67616d0000b273ff2684642c23615f628260ba",
+    "preview_url": null
+  },
+  {
     "name": "Monster Mash",
     "artist": "Bobby \"Boris\" Pickett, The Crypt-Kickers",
     "url": "https://open.spotify.com/track/0xxZY5C9xxij3D1HkzbnfC",
@@ -18,20 +32,6 @@
     "artist": "Andrew Gold",
     "url": "https://open.spotify.com/track/1sUdq3kWa9dJXHu3eYOUll",
     "image": "https://i.scdn.co/image/ab67616d0000b273a3cf7d524baed9e303302918",
-    "preview_url": null
-  },
-  {
-    "name": "Spooky, Scary Skeletons - Undead Tombstone Remix",
-    "artist": "Andrew Gold",
-    "url": "https://open.spotify.com/track/1sUdq3kWa9dJXHu3eYOUll",
-    "image": "https://i.scdn.co/image/ab67616d0000b273a3cf7d524baed9e303302918",
-    "preview_url": null
-  },
-  {
-    "name": "Ghostbusters",
-    "artist": "Ray Parker Jr.",
-    "url": "https://open.spotify.com/track/3m0y8qLoznUYi73SUBP8GI",
-    "image": "https://i.scdn.co/image/ab67616d0000b273aed4808eac27b70ba532f0e4",
     "preview_url": null
   }
 ]
