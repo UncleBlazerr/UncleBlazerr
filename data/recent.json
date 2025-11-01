@@ -1,5 +1,26 @@
 [
   {
+    "name": "Monster Mash",
+    "artist": "Bobby \"Boris\" Pickett, The Crypt-Kickers",
+    "url": "https://open.spotify.com/track/0xxZY5C9xxij3D1HkzbnfC",
+    "image": "https://i.scdn.co/image/ab67616d0000b273edf6710f9c0cd81e37fcaf3d",
+    "preview_url": null
+  },
+  {
+    "name": "Somebody's Watching Me - Single Version",
+    "artist": "Rockwell",
+    "url": "https://open.spotify.com/track/2QN9zL3SzXdGqqmXO68gFp",
+    "image": "https://i.scdn.co/image/ab67616d0000b2733b6773d6e0df6eedefb20190",
+    "preview_url": null
+  },
+  {
+    "name": "Spooky, Scary Skeletons - Undead Tombstone Remix",
+    "artist": "Andrew Gold",
+    "url": "https://open.spotify.com/track/1sUdq3kWa9dJXHu3eYOUll",
+    "image": "https://i.scdn.co/image/ab67616d0000b273a3cf7d524baed9e303302918",
+    "preview_url": null
+  },
+  {
     "name": "Spooky, Scary Skeletons - Undead Tombstone Remix",
     "artist": "Andrew Gold",
     "url": "https://open.spotify.com/track/1sUdq3kWa9dJXHu3eYOUll",
@@ -11,27 +32,6 @@
     "artist": "Ray Parker Jr.",
     "url": "https://open.spotify.com/track/3m0y8qLoznUYi73SUBP8GI",
     "image": "https://i.scdn.co/image/ab67616d0000b273aed4808eac27b70ba532f0e4",
-    "preview_url": null
-  },
-  {
-    "name": "What a Feeling",
-    "artist": "Stick Figure",
-    "url": "https://open.spotify.com/track/68kKTUw9HJOczE2CAsz73a",
-    "image": "https://i.scdn.co/image/ab67616d0000b2738b3badfaabf25097cc386832",
-    "preview_url": null
-  },
-  {
-    "name": "Gimme Love",
-    "artist": "The Elovaters",
-    "url": "https://open.spotify.com/track/1nUNC6zK5dkcVNMp43TyWC",
-    "image": "https://i.scdn.co/image/ab67616d0000b273cd99fa9f3dde1248225c8ec8",
-    "preview_url": null
-  },
-  {
-    "name": "Gimme Love",
-    "artist": "The Elovaters",
-    "url": "https://open.spotify.com/track/1nUNC6zK5dkcVNMp43TyWC",
-    "image": "https://i.scdn.co/image/ab67616d0000b273cd99fa9f3dde1248225c8ec8",
     "preview_url": null
   }
 ]
