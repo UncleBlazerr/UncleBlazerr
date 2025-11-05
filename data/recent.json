@@ -1,5 +1,12 @@
 [
   {
+    "name": "Closure",
+    "artist": "Caskets",
+    "url": "https://open.spotify.com/track/7wOnoMYUQot21uPASWNdqa",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e3479283b5ab890216f969e1",
+    "preview_url": null
+  },
+  {
     "name": "The Only Heaven You'll Know",
     "artist": "Caskets",
     "url": "https://open.spotify.com/track/4w1kRlzCTYQKXKXX2UULcK",
@@ -25,13 +32,6 @@
     "artist": "Karen Dotrice",
     "url": "https://open.spotify.com/track/3MzsifNRt15WBoc6u7PLul",
     "image": "https://i.scdn.co/image/ab67616d0000b27300aeb79f2ba99426d48b187c",
-    "preview_url": null
-  },
-  {
-    "name": "Peter Pan",
-    "artist": "Nolan North",
-    "url": "https://open.spotify.com/track/6DcUpWBWAM3Ayqhs8vdqrW",
-    "image": "https://i.scdn.co/image/ab67616d0000b27395f98326da30e8ac5b7b6a72",
     "preview_url": null
   }
 ]
