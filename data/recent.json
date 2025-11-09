@@ -1,5 +1,12 @@
 [
   {
+    "name": "Queen of Memphis - Remastered Version",
+    "artist": "Confederate Railroad",
+    "url": "https://open.spotify.com/track/59XR99m4eEQQZ7d2hcTogz",
+    "image": "https://i.scdn.co/image/ab67616d0000b27300b39ad9022f3e16f3629461",
+    "preview_url": null
+  },
+  {
     "name": "The Barn Dance",
     "artist": "Tom T. Hall",
     "url": "https://open.spotify.com/track/1ubgjZT0oIyIA8bAig0WkH",
@@ -25,13 +32,6 @@
     "artist": "Martina McBride",
     "url": "https://open.spotify.com/track/1nVoLxz8C0uGgMKfywy0vf",
     "image": "https://i.scdn.co/image/ab67616d0000b273bfc053859e5116c5eeca9843",
-    "preview_url": null
-  },
-  {
-    "name": "God Blessed Texas",
-    "artist": "Little Texas",
-    "url": "https://open.spotify.com/track/4pxROqdjivtjjobZz4y6G8",
-    "image": "https://i.scdn.co/image/ab67616d0000b273332b738a0dd03ffa2e1ec60c",
     "preview_url": null
   }
 ]
