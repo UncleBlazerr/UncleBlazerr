@@ -1,5 +1,19 @@
 [
   {
+    "name": "Tender - RADAR O.S.T",
+    "artist": "TesseracT, Choir Noir",
+    "url": "https://open.spotify.com/track/7vRSJmAG8nj14BYWh6Q5TY",
+    "image": "https://i.scdn.co/image/ab67616d0000b27392188409a45ec2e2694f7a42",
+    "preview_url": null
+  },
+  {
+    "name": "Meridian",
+    "artist": "The Elovaters, The Late Ones",
+    "url": "https://open.spotify.com/track/2cndByWPZ3ROX6Z6ZzYtJB",
+    "image": "https://i.scdn.co/image/ab67616d0000b2737d599a158fcf4d9e4b77e1d5",
+    "preview_url": null
+  },
+  {
     "name": "Gardenia (with Stick Figure)",
     "artist": "The Elovaters, Stick Figure",
     "url": "https://open.spotify.com/track/0OcIijvgNNIotHuvGTwDBT",
@@ -18,20 +32,6 @@
     "artist": "The Elovaters",
     "url": "https://open.spotify.com/track/1iASWrOMntdKX2bkhzeo3Y",
     "image": "https://i.scdn.co/image/ab67616d0000b273c6652cf3a3c6de5649a5fcd2",
-    "preview_url": null
-  },
-  {
-    "name": "Out the Door",
-    "artist": "Stick Figure",
-    "url": "https://open.spotify.com/track/6fo3vAnEA8NLICFCzYfVI8",
-    "image": "https://i.scdn.co/image/ab67616d0000b27328292b2539f0ed722e58aa63",
-    "preview_url": null
-  },
-  {
-    "name": "Too Late (with Jared Watson of Dirty Heads)",
-    "artist": "Shwayze, Dirty Heads",
-    "url": "https://open.spotify.com/track/6EBM66haIsDCPffZrIumUH",
-    "image": "https://i.scdn.co/image/ab67616d0000b27365dfcac1cc804c9acade0be9",
     "preview_url": null
   }
 ]
