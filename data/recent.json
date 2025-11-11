@@ -1,37 +1,37 @@
 [
   {
+    "name": "The Creepy Crawl",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/3sjwPrNmCYwkGMvAm8wlS2",
+    "image": "https://i.scdn.co/image/ab67616d0000b2738f7e1d9fb5ac9a3a826e3717",
+    "preview_url": null
+  },
+  {
+    "name": "The Floor is Lava Dance",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/7FfFraDlwTXR2WlCmdoHKz",
+    "image": "https://i.scdn.co/image/ab67616d0000b2739a5dd031e633b86b95829612",
+    "preview_url": null
+  },
+  {
+    "name": "Spooky Spiders Everywhere!",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/57LgRvOO6sDh5Mfqx4RY63",
+    "image": "https://i.scdn.co/image/ab67616d0000b2736d61fb4d74ba24d91647d64c",
+    "preview_url": null
+  },
+  {
+    "name": "The Dinosaur Dance",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/0gnvsnWoIeVVIpTwW3Kffo",
+    "image": "https://i.scdn.co/image/ab67616d0000b2736bd06a98d26dfa3fed91a86f",
+    "preview_url": null
+  },
+  {
     "name": "Ka-Pow! 2: Attack of the Gravity Goldfish!",
     "artist": "Danny Go!",
     "url": "https://open.spotify.com/track/4Q2K0ZwwkafTcW1vwWSLOg",
     "image": "https://i.scdn.co/image/ab67616d0000b27358d2fc0a35af96bab74d0a35",
-    "preview_url": null
-  },
-  {
-    "name": "Monsters, Inc.",
-    "artist": "Randy Newman",
-    "url": "https://open.spotify.com/track/5e0O7MjhNHq9G67qDFM8nR",
-    "image": "https://i.scdn.co/image/ab67616d0000b273ba7c9946402feb80e664a9aa",
-    "preview_url": null
-  },
-  {
-    "name": "The Big Race",
-    "artist": "Randy Newman",
-    "url": "https://open.spotify.com/track/4nbE2qIb4Dplf4ssGA8ETW",
-    "image": "https://i.scdn.co/image/ab67616d0000b273a73bb6afa8cb999aafb3c150",
-    "preview_url": null
-  },
-  {
-    "name": "The Piston Cup",
-    "artist": "Randy Newman",
-    "url": "https://open.spotify.com/track/2LwbqMBDHVgePOlAsYkJpY",
-    "image": "https://i.scdn.co/image/ab67616d0000b273a73bb6afa8cb999aafb3c150",
-    "preview_url": null
-  },
-  {
-    "name": "Pre-Race Pageantry",
-    "artist": "Randy Newman",
-    "url": "https://open.spotify.com/track/31SQzEn2j6IqoBM41axtX4",
-    "image": "https://i.scdn.co/image/ab67616d0000b273a73bb6afa8cb999aafb3c150",
     "preview_url": null
   }
 ]
