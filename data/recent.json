@@ -1,5 +1,12 @@
 [
   {
+    "name": "Spirit In The Sky",
+    "artist": "The Kentucky Headhunters",
+    "url": "https://open.spotify.com/track/1DQm5b0x7SOn22xWxIW2r8",
+    "image": "https://i.scdn.co/image/ab67616d0000b273cfa2cfddf3d28bd2c93e7327",
+    "preview_url": null
+  },
+  {
     "name": "Here's a Quarter (Call Someone Who Cares)",
     "artist": "Travis Tritt",
     "url": "https://open.spotify.com/track/6BTCpaBTxlqGMOl0P6hvvX",
@@ -25,13 +32,6 @@
     "artist": "BlackHawk",
     "url": "https://open.spotify.com/track/7yYWlhU8uy27bLV6gxPcFD",
     "image": "https://i.scdn.co/image/ab67616d0000b27375808eb8759a7a5ee3aa0266",
-    "preview_url": null
-  },
-  {
-    "name": "Queen of Memphis - Remastered Version",
-    "artist": "Confederate Railroad",
-    "url": "https://open.spotify.com/track/59XR99m4eEQQZ7d2hcTogz",
-    "image": "https://i.scdn.co/image/ab67616d0000b27300b39ad9022f3e16f3629461",
     "preview_url": null
   }
 ]
