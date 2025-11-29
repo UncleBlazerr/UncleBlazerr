@@ -7,6 +7,13 @@
     "preview_url": null
   },
   {
+    "name": "Tangled",
+    "artist": "Cindy Robinson",
+    "url": "https://open.spotify.com/track/16IKUZbb64LoX2sOrdxFeb",
+    "image": "https://i.scdn.co/image/ab67616d0000b2735db41540b10ff2ee3533abc1",
+    "preview_url": null
+  },
+  {
     "name": "There Ain't Nothin' Wrong with the Radio",
     "artist": "Aaron Tippin",
     "url": "https://open.spotify.com/track/1hcMA8tQegZyf9OumrFtMT",
@@ -25,13 +32,6 @@
     "artist": "Sammy Kershaw",
     "url": "https://open.spotify.com/track/2oyS4THTUzUxT2lnHGzzIr",
     "image": "https://i.scdn.co/image/ab67616d0000b2735b82a639a05848f834f33c59",
-    "preview_url": null
-  },
-  {
-    "name": "Better Class of Losers",
-    "artist": "Randy Travis",
-    "url": "https://open.spotify.com/track/3EiXWMUIE0bNNo36suPrRQ",
-    "image": "https://i.scdn.co/image/ab67616d0000b2730d0de99dd85a176fafd5554f",
     "preview_url": null
   }
 ]
