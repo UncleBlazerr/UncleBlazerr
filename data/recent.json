@@ -1,5 +1,19 @@
 [
   {
+    "name": "The Crimson",
+    "artist": "Atreyu",
+    "url": "https://open.spotify.com/track/1Huf90j0uhnqpdBLO3ptbq",
+    "image": "https://i.scdn.co/image/ab67616d0000b2736aeef7f54e8e170a138dd773",
+    "preview_url": null
+  },
+  {
+    "name": "You Eclipsed by Me",
+    "artist": "Atreyu",
+    "url": "https://open.spotify.com/track/3ViFhY6aEpz9WTVSmmEXFn",
+    "image": "https://i.scdn.co/image/ab67616d0000b2736aeef7f54e8e170a138dd773",
+    "preview_url": null
+  },
+  {
     "name": "Twist and Shake Dance",
     "artist": "Danny Go!",
     "url": "https://open.spotify.com/track/07JQ74lzqHoJD5WV5SH1Oe",
@@ -18,20 +32,6 @@
     "artist": "Haddaway",
     "url": "https://open.spotify.com/track/0gNRzHp1GsQRQXz7EQa4Ox",
     "image": "https://i.scdn.co/image/ab67616d0000b2739c783e96159db6857816809e",
-    "preview_url": null
-  },
-  {
-    "name": "Watermelon Crawl",
-    "artist": "Tracy Byrd",
-    "url": "https://open.spotify.com/track/3Q9t1A12iUemHTAWnH7PjD",
-    "image": "https://i.scdn.co/image/ab67616d0000b273e1229b124d3f72a9494a4e3b",
-    "preview_url": null
-  },
-  {
-    "name": "Banana Puddin'",
-    "artist": "Southern Culture on the Skids",
-    "url": "https://open.spotify.com/track/47w0bCg60WtegkZYYQZOMd",
-    "image": "https://i.scdn.co/image/ab67616d0000b2739489a4a0b8368896a7691e5c",
     "preview_url": null
   }
 ]
