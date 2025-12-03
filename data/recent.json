@@ -1,5 +1,12 @@
 [
   {
+    "name": "Jake and the Never Land Pirates",
+    "artist": "Nolan North",
+    "url": "https://open.spotify.com/track/0Bi7QrgsoIfyOIr5rScCzS",
+    "image": "https://i.scdn.co/image/ab67616d0000b27320715cb3fd80ca3d95f6de5e",
+    "preview_url": null
+  },
+  {
     "name": "Toy Story 3",
     "artist": "Rick Zieff",
     "url": "https://open.spotify.com/track/2Yf0fbv6Ph0kxTOuqvfWpY",
@@ -24,13 +31,6 @@
     "name": "Weigh Hey Well Done Crew",
     "artist": "The Never Land Pirate Band",
     "url": "https://open.spotify.com/track/0mr6ZmywrRvkj8IaJWhDCj",
-    "image": "https://i.scdn.co/image/ab67616d0000b273356a5a6be1b1c17267f32fd1",
-    "preview_url": null
-  },
-  {
-    "name": "Talk Like a Pirate - From \"Jake and the Never Land Pirates\"/Soundtrack Version",
-    "artist": "The Never Land Pirate Band",
-    "url": "https://open.spotify.com/track/1Zi29x5mS9gE9BbpW10gMJ",
     "image": "https://i.scdn.co/image/ab67616d0000b273356a5a6be1b1c17267f32fd1",
     "preview_url": null
   }
