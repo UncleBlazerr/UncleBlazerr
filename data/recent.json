@@ -1,5 +1,12 @@
 [
   {
+    "name": "The Remembrance Ballad",
+    "artist": "Atreyu",
+    "url": "https://open.spotify.com/track/6NXjfyJogAyX2HhZxOl9U5",
+    "image": "https://i.scdn.co/image/ab67616d0000b2736aeef7f54e8e170a138dd773",
+    "preview_url": null
+  },
+  {
     "name": "The Crimson",
     "artist": "Atreyu",
     "url": "https://open.spotify.com/track/1Huf90j0uhnqpdBLO3ptbq",
@@ -14,24 +21,17 @@
     "preview_url": null
   },
   {
-    "name": "Twist and Shake Dance",
-    "artist": "Danny Go!",
-    "url": "https://open.spotify.com/track/07JQ74lzqHoJD5WV5SH1Oe",
-    "image": "https://i.scdn.co/image/ab67616d0000b273c41a959189d84b1453e43515",
+    "name": "This Flesh a Tomb",
+    "artist": "Atreyu",
+    "url": "https://open.spotify.com/track/4ob9zYEbMn8aG2xxaVK0hD",
+    "image": "https://i.scdn.co/image/ab67616d0000b2736aeef7f54e8e170a138dd773",
     "preview_url": null
   },
   {
-    "name": "This Is Your Night",
-    "artist": "Amber",
-    "url": "https://open.spotify.com/track/6YX75Ps2XsWn9dOzwbqmNV",
-    "image": "https://i.scdn.co/image/ab67616d0000b273324d670a4b77694ffee2fa9c",
-    "preview_url": null
-  },
-  {
-    "name": "What Is Love - Club Mix",
-    "artist": "Haddaway",
-    "url": "https://open.spotify.com/track/0gNRzHp1GsQRQXz7EQa4Ox",
-    "image": "https://i.scdn.co/image/ab67616d0000b2739c783e96159db6857816809e",
+    "name": "Right Side of the Bed",
+    "artist": "Atreyu",
+    "url": "https://open.spotify.com/track/59LEMrpo5r4MSXq2pYvOOf",
+    "image": "https://i.scdn.co/image/ab67616d0000b2736aeef7f54e8e170a138dd773",
     "preview_url": null
   }
 ]
