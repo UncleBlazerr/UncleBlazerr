@@ -1,9 +1,16 @@
 [
   {
-    "name": "Golden Brown - Sped Up Version",
-    "artist": "The Stranglers",
-    "url": "https://open.spotify.com/track/6CC5XSjHTTG3X3MmtLjvXx",
-    "image": "https://i.scdn.co/image/ab67616d0000b2730cf70d72827e4304c0e5a551",
+    "name": "Rammlied",
+    "artist": "Rammstein",
+    "url": "https://open.spotify.com/track/3UCnSaaqDCgtuRo0J8Sxbp",
+    "image": "https://i.scdn.co/image/ab67616d0000b273f35b533187d748e0e6f71f09",
+    "preview_url": null
+  },
+  {
+    "name": "Chubina - Slowed",
+    "artist": "East Duo",
+    "url": "https://open.spotify.com/track/5hphuBmK2LHrQvd6gfc0uX",
+    "image": "https://i.scdn.co/image/ab67616d0000b273fdfceb44fe179b3098bdd6b7",
     "preview_url": null
   },
   {
@@ -18,13 +25,6 @@
     "artist": "The Stranglers",
     "url": "https://open.spotify.com/track/6CC5XSjHTTG3X3MmtLjvXx",
     "image": "https://i.scdn.co/image/ab67616d0000b2730cf70d72827e4304c0e5a551",
-    "preview_url": null
-  },
-  {
-    "name": "Everybody Loves You When You're Dead",
-    "artist": "The Stranglers",
-    "url": "https://open.spotify.com/track/2xWQjZXKIUjkTCnBLw23yL",
-    "image": "https://i.scdn.co/image/ab67616d0000b273a713f9b06accedba5d963d61",
     "preview_url": null
   },
   {
