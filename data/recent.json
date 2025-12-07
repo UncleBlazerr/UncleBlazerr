@@ -1,5 +1,12 @@
 [
   {
+    "name": "New Day (with Iration)",
+    "artist": "Claire Wright, Iration",
+    "url": "https://open.spotify.com/track/5zg5smilzwTiPcJ4EuiyRm",
+    "image": "https://i.scdn.co/image/ab67616d0000b273c82002b43469c38b6e041a3a",
+    "preview_url": null
+  },
+  {
     "name": "Visions (with Stick Figure)",
     "artist": "The Movement, Stick Figure",
     "url": "https://open.spotify.com/track/6VFrBdWj6BjGNeuX3VlmPl",
@@ -25,13 +32,6 @@
     "artist": "Pops, Beach Fly",
     "url": "https://open.spotify.com/track/5u1iXHzud5pmP1tP9Uyx73",
     "image": "https://i.scdn.co/image/ab67616d0000b273294c6caa0fc89529dc933627",
-    "preview_url": null
-  },
-  {
-    "name": "Pay No Mind",
-    "artist": "Rebelution, Unified Highway",
-    "url": "https://open.spotify.com/track/36hdtlZ3njdcD6Iq4YWeR6",
-    "image": "https://i.scdn.co/image/ab67616d0000b2735cbecbae08fe57dbb2adbfbc",
     "preview_url": null
   }
 ]
