@@ -1,5 +1,12 @@
 [
   {
+    "name": "Livin' On Love",
+    "artist": "Alan Jackson",
+    "url": "https://open.spotify.com/track/15gU2OepIEbeNTBbes6pIF",
+    "image": "https://i.scdn.co/image/ab67616d0000b2730ee603bd5cc1836dd36713fc",
+    "preview_url": null
+  },
+  {
     "name": "American Saturday Night",
     "artist": "Brad Paisley",
     "url": "https://open.spotify.com/track/7xJqaCgeteqWPogqjjxkBl",
@@ -25,13 +32,6 @@
     "artist": "Brooks & Dunn",
     "url": "https://open.spotify.com/track/6iKWr2XH1DyT7TQzDZlvzd",
     "image": "https://i.scdn.co/image/ab67616d0000b273cf1e09d6382993798b554242",
-    "preview_url": null
-  },
-  {
-    "name": "My Next Thirty Years",
-    "artist": "Tim McGraw",
-    "url": "https://open.spotify.com/track/7AHw9SfOITU9Q7sj3V5vxV",
-    "image": "https://i.scdn.co/image/ab67616d0000b273674c7a81aa925a9d6071f60c",
     "preview_url": null
   }
 ]
