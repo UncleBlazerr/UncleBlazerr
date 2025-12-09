@@ -1,5 +1,12 @@
 [
   {
+    "name": "Shine",
+    "artist": "Stick Figure",
+    "url": "https://open.spotify.com/track/1QhrlNjzqmqEFW5T5yMFhw",
+    "image": "https://i.scdn.co/image/ab67616d0000b273b051ce304d1eb1a6f340cd20",
+    "preview_url": null
+  },
+  {
     "name": "Sounds Of Summer (with Slightly Stoopid)",
     "artist": "The Movement, Slightly Stoopid",
     "url": "https://open.spotify.com/track/2B1UZhUKvBrRMZ4Er4OMXm",
@@ -25,13 +32,6 @@
     "artist": "The Movement",
     "url": "https://open.spotify.com/track/4R4ToMqCot36ybGoJF4pF6",
     "image": "https://i.scdn.co/image/ab67616d0000b2736df76adbfb54ce254d4df1bd",
-    "preview_url": null
-  },
-  {
-    "name": "Smoke",
-    "artist": "The Movement",
-    "url": "https://open.spotify.com/track/2j5L0FERhrTSNHP42C7gtU",
-    "image": "https://i.scdn.co/image/ab67616d0000b273f47c9dd102db2db4a12e3019",
     "preview_url": null
   }
 ]
