@@ -1,5 +1,19 @@
 [
   {
+    "name": "A Better Man",
+    "artist": "Clint Black",
+    "url": "https://open.spotify.com/track/0dJ5V9MpWexOq1nRDO2JY2",
+    "image": "https://i.scdn.co/image/ab67616d0000b2731a229e85ca3668b0f2174719",
+    "preview_url": null
+  },
+  {
+    "name": "Here's a Quarter (Call Someone Who Cares)",
+    "artist": "Travis Tritt",
+    "url": "https://open.spotify.com/track/6BTCpaBTxlqGMOl0P6hvvX",
+    "image": "https://i.scdn.co/image/ab67616d0000b273de26ff2ffad56769a36b9d4c",
+    "preview_url": null
+  },
+  {
     "name": "Don't Let Our Love Start Slippin' Away",
     "artist": "Vince Gill",
     "url": "https://open.spotify.com/track/2G6pvEfrwrJZS6NgqS3DqX",
@@ -18,20 +32,6 @@
     "artist": "Craig Morgan",
     "url": "https://open.spotify.com/track/19TKY0KksXTyTGhAImxwQ1",
     "image": "https://i.scdn.co/image/ab67616d0000b273ff54a870e2fd78833b2b1a16",
-    "preview_url": null
-  },
-  {
-    "name": "Dust On The Bottle",
-    "artist": "David Lee Murphy",
-    "url": "https://open.spotify.com/track/0Xg68XXMRWzKQvD5S6BFvI",
-    "image": "https://i.scdn.co/image/ab67616d0000b2737883d49cc76d40ae14b6bcf2",
-    "preview_url": null
-  },
-  {
-    "name": "Time Marches On",
-    "artist": "Tracy Lawrence",
-    "url": "https://open.spotify.com/track/2TIEeLrOQrGnO2D2OeDDJu",
-    "image": "https://i.scdn.co/image/ab67616d0000b2733eac04f4db8c45984d4edb0c",
     "preview_url": null
   }
 ]
