@@ -1,23 +1,30 @@
 [
   {
-    "name": "A Better Man",
-    "artist": "Clint Black",
-    "url": "https://open.spotify.com/track/0dJ5V9MpWexOq1nRDO2JY2",
-    "image": "https://i.scdn.co/image/ab67616d0000b2731a229e85ca3668b0f2174719",
+    "name": "Boot Scootin' Boogie",
+    "artist": "Brooks & Dunn",
+    "url": "https://open.spotify.com/track/7Fq9RwQxSn3kW85PrDUf0M",
+    "image": "https://i.scdn.co/image/ab67616d0000b273941001e5ce6bc1272466de29",
     "preview_url": null
   },
   {
-    "name": "Here's a Quarter (Call Someone Who Cares)",
-    "artist": "Travis Tritt",
-    "url": "https://open.spotify.com/track/6BTCpaBTxlqGMOl0P6hvvX",
-    "image": "https://i.scdn.co/image/ab67616d0000b273de26ff2ffad56769a36b9d4c",
+    "name": "Watermelon Crawl",
+    "artist": "Tracy Byrd",
+    "url": "https://open.spotify.com/track/3Q9t1A12iUemHTAWnH7PjD",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e1229b124d3f72a9494a4e3b",
     "preview_url": null
   },
   {
-    "name": "Don't Let Our Love Start Slippin' Away",
-    "artist": "Vince Gill",
-    "url": "https://open.spotify.com/track/2G6pvEfrwrJZS6NgqS3DqX",
-    "image": "https://i.scdn.co/image/ab67616d0000b273fc8c2507067028eea6494628",
+    "name": "Sold (The Grundy County Auction Incident)",
+    "artist": "John Michael Montgomery",
+    "url": "https://open.spotify.com/track/0NLBwQBYJhEM9t3KAMPFVR",
+    "image": "https://i.scdn.co/image/ab67616d0000b273c3fe0ccfeacabfd43e586de3",
+    "preview_url": null
+  },
+  {
+    "name": "Something Like That",
+    "artist": "Tim McGraw",
+    "url": "https://open.spotify.com/track/6leiB1fEsTnVCuPiielde5",
+    "image": "https://i.scdn.co/image/ab67616d0000b273674c7a81aa925a9d6071f60c",
     "preview_url": null
   },
   {
@@ -25,13 +32,6 @@
     "artist": "Tim McGraw",
     "url": "https://open.spotify.com/track/3IvcWWehbBcBR4YZxlGM9R",
     "image": "https://i.scdn.co/image/ab67616d0000b2733069894b5d58159a103dd169",
-    "preview_url": null
-  },
-  {
-    "name": "Redneck Yacht Club",
-    "artist": "Craig Morgan",
-    "url": "https://open.spotify.com/track/19TKY0KksXTyTGhAImxwQ1",
-    "image": "https://i.scdn.co/image/ab67616d0000b273ff54a870e2fd78833b2b1a16",
     "preview_url": null
   }
 ]
