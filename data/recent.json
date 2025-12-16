@@ -1,5 +1,12 @@
 [
   {
+    "name": "Sleight of Hand",
+    "artist": "Parkway Drive",
+    "url": "https://open.spotify.com/track/4629CEGA4gQ065aiuoR32n",
+    "image": "https://i.scdn.co/image/ab67616d0000b273356c88f4aacba39173266b8e",
+    "preview_url": null
+  },
+  {
     "name": "Moon",
     "artist": "The Elovaters",
     "url": "https://open.spotify.com/track/33T0aCAKVuh5MrBJ8LuOOK",
@@ -25,13 +32,6 @@
     "artist": "The Black Dahlia Murder",
     "url": "https://open.spotify.com/track/4jKO9bRVCZpXy66xFeKBzP",
     "image": "https://i.scdn.co/image/ab67616d0000b2734f129e763cfb37a2ba0c7998",
-    "preview_url": null
-  },
-  {
-    "name": "How Soon Is Now? - 2011 Remaster",
-    "artist": "The Smiths",
-    "url": "https://open.spotify.com/track/1YrnDTqvcnUKxAIeXyaEmU",
-    "image": "https://i.scdn.co/image/ab67616d0000b273786b44c75ebf915866523f5b",
     "preview_url": null
   }
 ]
