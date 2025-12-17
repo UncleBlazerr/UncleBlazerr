@@ -1,5 +1,12 @@
 [
   {
+    "name": "Weapon of Choice",
+    "artist": "Fatboy Slim",
+    "url": "https://open.spotify.com/track/08kB9HSfrcIi83rymwgjMz",
+    "image": "https://i.scdn.co/image/ab67616d0000b273bec2d7f1e2e518ccf4af1ce1",
+    "preview_url": null
+  },
+  {
     "name": "Generate",
     "artist": "Eric Prydz",
     "url": "https://open.spotify.com/track/4Dg0FSovv3n8IBS9QMezTp",
@@ -25,13 +32,6 @@
     "artist": "Daft Punk",
     "url": "https://open.spotify.com/track/7cMFjxhbXBpOlais7KMF3j",
     "image": "https://i.scdn.co/image/ab67616d0000b2732c25dad9f8fd54652f7ba5df",
-    "preview_url": null
-  },
-  {
-    "name": "The Phoenix",
-    "artist": "Fall Out Boy",
-    "url": "https://open.spotify.com/track/53AuxddsgPSlqM619nJhSd",
-    "image": "https://i.scdn.co/image/ab67616d0000b27360c84f44c080824ce336e1a1",
     "preview_url": null
   }
 ]
