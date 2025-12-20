@@ -1,5 +1,12 @@
 [
   {
+    "name": "Absolute Power - Live at Wacken",
+    "artist": "Parkway Drive",
+    "url": "https://open.spotify.com/track/2VZ7WsgzXX6ob5ZHn9T85D",
+    "image": "https://i.scdn.co/image/ab67616d0000b273be666142622fe4c727df2d12",
+    "preview_url": null
+  },
+  {
     "name": "Cars",
     "artist": "David Jeremiah",
     "url": "https://open.spotify.com/track/4xZ2V2v1et5VjIEluggjU6",
@@ -25,13 +32,6 @@
     "artist": "Gene Autry",
     "url": "https://open.spotify.com/track/1dtIaSlyrLI04sqYa8nLyN",
     "image": "https://i.scdn.co/image/ab67616d0000b27361b80b3738446f5eedc3610d",
-    "preview_url": null
-  },
-  {
-    "name": "Cars",
-    "artist": "David Jeremiah",
-    "url": "https://open.spotify.com/track/4xZ2V2v1et5VjIEluggjU6",
-    "image": "https://i.scdn.co/image/ab67616d0000b2739c671f56c381c413d9e60087",
     "preview_url": null
   }
 ]
