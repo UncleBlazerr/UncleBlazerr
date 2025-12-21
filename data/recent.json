@@ -1,5 +1,12 @@
 [
   {
+    "name": "John Deere Green",
+    "artist": "Joe Diffie",
+    "url": "https://open.spotify.com/track/2evFJQfQVcDEXyOiyEV6OW",
+    "image": "https://i.scdn.co/image/ab67616d0000b2735e6a1d3c9c31c7d14b61097f",
+    "preview_url": null
+  },
+  {
     "name": "Better Class of Losers",
     "artist": "Randy Travis",
     "url": "https://open.spotify.com/track/3EiXWMUIE0bNNo36suPrRQ",
@@ -18,13 +25,6 @@
     "artist": "Brooks & Dunn",
     "url": "https://open.spotify.com/track/3z7aMSuKqrPQluiJro3Gqt",
     "image": "https://i.scdn.co/image/ab67616d0000b273bd31fd7464409d295f51cb68",
-    "preview_url": null
-  },
-  {
-    "name": "She's In Love With The Boy - Single Version",
-    "artist": "Trisha Yearwood",
-    "url": "https://open.spotify.com/track/2ulBBx6YQ3qY3ci34RadtN",
-    "image": "https://i.scdn.co/image/ab67616d0000b273a8635c8965518a6fb5eb160a",
     "preview_url": null
   },
   {
