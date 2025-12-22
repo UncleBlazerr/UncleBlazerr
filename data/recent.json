@@ -1,5 +1,19 @@
 [
   {
+    "name": "The Beautiful People",
+    "artist": "Marilyn Manson",
+    "url": "https://open.spotify.com/track/2aIB1CdRRG7YLBu9hNw9nR",
+    "image": "https://i.scdn.co/image/ab67616d0000b273c61d3a663bd18fe8cd97c947",
+    "preview_url": null
+  },
+  {
+    "name": "Lying from You",
+    "artist": "Linkin Park",
+    "url": "https://open.spotify.com/track/3BmjRmFTESgWZLPSVGp8aG",
+    "image": "https://i.scdn.co/image/ab67616d0000b27310b4bd659193bc34476e066f",
+    "preview_url": null
+  },
+  {
     "name": "Bleed It Out",
     "artist": "Linkin Park",
     "url": "https://open.spotify.com/track/0UFDKFqW2oGspYeYqo9wjA",
@@ -18,20 +32,6 @@
     "artist": "Rammstein",
     "url": "https://open.spotify.com/track/1SlMYQmLe0yNEvBIfaPTAW",
     "image": "https://i.scdn.co/image/ab67616d0000b27325d8b7c6feee0c8d6593d606",
-    "preview_url": null
-  },
-  {
-    "name": "Papercut",
-    "artist": "Linkin Park",
-    "url": "https://open.spotify.com/track/1Vej0qeQ3ioKwpI6FUbRv1",
-    "image": "https://i.scdn.co/image/ab67616d0000b273e2f039481babe23658fc719a",
-    "preview_url": null
-  },
-  {
-    "name": "Ausländer",
-    "artist": "Rammstein",
-    "url": "https://open.spotify.com/track/7j43FohbLVulScL7S9sQZk",
-    "image": "https://i.scdn.co/image/ab67616d0000b27302add2c77fb6999e311a3248",
     "preview_url": null
   }
 ]
