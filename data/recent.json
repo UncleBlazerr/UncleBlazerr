@@ -1,37 +1,37 @@
 [
   {
-    "name": "The Beautiful People",
-    "artist": "Marilyn Manson",
-    "url": "https://open.spotify.com/track/2aIB1CdRRG7YLBu9hNw9nR",
-    "image": "https://i.scdn.co/image/ab67616d0000b273c61d3a663bd18fe8cd97c947",
+    "name": "Boneyards",
+    "artist": "Parkway Drive",
+    "url": "https://open.spotify.com/track/0TIef4jRYHONrw4BVvDGT0",
+    "image": "https://i.scdn.co/image/ab67616d0000b273248c3d99d296604ecd4f2c89",
     "preview_url": null
   },
   {
-    "name": "Lying from You",
+    "name": "Idols and Anchors",
+    "artist": "Parkway Drive",
+    "url": "https://open.spotify.com/track/4kJ5xTh1TyX7ECAOfKJ9Je",
+    "image": "https://i.scdn.co/image/ab67616d0000b273248c3d99d296604ecd4f2c89",
+    "preview_url": null
+  },
+  {
+    "name": "Dragula",
+    "artist": "Rob Zombie",
+    "url": "https://open.spotify.com/track/6Nm8h73ycDG2saCnZV8poF",
+    "image": "https://i.scdn.co/image/ab67616d0000b27313d4adf9e4b938f88266f4e4",
+    "preview_url": null
+  },
+  {
+    "name": "Steh auf",
+    "artist": "Lindemann",
+    "url": "https://open.spotify.com/track/2cwwUYTPOEfz0pam6tiVZz",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e675d7e4970918b5e0fb3052",
+    "preview_url": null
+  },
+  {
+    "name": "A Place for My Head",
     "artist": "Linkin Park",
-    "url": "https://open.spotify.com/track/3BmjRmFTESgWZLPSVGp8aG",
-    "image": "https://i.scdn.co/image/ab67616d0000b27310b4bd659193bc34476e066f",
-    "preview_url": null
-  },
-  {
-    "name": "Bleed It Out",
-    "artist": "Linkin Park",
-    "url": "https://open.spotify.com/track/0UFDKFqW2oGspYeYqo9wjA",
-    "image": "https://i.scdn.co/image/ab67616d0000b2736e996745f2c7b8036abef213",
-    "preview_url": null
-  },
-  {
-    "name": "Rammlied",
-    "artist": "Rammstein",
-    "url": "https://open.spotify.com/track/3UCnSaaqDCgtuRo0J8Sxbp",
-    "image": "https://i.scdn.co/image/ab67616d0000b273f35b533187d748e0e6f71f09",
-    "preview_url": null
-  },
-  {
-    "name": "Ich will",
-    "artist": "Rammstein",
-    "url": "https://open.spotify.com/track/1SlMYQmLe0yNEvBIfaPTAW",
-    "image": "https://i.scdn.co/image/ab67616d0000b27325d8b7c6feee0c8d6593d606",
+    "url": "https://open.spotify.com/track/5rAxhWcgFng3s570sGO2F8",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e2f039481babe23658fc719a",
     "preview_url": null
   }
 ]
