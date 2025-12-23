@@ -1,5 +1,26 @@
 [
   {
+    "name": "Wolves Cry",
+    "artist": "Bryan Martin",
+    "url": "https://open.spotify.com/track/7yyRhjoCsdt5dDpFz2CImD",
+    "image": "https://i.scdn.co/image/ab67616d0000b273eda625668a424f4ee44e7998",
+    "preview_url": null
+  },
+  {
+    "name": "Robot Energy!",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/6tAZ0FghqDG3pwcau3vonO",
+    "image": "https://i.scdn.co/image/ab67616d0000b273bdcab7943c065664cb553f2f",
+    "preview_url": null
+  },
+  {
+    "name": "Magnet Mania!",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/29BvKOZz1KNd0aHKNHeAjB",
+    "image": "https://i.scdn.co/image/ab67616d0000b273bdcab7943c065664cb553f2f",
+    "preview_url": null
+  },
+  {
     "name": "Romance Is Dead",
     "artist": "Parkway Drive",
     "url": "https://open.spotify.com/track/6Q9XnZPl7qbvvYV3UBz6bP",
@@ -11,27 +32,6 @@
     "artist": "Parkway Drive",
     "url": "https://open.spotify.com/track/0TIef4jRYHONrw4BVvDGT0",
     "image": "https://i.scdn.co/image/ab67616d0000b273248c3d99d296604ecd4f2c89",
-    "preview_url": null
-  },
-  {
-    "name": "Idols and Anchors",
-    "artist": "Parkway Drive",
-    "url": "https://open.spotify.com/track/4kJ5xTh1TyX7ECAOfKJ9Je",
-    "image": "https://i.scdn.co/image/ab67616d0000b273248c3d99d296604ecd4f2c89",
-    "preview_url": null
-  },
-  {
-    "name": "Dragula",
-    "artist": "Rob Zombie",
-    "url": "https://open.spotify.com/track/6Nm8h73ycDG2saCnZV8poF",
-    "image": "https://i.scdn.co/image/ab67616d0000b27313d4adf9e4b938f88266f4e4",
-    "preview_url": null
-  },
-  {
-    "name": "Steh auf",
-    "artist": "Lindemann",
-    "url": "https://open.spotify.com/track/2cwwUYTPOEfz0pam6tiVZz",
-    "image": "https://i.scdn.co/image/ab67616d0000b273e675d7e4970918b5e0fb3052",
     "preview_url": null
   }
 ]
