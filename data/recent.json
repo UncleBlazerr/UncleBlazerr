@@ -1,5 +1,19 @@
 [
   {
+    "name": "Livin' On Love",
+    "artist": "Alan Jackson",
+    "url": "https://open.spotify.com/track/15gU2OepIEbeNTBbes6pIF",
+    "image": "https://i.scdn.co/image/ab67616d0000b2730ee603bd5cc1836dd36713fc",
+    "preview_url": null
+  },
+  {
+    "name": "Livin' On Love",
+    "artist": "Alan Jackson",
+    "url": "https://open.spotify.com/track/15gU2OepIEbeNTBbes6pIF",
+    "image": "https://i.scdn.co/image/ab67616d0000b2730ee603bd5cc1836dd36713fc",
+    "preview_url": null
+  },
+  {
     "name": "Better Class of Losers",
     "artist": "Randy Travis",
     "url": "https://open.spotify.com/track/3EiXWMUIE0bNNo36suPrRQ",
@@ -18,20 +32,6 @@
     "artist": "Joe Diffie",
     "url": "https://open.spotify.com/track/2evFJQfQVcDEXyOiyEV6OW",
     "image": "https://i.scdn.co/image/ab67616d0000b2735e6a1d3c9c31c7d14b61097f",
-    "preview_url": null
-  },
-  {
-    "name": "John Deere Green",
-    "artist": "Joe Diffie",
-    "url": "https://open.spotify.com/track/2evFJQfQVcDEXyOiyEV6OW",
-    "image": "https://i.scdn.co/image/ab67616d0000b2735e6a1d3c9c31c7d14b61097f",
-    "preview_url": null
-  },
-  {
-    "name": "Should've Been A Cowboy - VAVO Remix",
-    "artist": "Toby Keith, VAVO",
-    "url": "https://open.spotify.com/track/3dhv6Ng961tNRvX9LNJz9y",
-    "image": "https://i.scdn.co/image/ab67616d0000b273878df0926f270c44ba05ca43",
     "preview_url": null
   }
 ]
