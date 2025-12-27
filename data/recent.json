@@ -1,5 +1,19 @@
 [
   {
+    "name": "Better Class of Losers",
+    "artist": "Randy Travis",
+    "url": "https://open.spotify.com/track/3EiXWMUIE0bNNo36suPrRQ",
+    "image": "https://i.scdn.co/image/ab67616d0000b2730d0de99dd85a176fafd5554f",
+    "preview_url": null
+  },
+  {
+    "name": "Boot Scootin' Boogie",
+    "artist": "Brooks & Dunn",
+    "url": "https://open.spotify.com/track/7Fq9RwQxSn3kW85PrDUf0M",
+    "image": "https://i.scdn.co/image/ab67616d0000b273941001e5ce6bc1272466de29",
+    "preview_url": null
+  },
+  {
     "name": "John Deere Green",
     "artist": "Joe Diffie",
     "url": "https://open.spotify.com/track/2evFJQfQVcDEXyOiyEV6OW",
@@ -18,20 +32,6 @@
     "artist": "Toby Keith, VAVO",
     "url": "https://open.spotify.com/track/3dhv6Ng961tNRvX9LNJz9y",
     "image": "https://i.scdn.co/image/ab67616d0000b273878df0926f270c44ba05ca43",
-    "preview_url": null
-  },
-  {
-    "name": "Watermelon Crawl",
-    "artist": "Tracy Byrd",
-    "url": "https://open.spotify.com/track/3Q9t1A12iUemHTAWnH7PjD",
-    "image": "https://i.scdn.co/image/ab67616d0000b273e1229b124d3f72a9494a4e3b",
-    "preview_url": null
-  },
-  {
-    "name": "Boot Scootin' Boogie",
-    "artist": "Brooks & Dunn",
-    "url": "https://open.spotify.com/track/6iKWr2XH1DyT7TQzDZlvzd",
-    "image": "https://i.scdn.co/image/ab67616d0000b273cf1e09d6382993798b554242",
     "preview_url": null
   }
 ]
