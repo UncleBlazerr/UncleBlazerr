@@ -1,5 +1,19 @@
 [
   {
+    "name": "Wagon Ride",
+    "artist": "Bluey, Joff Bush",
+    "url": "https://open.spotify.com/track/5A7NglEPKMeCu7y8AJmzAD",
+    "image": "https://i.scdn.co/image/ab67616d0000b27319ae9f2ac27cfa4de951e56e",
+    "preview_url": null
+  },
+  {
+    "name": "The Cowboy Dance - Hyperspeed Remix",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/03Go6YIJdqFx06WfHRHmQR",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e1c3cc0aa2c03d53781582c4",
+    "preview_url": null
+  },
+  {
     "name": "Electric Avenue",
     "artist": "Eddy Grant",
     "url": "https://open.spotify.com/track/5WeuqW7eiIj27OiB1hV2BF",
@@ -7,31 +21,17 @@
     "preview_url": null
   },
   {
-    "name": "Beat City (From \"Ferris Bueller's Day Off\")",
-    "artist": "The Flowerpot Men",
-    "url": "https://open.spotify.com/track/3Whgdrt7mGtx4w5cZ1mhTH",
-    "image": "https://i.scdn.co/image/ab67616d0000b273b768974d9bb29a67efcf77b0",
+    "name": "Electric Avenue",
+    "artist": "Eddy Grant",
+    "url": "https://open.spotify.com/track/5WeuqW7eiIj27OiB1hV2BF",
+    "image": "https://i.scdn.co/image/ab67616d0000b27311541f506b9c9b7b086ce332",
     "preview_url": null
   },
   {
-    "name": "Dance Mode",
-    "artist": "Bluey, Joff Bush",
-    "url": "https://open.spotify.com/track/34oa5y5p5SyWk7GfjdeNJY",
-    "image": "https://i.scdn.co/image/ab67616d0000b2731ccfea3f92d87379bcd39489",
-    "preview_url": null
-  },
-  {
-    "name": "I Love Ice Cream! (La Cucaracha Song)",
-    "artist": "Steve and Maggie",
-    "url": "https://open.spotify.com/track/6wjtt9qNtLCLuGKcJDHzgI",
-    "image": "https://i.scdn.co/image/ab67616d0000b2737a914750a05a7ebdbb7011fd",
-    "preview_url": null
-  },
-  {
-    "name": "The Millipede March",
-    "artist": "Danny Go!",
-    "url": "https://open.spotify.com/track/6oca6aWQaiyt8mZj0ApidA",
-    "image": "https://i.scdn.co/image/ab67616d0000b2731468429aad9cc2f06fd4987c",
+    "name": "Electric Avenue",
+    "artist": "Eddy Grant",
+    "url": "https://open.spotify.com/track/5WeuqW7eiIj27OiB1hV2BF",
+    "image": "https://i.scdn.co/image/ab67616d0000b27311541f506b9c9b7b086ce332",
     "preview_url": null
   }
 ]
