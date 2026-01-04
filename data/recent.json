@@ -1,5 +1,12 @@
 [
   {
+    "name": "In the Mood for Food! - Cooking Dance",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/6h4flHBxBSIjeWiLI6tTu6",
+    "image": "https://i.scdn.co/image/ab67616d0000b2733ba4b430351971e48b6a735f",
+    "preview_url": null
+  },
+  {
     "name": "The Skeleton Shake",
     "artist": "Danny Go!",
     "url": "https://open.spotify.com/track/0c6Ljz58jgF8X4FPAN544F",
@@ -25,13 +32,6 @@
     "artist": "Danny Go!",
     "url": "https://open.spotify.com/track/01hdETjucKH5ZrB4vkUqwV",
     "image": "https://i.scdn.co/image/ab67616d0000b2731540c8a29323d9656eaea749",
-    "preview_url": null
-  },
-  {
-    "name": "The Claw (Pachelbel's Canon)",
-    "artist": "Bluey, Marly Luske, Joff Bush",
-    "url": "https://open.spotify.com/track/2RpIM5fRYM5hJbFmkkhqXC",
-    "image": "https://i.scdn.co/image/ab67616d0000b27319ae9f2ac27cfa4de951e56e",
     "preview_url": null
   }
 ]
