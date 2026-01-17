@@ -1,5 +1,12 @@
 [
   {
+    "name": "Never Going Home",
+    "artist": "Kungs",
+    "url": "https://open.spotify.com/track/2fuWIFyY452wmNOoT32EB8",
+    "image": "https://i.scdn.co/image/ab67616d0000b2736fe64a6925eacbe9462f69de",
+    "preview_url": null
+  },
+  {
     "name": "Roses - Imanbek Remix",
     "artist": "SAINt JHN, Imanbek",
     "url": "https://open.spotify.com/track/72GVdRHK49beKrC1NqRCqj",
@@ -25,13 +32,6 @@
     "artist": "Tame Impala",
     "url": "https://open.spotify.com/track/52ojopYMUzeNcudsoz7O9D",
     "image": "https://i.scdn.co/image/ab67616d0000b2739e1cfc756886ac782e363d79",
-    "preview_url": null
-  },
-  {
-    "name": "Way of Life (with Slightly Stoopid)",
-    "artist": "Stick Figure, Slightly Stoopid",
-    "url": "https://open.spotify.com/track/6kTfQwJJGDimJxFLgUTyfa",
-    "image": "https://i.scdn.co/image/ab67616d0000b2739550e26961358efe32cd89ac",
     "preview_url": null
   }
 ]
