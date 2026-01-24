@@ -1,5 +1,12 @@
 [
   {
+    "name": "Isis",
+    "artist": "Joyner Lucas, Logic",
+    "url": "https://open.spotify.com/track/36TO60sxDduIsO3xH8IcUh",
+    "image": "https://i.scdn.co/image/ab67616d0000b27319cd25731b71500a8bbecb13",
+    "preview_url": null
+  },
+  {
     "name": "Nightmare",
     "artist": "Offset, Metro Boomin",
     "url": "https://open.spotify.com/track/7LAhKXDNWwq3CmnFP3UIOP",
@@ -25,13 +32,6 @@
     "artist": "Stick Figure",
     "url": "https://open.spotify.com/track/4BG3BJjZ6g2tMOiFaawWEP",
     "image": "https://i.scdn.co/image/ab67616d0000b273d05956a2233c7be9340ae85b",
-    "preview_url": null
-  },
-  {
-    "name": "Mykonos",
-    "artist": "Fleet Foxes",
-    "url": "https://open.spotify.com/track/3Ck96jIZdVzpWbbZ6mojsE",
-    "image": "https://i.scdn.co/image/ab67616d0000b2734a8854d880d67850e1c7b98c",
     "preview_url": null
   }
 ]
