@@ -1,5 +1,12 @@
 [
   {
+    "name": "Atropos",
+    "artist": "Periphery",
+    "url": "https://open.spotify.com/track/3oGlG3Q8CF3Ms5DbX16jiN",
+    "image": "https://i.scdn.co/image/ab67616d0000b2734bb4c2c3e863c9bd5c34f295",
+    "preview_url": null
+  },
+  {
     "name": "Miss You - Bonus Track",
     "artist": "Oliver Tree, Robin Schulz",
     "url": "https://open.spotify.com/track/1ypwNj8eK2qAMDEs4EiIIX",
@@ -25,13 +32,6 @@
     "artist": "PAIN",
     "url": "https://open.spotify.com/track/1gUq6SezLS3lc7KxBZaA3A",
     "image": "https://i.scdn.co/image/ab67616d0000b273c339c73a778abc29533b9b31",
-    "preview_url": null
-  },
-  {
-    "name": "Pride",
-    "artist": "Soil",
-    "url": "https://open.spotify.com/track/7hbidev4v8qluSwdSqoxHH",
-    "image": "https://i.scdn.co/image/ab67616d0000b2735fcd534009d11f77036afc93",
     "preview_url": null
   }
 ]
