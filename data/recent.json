@@ -1,5 +1,12 @@
 [
   {
+    "name": "The Weapon Pt. II",
+    "artist": "Mizery",
+    "url": "https://open.spotify.com/track/2nUWdoAXkRdZj4ssbrbK81",
+    "image": "https://i.scdn.co/image/ab67616d0000b2737ddf6a17f4f53f1164af0b68",
+    "preview_url": null
+  },
+  {
     "name": "Never A God",
     "artist": "Heathen",
     "url": "https://open.spotify.com/track/50CHkHFGDGAUbXsrqON5kR",
@@ -25,13 +32,6 @@
     "artist": "Haste The Day",
     "url": "https://open.spotify.com/track/5xxXjTLApETkmNiFHyksac",
     "image": "https://i.scdn.co/image/ab67616d0000b2736b4708cedf7ae190a1ec5526",
-    "preview_url": null
-  },
-  {
-    "name": "Papa Mama Loca Pipa",
-    "artist": "The Minions",
-    "url": "https://open.spotify.com/track/1WbZ7ZmDVARABHF2isuWF7",
-    "image": "https://i.scdn.co/image/ab67616d0000b273b4910b03d64de42d39df86e8",
     "preview_url": null
   }
 ]
