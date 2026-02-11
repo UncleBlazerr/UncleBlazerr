@@ -1,37 +1,37 @@
 [
   {
-    "name": "Y.M.C.A.",
+    "name": "Minions Through Time",
+    "artist": "Heitor Pereira",
+    "url": "https://open.spotify.com/track/12dG0EFVRHyKXO4q3BwVr6",
+    "image": "https://i.scdn.co/image/ab67616d0000b2732491486e0c8c1df2323c2541",
+    "preview_url": null
+  },
+  {
+    "name": "Revolution",
     "artist": "The Minions",
-    "url": "https://open.spotify.com/track/45WZ2N9hK3b7KhOECCUGkh",
-    "image": "https://i.scdn.co/image/ab67616d0000b2737d15f4754a70b55dac6cd56e",
+    "url": "https://open.spotify.com/track/0ndkzkEd6LHSndLmRsEziR",
+    "image": "https://i.scdn.co/image/ab67616d0000b2732491486e0c8c1df2323c2541",
     "preview_url": null
   },
   {
-    "name": "Papaya - Vaya Papayas",
-    "artist": "The Minions, Juan Alcaraz",
-    "url": "https://open.spotify.com/track/3ELQDaxdo2J6KIL7oW7Xyn",
-    "image": "https://i.scdn.co/image/ab67616d0000b273718e122fe3c8da31d2665262",
+    "name": "Theme from the Monkees",
+    "artist": "The Minions",
+    "url": "https://open.spotify.com/track/5K0tGDDb6F5YFoywrHXOlf",
+    "image": "https://i.scdn.co/image/ab67616d0000b2732491486e0c8c1df2323c2541",
     "preview_url": null
   },
   {
-    "name": "Sleeping Beauty",
-    "artist": "Cindy Robinson",
-    "url": "https://open.spotify.com/track/5igPvKQ6hLqSVLGibysbSw",
-    "image": "https://i.scdn.co/image/ab67616d0000b27309943aab3112d8823f8ffb43",
+    "name": "Hair",
+    "artist": "The Minions",
+    "url": "https://open.spotify.com/track/0ufMgyci5BJrFzZFxFjCuA",
+    "image": "https://i.scdn.co/image/ab67616d0000b2732491486e0c8c1df2323c2541",
     "preview_url": null
   },
   {
-    "name": "Golden Brown",
-    "artist": "The Stranglers",
-    "url": "https://open.spotify.com/track/5GpfyJrKHJI36jDKtQiyGN",
-    "image": "https://i.scdn.co/image/ab67616d0000b2730cf70d72827e4304c0e5a551",
-    "preview_url": null
-  },
-  {
-    "name": "The Weapon Pt. II",
-    "artist": "Mizery",
-    "url": "https://open.spotify.com/track/2nUWdoAXkRdZj4ssbrbK81",
-    "image": "https://i.scdn.co/image/ab67616d0000b2737ddf6a17f4f53f1164af0b68",
+    "name": "Despicable Me",
+    "artist": "Pharrell Williams",
+    "url": "https://open.spotify.com/track/2EOMe4XAS7U6UA1mhDs9tP",
+    "image": "https://i.scdn.co/image/ab67616d0000b273ef2e259ee0b34f61bea33b49",
     "preview_url": null
   }
 ]
