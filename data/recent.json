@@ -1,5 +1,19 @@
 [
   {
+    "name": "The Stomp Clap Dance Song",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/6eUC9FU6VauzxWN7sv7CgD",
+    "image": "https://i.scdn.co/image/ab67616d0000b273a40712e6f3d3f54ded165109",
+    "preview_url": null
+  },
+  {
+    "name": "The Slip and Slide Dance",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/10MNr7vrVSgDHLl1YagfZr",
+    "image": "https://i.scdn.co/image/ab67616d0000b2731fc7c05d8053494a8a2748bb",
+    "preview_url": null
+  },
+  {
     "name": "Dancin (feat. Luvli) - Krono Remix",
     "artist": "Aaron Smith, Krono, Luvli",
     "url": "https://open.spotify.com/track/6WkJ2OK163XXS2oARUC9JM",
@@ -18,20 +32,6 @@
     "artist": "Steve Earle",
     "url": "https://open.spotify.com/track/7fF6Af2M3vL4IUtE8cMy6G",
     "image": "https://i.scdn.co/image/ab67616d0000b273a352d81e0fc0474246038ddb",
-    "preview_url": null
-  },
-  {
-    "name": "Mercury Blues",
-    "artist": "Alan Jackson",
-    "url": "https://open.spotify.com/track/48JlBoXcuOj8hDDgbaZUxg",
-    "image": "https://i.scdn.co/image/ab67616d0000b273933cf67cacfab71afa20c6c4",
-    "preview_url": null
-  },
-  {
-    "name": "Catch All the Fish",
-    "artist": "Brad Paisley",
-    "url": "https://open.spotify.com/track/12FaKWnF6BbXwNeLRlvhvk",
-    "image": "https://i.scdn.co/image/ab67616d0000b273e6653e0a3279936562574def",
     "preview_url": null
   }
 ]
