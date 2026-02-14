@@ -1,5 +1,19 @@
 [
   {
+    "name": "Dancin (feat. Luvli) - Krono Remix",
+    "artist": "Aaron Smith, Krono, Luvli",
+    "url": "https://open.spotify.com/track/6WkJ2OK163XXS2oARUC9JM",
+    "image": "https://i.scdn.co/image/ab67616d0000b273f7a3a5656060030a0d24855c",
+    "preview_url": null
+  },
+  {
+    "name": "I'm An Easy Rider",
+    "artist": "Johnny Cash",
+    "url": "https://open.spotify.com/track/2WP5GQFo9Uo04I4BwDjUlJ",
+    "image": "https://i.scdn.co/image/ab67616d0000b273d50af512dee835bea07eb908",
+    "preview_url": null
+  },
+  {
     "name": "Feel Alright",
     "artist": "Steve Earle",
     "url": "https://open.spotify.com/track/7fF6Af2M3vL4IUtE8cMy6G",
@@ -18,20 +32,6 @@
     "artist": "Brad Paisley",
     "url": "https://open.spotify.com/track/12FaKWnF6BbXwNeLRlvhvk",
     "image": "https://i.scdn.co/image/ab67616d0000b273e6653e0a3279936562574def",
-    "preview_url": null
-  },
-  {
-    "name": "Brand New Man - with Luke Combs",
-    "artist": "Brooks & Dunn, Luke Combs",
-    "url": "https://open.spotify.com/track/001UkMQHw4zXfFNdKpwXAF",
-    "image": "https://i.scdn.co/image/ab67616d0000b27304b298bb05d09122c32f23f8",
-    "preview_url": null
-  },
-  {
-    "name": "Hillbilly Shoes",
-    "artist": "Montgomery Gentry",
-    "url": "https://open.spotify.com/track/0kJeo33oWW6Nx4tkUNPshJ",
-    "image": "https://i.scdn.co/image/ab67616d0000b2737579d65e5a0716d8d0527806",
     "preview_url": null
   }
 ]
