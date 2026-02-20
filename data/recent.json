@@ -1,5 +1,12 @@
 [
   {
+    "name": "Black Lights",
+    "artist": "Algorhythm",
+    "url": "https://open.spotify.com/track/7GcRrfDer8y3lmuWkqRXBl",
+    "image": "https://i.scdn.co/image/ab67616d0000b273c0b129ad8f331254d2484138",
+    "preview_url": null
+  },
+  {
     "name": "Fire on the Horizon",
     "artist": "Stick Figure",
     "url": "https://open.spotify.com/track/7mnk9W0umx7q4Vo4FjtOot",
@@ -24,13 +31,6 @@
     "name": "Bubbly Blue",
     "artist": "The Never Land Pirate Band",
     "url": "https://open.spotify.com/track/4gHxqUPOP4S4HSfBmBkmYN",
-    "image": "https://i.scdn.co/image/ab67616d0000b273fe3a8c12f23e656e8e28e33a",
-    "preview_url": null
-  },
-  {
-    "name": "Pirate Island Hideout",
-    "artist": "The Never Land Pirate Band",
-    "url": "https://open.spotify.com/track/5R5AyonP1reg1KLuE2au7C",
     "image": "https://i.scdn.co/image/ab67616d0000b273fe3a8c12f23e656e8e28e33a",
     "preview_url": null
   }
