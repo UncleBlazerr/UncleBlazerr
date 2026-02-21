@@ -1,5 +1,26 @@
 [
   {
+    "name": "Cadillac Ranch",
+    "artist": "Chris LeDoux",
+    "url": "https://open.spotify.com/track/2Ut5iHpzUHd0V37bpJqUlU",
+    "image": "https://i.scdn.co/image/ab67616d0000b2738ce118912ecdfb6db9059850",
+    "preview_url": null
+  },
+  {
+    "name": "Big Bear",
+    "artist": "Steak",
+    "url": "https://open.spotify.com/track/0OcfoydaXAuEMbkZL6FLA1",
+    "image": "https://i.scdn.co/image/ab67616d0000b273945ccee848906b7891f2b199",
+    "preview_url": null
+  },
+  {
+    "name": "Manly Man - Line Dance Remix",
+    "artist": "Rednex",
+    "url": "https://open.spotify.com/track/2MF3k09MsCVKDhWKc6G2m8",
+    "image": "https://i.scdn.co/image/ab67616d0000b273ca492e866d431f4fdc7df8c4",
+    "preview_url": null
+  },
+  {
     "name": "(Ghost) Riders in the Sky - Live at Nassau Coliseum, Uniondale, NY - March 1990",
     "artist": "The Highwaymen, Willie Nelson, Johnny Cash, Waylon Jennings, Kris Kristofferson",
     "url": "https://open.spotify.com/track/3ST1SVHTxxiGodhUeASN3h",
@@ -11,27 +32,6 @@
     "artist": "Sawyer Brown",
     "url": "https://open.spotify.com/track/4OCFCX4RSZl8esUMtt3muO",
     "image": "https://i.scdn.co/image/ab67616d0000b273e1c5a7d2843465aed8a0bdc7",
-    "preview_url": null
-  },
-  {
-    "name": "A Little Less Talk And A Lot More Action",
-    "artist": "Toby Keith",
-    "url": "https://open.spotify.com/track/267pym8JqsQQdIs7dadMJR",
-    "image": "https://i.scdn.co/image/ab67616d0000b2739b3b9e4898eb80d8d8cbab8a",
-    "preview_url": null
-  },
-  {
-    "name": "She Thinks My Tractor's Sexy",
-    "artist": "Kenny Chesney",
-    "url": "https://open.spotify.com/track/3QV7NYkrmV0Q0IHdFJw9hO",
-    "image": "https://i.scdn.co/image/ab67616d0000b27364a63b96729180030ad93871",
-    "preview_url": null
-  },
-  {
-    "name": "If I Could Make a Living",
-    "artist": "Clay Walker",
-    "url": "https://open.spotify.com/track/7njoWVpJbAiTkyT6rKwbze",
-    "image": "https://i.scdn.co/image/ab67616d0000b273e9ea7a96fdd9d099de516d16",
     "preview_url": null
   }
 ]
