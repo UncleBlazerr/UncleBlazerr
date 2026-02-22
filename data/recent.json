@@ -1,5 +1,12 @@
 [
   {
+    "name": "Gone Country",
+    "artist": "Alan Jackson",
+    "url": "https://open.spotify.com/track/6IEIPevuDocD80PovsX6kN",
+    "image": "https://i.scdn.co/image/ab67616d0000b2730ee603bd5cc1836dd36713fc",
+    "preview_url": null
+  },
+  {
     "name": "Doubleback - Extended Version",
     "artist": "Alan Silvestri, Billy F Gibbons, Dusty Hill, Frank Beard",
     "url": "https://open.spotify.com/track/4kwWZUZ4YwX3BPs0O8BkYx",
@@ -25,13 +32,6 @@
     "artist": "Brad Paisley",
     "url": "https://open.spotify.com/track/6A426nfNHDuTDs1uY0W0NF",
     "image": "https://i.scdn.co/image/ab67616d0000b273f8be6a6e73ff1219404c7a27",
-    "preview_url": null
-  },
-  {
-    "name": "Feel Alright",
-    "artist": "Steve Earle",
-    "url": "https://open.spotify.com/track/7fF6Af2M3vL4IUtE8cMy6G",
-    "image": "https://i.scdn.co/image/ab67616d0000b273a352d81e0fc0474246038ddb",
     "preview_url": null
   }
 ]
