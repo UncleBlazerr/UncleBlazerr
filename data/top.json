@@ -14,13 +14,6 @@
     "preview_url": null
   },
   {
-    "name": "The Gingerbread Cookie Dance",
-    "artist": "Danny Go!",
-    "url": "https://open.spotify.com/track/4RG6DnenjlsDjM6jYB6QYz",
-    "image": "https://i.scdn.co/image/ab67616d0000b2739612822df7cc9db804cc2e16",
-    "preview_url": null
-  },
-  {
     "name": "Too Late (with Jared Watson of Dirty Heads)",
     "artist": "Shwayze, Dirty Heads",
     "url": "https://open.spotify.com/track/6EBM66haIsDCPffZrIumUH",
@@ -32,6 +25,13 @@
     "artist": "Danny Go!",
     "url": "https://open.spotify.com/track/4q0MbjZR7Aagh3IEEzCsxN",
     "image": "https://i.scdn.co/image/ab67616d0000b273f64aa4f8d26605e9ff01a63d",
+    "preview_url": null
+  },
+  {
+    "name": "Gorilla Smash!",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/1Q3Qq6NSvtl8XcAAjKXkC2",
+    "image": "https://i.scdn.co/image/ab67616d0000b2732a77affe9b6caa12003c48b8",
     "preview_url": null
   }
 ]
