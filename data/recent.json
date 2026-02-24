@@ -1,9 +1,23 @@
 [
   {
-    "name": "Baby I'm A Queen",
-    "artist": "SOFI TUKKER",
-    "url": "https://open.spotify.com/track/7vJ8ZRQYi9xxiauF3SycV6",
-    "image": "https://i.scdn.co/image/ab67616d0000b273a944ee087e0303d6bcf29e34",
+    "name": "Whatuworried4?",
+    "artist": "ericdoa",
+    "url": "https://open.spotify.com/track/5suukXwOYA1AuB8O0sCSBR",
+    "image": "https://i.scdn.co/image/ab67616d0000b273b1d2a5e4a2f182f9aac76067",
+    "preview_url": null
+  },
+  {
+    "name": "Animal",
+    "artist": "Def Leppard",
+    "url": "https://open.spotify.com/track/4qjscZh4jfhkpcQG4ZQfi2",
+    "image": "https://i.scdn.co/image/ab67616d0000b27343511b8c20112757edddc7ba",
+    "preview_url": null
+  },
+  {
+    "name": "You Say",
+    "artist": "Ehrling",
+    "url": "https://open.spotify.com/track/6pEoCqHF6gSqgpwBR57RR1",
+    "image": "https://i.scdn.co/image/ab67616d0000b27336a388fef6ddbef7eca41c63",
     "preview_url": null
   },
   {
@@ -14,24 +28,10 @@
     "preview_url": null
   },
   {
-    "name": "Cracker Island (feat. Thundercat)",
-    "artist": "Gorillaz, Thundercat",
-    "url": "https://open.spotify.com/track/2W3ZpQg9i6lE6kmHbcdu9N",
-    "image": "https://i.scdn.co/image/ab67616d0000b273ca411783dc7b841d8c8dab26",
-    "preview_url": null
-  },
-  {
-    "name": "As the Sea Divides",
-    "artist": "Shattered Skies",
-    "url": "https://open.spotify.com/track/2ajQYCwCyfVU6PIkPk6Sz9",
-    "image": "https://i.scdn.co/image/ab67616d0000b273f6adcccab88ae18ab07b67d1",
-    "preview_url": null
-  },
-  {
-    "name": "Pirate Rock Recipe",
-    "artist": "The Never Land Pirate Band",
-    "url": "https://open.spotify.com/track/0QDFpQ0nT5vm3Nzp25wLty",
-    "image": "https://i.scdn.co/image/ab67616d0000b2735c1ca8357d14c0a0e8669881",
+    "name": "Baby I'm A Queen",
+    "artist": "SOFI TUKKER",
+    "url": "https://open.spotify.com/track/7vJ8ZRQYi9xxiauF3SycV6",
+    "image": "https://i.scdn.co/image/ab67616d0000b273a944ee087e0303d6bcf29e34",
     "preview_url": null
   }
 ]
