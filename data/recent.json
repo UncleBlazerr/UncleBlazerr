@@ -1,5 +1,12 @@
 [
   {
+    "name": "Sounds Of Summer (with Slightly Stoopid)",
+    "artist": "The Movement, Slightly Stoopid",
+    "url": "https://open.spotify.com/track/2B1UZhUKvBrRMZ4Er4OMXm",
+    "image": "https://i.scdn.co/image/ab67616d0000b273f2fd5aa3a8621d882b5eab7b",
+    "preview_url": null
+  },
+  {
     "name": "Violent Nature",
     "artist": "I Prevail",
     "url": "https://open.spotify.com/track/0Rp8u7fAuFuERNplZXk3Vy",
@@ -25,13 +32,6 @@
     "artist": "Johnny Booth",
     "url": "https://open.spotify.com/track/0fzicqW8dA8UZzfMAE2DF6",
     "image": "https://i.scdn.co/image/ab67616d0000b27316348b060ece86b0bbd7df6a",
-    "preview_url": null
-  },
-  {
-    "name": "Annihilate Me",
-    "artist": "I Prevail",
-    "url": "https://open.spotify.com/track/7lWgoPdOX6T6xsqoVRHQmy",
-    "image": "https://i.scdn.co/image/ab67616d0000b273f36b5e297e6a53acc82486d7",
     "preview_url": null
   }
 ]
