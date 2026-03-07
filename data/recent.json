@@ -1,37 +1,37 @@
 [
   {
-    "name": "Welcome to the Sun",
+    "name": "Beach Cruiser",
+    "artist": "Algorhythm",
+    "url": "https://open.spotify.com/track/5vMXbygydZcTqoBfh9rFDu",
+    "image": "https://i.scdn.co/image/ab67616d0000b27326a963f752ccca245c9d826c",
+    "preview_url": null
+  },
+  {
+    "name": "Can You Feel It (feat. Wiz Khalifa)",
+    "artist": "Sublime With Rome",
+    "url": "https://open.spotify.com/track/6vhRmymsQaWhVegaK7aTDe",
+    "image": "https://i.scdn.co/image/ab67616d0000b27397be8861cd459d81a5307ddc",
+    "preview_url": null
+  },
+  {
+    "name": "Tides (with Pepper & Slightly Stoopid)",
+    "artist": "Shwayze, Pepper, Slightly Stoopid",
+    "url": "https://open.spotify.com/track/05XyeZ6TZEnQyWd7ksYERw",
+    "image": "https://i.scdn.co/image/ab67616d0000b27365dfcac1cc804c9acade0be9",
+    "preview_url": null
+  },
+  {
+    "name": "Above the Storm",
     "artist": "Stick Figure",
-    "url": "https://open.spotify.com/track/1Oblb5QTccCRUI4EtiuVTm",
+    "url": "https://open.spotify.com/track/1mOQwe1UcsuK3l3MGFtim6",
     "image": "https://i.scdn.co/image/ab67616d0000b273b051ce304d1eb1a6f340cd20",
     "preview_url": null
   },
   {
-    "name": "Take It Easy",
-    "artist": "Sensamotion",
-    "url": "https://open.spotify.com/track/1wEi5ja6LpF1RRbb55dd4o",
-    "image": "https://i.scdn.co/image/ab67616d0000b2733a17527ebc47e20af6988e6b",
-    "preview_url": null
-  },
-  {
-    "name": "Sentenced",
+    "name": "Welcome to the Sun",
     "artist": "Stick Figure",
-    "url": "https://open.spotify.com/track/4qjNkNFeGzlPWCCte9Yjr4",
-    "image": "https://i.scdn.co/image/ab67616d0000b27328292b2539f0ed722e58aa63",
-    "preview_url": null
-  },
-  {
-    "name": "What a Feeling",
-    "artist": "Stick Figure",
-    "url": "https://open.spotify.com/track/68kKTUw9HJOczE2CAsz73a",
-    "image": "https://i.scdn.co/image/ab67616d0000b2738b3badfaabf25097cc386832",
-    "preview_url": null
-  },
-  {
-    "name": "Cinderella",
-    "artist": "Stephanie Stearns",
-    "url": "https://open.spotify.com/track/758ehxhBBJFGukUrEgnTjD",
-    "image": "https://i.scdn.co/image/ab67616d0000b2732a8b6ce34511614c9373f423",
+    "url": "https://open.spotify.com/track/1Oblb5QTccCRUI4EtiuVTm",
+    "image": "https://i.scdn.co/image/ab67616d0000b273b051ce304d1eb1a6f340cd20",
     "preview_url": null
   }
 ]
