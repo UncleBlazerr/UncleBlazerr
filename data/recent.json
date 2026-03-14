@@ -1,5 +1,12 @@
 [
   {
+    "name": "State of Mind",
+    "artist": "Ehrling",
+    "url": "https://open.spotify.com/track/3IrS0IWzyYMeSJlCcKzQ3g",
+    "image": "https://i.scdn.co/image/ab67616d0000b27372d4d57950c898c3536e7ccc",
+    "preview_url": null
+  },
+  {
     "name": "Save A Little Love",
     "artist": "Don Diablo",
     "url": "https://open.spotify.com/track/2UmLTsY9Z4kqpNNxKGQBkM",
@@ -25,13 +32,6 @@
     "artist": "Mustard, Migos",
     "url": "https://open.spotify.com/track/3j84U36KvLeXNDPv4t5pI8",
     "image": "https://i.scdn.co/image/ab67616d0000b27393b1e96fad758869d0974162",
-    "preview_url": null
-  },
-  {
-    "name": "How Did You Love - Twine Remix",
-    "artist": "Shinedown, Twine",
-    "url": "https://open.spotify.com/track/2ptV90c5eU7u2nR5OM6J4p",
-    "image": "https://i.scdn.co/image/ab67616d0000b2733f59abdb16b40d25e8079fa6",
     "preview_url": null
   }
 ]
