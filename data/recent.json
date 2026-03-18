@@ -1,37 +1,37 @@
 [
   {
-    "name": "Pirate Rock Recipe",
+    "name": "Modern Pirates",
+    "artist": "Barleyjuice",
+    "url": "https://open.spotify.com/track/1KpshaxqWDlVvUelMWExpm",
+    "image": "https://i.scdn.co/image/ab67616d0000b27397c16a998cd5caa8c4141a2a",
+    "preview_url": null
+  },
+  {
+    "name": "Rattle Yer Bones",
     "artist": "The Never Land Pirate Band",
-    "url": "https://open.spotify.com/track/3oPPcBsFY2hCIdwTDiVusZ",
-    "image": "https://i.scdn.co/image/ab67616d0000b273fe3a8c12f23e656e8e28e33a",
+    "url": "https://open.spotify.com/track/6lh3dUCnhWx7O0H07DZYvx",
+    "image": "https://i.scdn.co/image/ab67616d0000b2735c1ca8357d14c0a0e8669881",
     "preview_url": null
   },
   {
-    "name": "Steh auf",
-    "artist": "Lindemann",
-    "url": "https://open.spotify.com/track/2cwwUYTPOEfz0pam6tiVZz",
-    "image": "https://i.scdn.co/image/ab67616d0000b273e675d7e4970918b5e0fb3052",
+    "name": "Rockstar Sea Shanty",
+    "artist": "Nickelback, The Lottery Winners",
+    "url": "https://open.spotify.com/track/1OisyDHy5LRaH7UN7umfyI",
+    "image": "https://i.scdn.co/image/ab67616d0000b2733446c5ce6adacb3255ed3b4d",
     "preview_url": null
   },
   {
-    "name": "Steh auf",
-    "artist": "Lindemann",
-    "url": "https://open.spotify.com/track/2cwwUYTPOEfz0pam6tiVZz",
-    "image": "https://i.scdn.co/image/ab67616d0000b273e675d7e4970918b5e0fb3052",
+    "name": "Gold Doubloons",
+    "artist": "The Never Land Pirate Band",
+    "url": "https://open.spotify.com/track/7b1judYOwefmgg8awxrxG4",
+    "image": "https://i.scdn.co/image/ab67616d0000b2735c1ca8357d14c0a0e8669881",
     "preview_url": null
   },
   {
-    "name": "Shut Your Mouth",
-    "artist": "PAIN",
-    "url": "https://open.spotify.com/track/1gUq6SezLS3lc7KxBZaA3A",
-    "image": "https://i.scdn.co/image/ab67616d0000b273c339c73a778abc29533b9b31",
-    "preview_url": null
-  },
-  {
-    "name": "Bad Habit",
-    "artist": "Jéja, Zaug",
-    "url": "https://open.spotify.com/track/0cS68JM1etmzjnxATZTn1p",
-    "image": "https://i.scdn.co/image/ab67616d0000b27317895437e8159f855167b3f7",
+    "name": "The Jolly Roger",
+    "artist": "The Never Land Pirate Band",
+    "url": "https://open.spotify.com/track/1hxlc8WM5bDdNThBioQcpD",
+    "image": "https://i.scdn.co/image/ab67616d0000b2735c1ca8357d14c0a0e8669881",
     "preview_url": null
   }
 ]
