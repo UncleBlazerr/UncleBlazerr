@@ -1,5 +1,12 @@
 [
   {
+    "name": "Weary Eyes",
+    "artist": "Stick Figure",
+    "url": "https://open.spotify.com/track/0H4PAoFgTxnIfk57vLTXHn",
+    "image": "https://i.scdn.co/image/ab67616d0000b27328292b2539f0ed722e58aa63",
+    "preview_url": null
+  },
+  {
     "name": "Part of My Life",
     "artist": "Collie Buddz",
     "url": "https://open.spotify.com/track/4M3IhVHuE5X8bhryrnBSCY",
@@ -25,13 +32,6 @@
     "artist": "Pepper, Stick Figure",
     "url": "https://open.spotify.com/track/29JOtyhGMv2gfikATHJlCF",
     "image": "https://i.scdn.co/image/ab67616d0000b27381b5063d780b5b74bff2a0a6",
-    "preview_url": null
-  },
-  {
-    "name": "Railroad Shelter (with Stick Figure)",
-    "artist": "TJ O'Neill, Stick Figure",
-    "url": "https://open.spotify.com/track/2Cv6DwpDGeg1m6gcHG55dc",
-    "image": "https://i.scdn.co/image/ab67616d0000b273eea85bac84babffabee4c0c9",
     "preview_url": null
   }
 ]
