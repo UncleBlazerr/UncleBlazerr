@@ -1,5 +1,12 @@
 [
   {
+    "name": "O.A.I.",
+    "artist": "Algorhythm",
+    "url": "https://open.spotify.com/track/28ugMN2Xuu4d0HCMdfTb8O",
+    "image": "https://i.scdn.co/image/ab67616d0000b2737bf3c5f69d777de425c2dd79",
+    "preview_url": null
+  },
+  {
     "name": "Orange Sky",
     "artist": "The Movement",
     "url": "https://open.spotify.com/track/7Ks8MfYsPgWi90XztTTy1F",
@@ -25,13 +32,6 @@
     "artist": "Stick Figure",
     "url": "https://open.spotify.com/track/3u1bKblfqeghD3grk3Le2w",
     "image": "https://i.scdn.co/image/ab67616d0000b27328292b2539f0ed722e58aa63",
-    "preview_url": null
-  },
-  {
-    "name": "Right Here Right Now (feat. Eric Rachmany and Stick Figure)",
-    "artist": "Iration, Eric Rachmany, Stick Figure",
-    "url": "https://open.spotify.com/track/7pkhPwcGOZT8jYQqt3eByr",
-    "image": "https://i.scdn.co/image/ab67616d0000b27335b661c17ad01b5f5c6d29e1",
     "preview_url": null
   }
 ]
