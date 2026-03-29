@@ -1,5 +1,12 @@
 [
   {
+    "name": "She Thinks My Tractor's Sexy",
+    "artist": "Kenny Chesney",
+    "url": "https://open.spotify.com/track/3QV7NYkrmV0Q0IHdFJw9hO",
+    "image": "https://i.scdn.co/image/ab67616d0000b27364a63b96729180030ad93871",
+    "preview_url": null
+  },
+  {
     "name": "Who's Cheatin' Who",
     "artist": "Alan Jackson",
     "url": "https://open.spotify.com/track/0UwNjqs1Wq1VNOkriRaRyS",
@@ -25,13 +32,6 @@
     "artist": "Steve Earle",
     "url": "https://open.spotify.com/track/7aXK1UkGw6bDc2zr4YUpdJ",
     "image": "https://i.scdn.co/image/ab67616d0000b273a352d81e0fc0474246038ddb",
-    "preview_url": null
-  },
-  {
-    "name": "Bible Belt (feat. Little Feat)",
-    "artist": "Travis Tritt, Little Feat",
-    "url": "https://open.spotify.com/track/72uqZ6vT3cA2tAu28oQN2m",
-    "image": "https://i.scdn.co/image/ab67616d0000b273de26ff2ffad56769a36b9d4c",
     "preview_url": null
   }
 ]
