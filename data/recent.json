@@ -1,5 +1,19 @@
 [
   {
+    "name": "crucify",
+    "artist": "KNIFE BRIDE",
+    "url": "https://open.spotify.com/track/32P5V0Pkgn4NAGdAEm0UNf",
+    "image": "https://i.scdn.co/image/ab67616d0000b273cd62fe059c309d0250659ef7",
+    "preview_url": null
+  },
+  {
+    "name": "Des kleinen Herzens letzter Schlag",
+    "artist": "Nachtblut",
+    "url": "https://open.spotify.com/track/5pgO6wkMrIAChG2zPIuxyW",
+    "image": "https://i.scdn.co/image/ab67616d0000b2735230787aa45b9b20c25f97b1",
+    "preview_url": null
+  },
+  {
     "name": "PAW Patrol Opening Theme",
     "artist": "PAW Patrol",
     "url": "https://open.spotify.com/track/2bTc3HglsgQ8kbn1dUeo1M",
@@ -18,20 +32,6 @@
     "artist": "Danny Go!",
     "url": "https://open.spotify.com/track/5J8qbgtxKEgM8FXhLeatNm",
     "image": "https://i.scdn.co/image/ab67616d0000b2737a447e9a75848b55b0a33218",
-    "preview_url": null
-  },
-  {
-    "name": "Genesis",
-    "artist": "Justice",
-    "url": "https://open.spotify.com/track/4wSmqFg31t6LsQWtzYAJob",
-    "image": "https://i.scdn.co/image/ab67616d0000b2731c0bcf8b536295438d26c70d",
-    "preview_url": null
-  },
-  {
-    "name": "Stylo (feat. Mos Def and Bobby Womack)",
-    "artist": "Gorillaz, Bobby Womack, Mos Def",
-    "url": "https://open.spotify.com/track/6LUfuyLgvgqrykiTE6sJHY",
-    "image": "https://i.scdn.co/image/ab67616d0000b273661d019f34569f79eae9e985",
     "preview_url": null
   }
 ]
