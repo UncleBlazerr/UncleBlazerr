@@ -1,5 +1,12 @@
 [
   {
+    "name": "Riptide",
+    "artist": "Beartooth",
+    "url": "https://open.spotify.com/track/5JoeVkiHxak6x5hw0lm46K",
+    "image": "https://i.scdn.co/image/ab67616d0000b273f121e9e68ce75543e7761963",
+    "preview_url": null
+  },
+  {
     "name": "Mulan",
     "artist": "June Foray",
     "url": "https://open.spotify.com/track/7hbhqm0b0MZkxmvy4koUtV",
@@ -25,13 +32,6 @@
     "artist": "George Benson",
     "url": "https://open.spotify.com/track/62GYoGszQfROZswLee6W3O",
     "image": "https://i.scdn.co/image/ab67616d0000b2733a3c381f6910a4fe51c2640b",
-    "preview_url": null
-  },
-  {
-    "name": "Panda",
-    "artist": "Astro",
-    "url": "https://open.spotify.com/track/1x5kg9Xe82135NHR10kuXw",
-    "image": "https://i.scdn.co/image/ab67616d0000b273f2752a97119c61a2b1e8b14f",
     "preview_url": null
   }
 ]
