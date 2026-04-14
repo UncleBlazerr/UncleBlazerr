@@ -1,37 +1,37 @@
 [
   {
-    "name": "Deutschland",
+    "name": "Du riechst so gut - '98",
     "artist": "Rammstein",
-    "url": "https://open.spotify.com/track/2bPGTMB5sFfFYQ2YvSmup0",
+    "url": "https://open.spotify.com/track/6gXgQvmwEKuG7a0BYryqTP",
+    "image": "https://i.scdn.co/image/ab67616d0000b273c1207c7f4f9fedffb38a3d3e",
+    "preview_url": null
+  },
+  {
+    "name": "Mein Teil - There Are No Guitars On This Mix By Pet Shop Boys",
+    "artist": "Rammstein, Pet Shop Boys",
+    "url": "https://open.spotify.com/track/71O1PvdZ7Hr83wZwjPomgz",
+    "image": "https://i.scdn.co/image/ab67616d0000b273c1207c7f4f9fedffb38a3d3e",
+    "preview_url": null
+  },
+  {
+    "name": "Ausländer",
+    "artist": "Rammstein",
+    "url": "https://open.spotify.com/track/7j43FohbLVulScL7S9sQZk",
     "image": "https://i.scdn.co/image/ab67616d0000b27302add2c77fb6999e311a3248",
     "preview_url": null
   },
   {
-    "name": "Todschick",
-    "artist": "Nachtblut",
-    "url": "https://open.spotify.com/track/4EUvU6kTRfOeJp5uBxoqUY",
-    "image": "https://i.scdn.co/image/ab67616d0000b273f79c115fcca6402234157dad",
+    "name": "Sonne",
+    "artist": "Rammstein",
+    "url": "https://open.spotify.com/track/4w3R0GZ2rScJMKlgPJzHRq",
+    "image": "https://i.scdn.co/image/ab67616d0000b27325d8b7c6feee0c8d6593d606",
     "preview_url": null
   },
   {
-    "name": "Des kleinen Herzens letzter Schlag",
-    "artist": "Nachtblut",
-    "url": "https://open.spotify.com/track/5pgO6wkMrIAChG2zPIuxyW",
-    "image": "https://i.scdn.co/image/ab67616d0000b2735230787aa45b9b20c25f97b1",
-    "preview_url": null
-  },
-  {
-    "name": "Wat is' denn los mit dir (Bonus Track)",
-    "artist": "Nachtblut",
-    "url": "https://open.spotify.com/track/4HNNa2BIt1IKMylL8Wai4a",
-    "image": "https://i.scdn.co/image/ab67616d0000b273cd112592f71952e6ad14c79c",
-    "preview_url": null
-  },
-  {
-    "name": "Des kleinen Herzens letzter Schlag",
-    "artist": "Nachtblut",
-    "url": "https://open.spotify.com/track/5pgO6wkMrIAChG2zPIuxyW",
-    "image": "https://i.scdn.co/image/ab67616d0000b2735230787aa45b9b20c25f97b1",
+    "name": "Sehnsucht",
+    "artist": "Rammstein",
+    "url": "https://open.spotify.com/track/138ADAIJra5lBNbqQF2m7z",
+    "image": "https://i.scdn.co/image/ab67616d0000b27397ea8cd106d06260c2c76cd6",
     "preview_url": null
   }
 ]
