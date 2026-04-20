@@ -1,5 +1,26 @@
 [
   {
+    "name": "ULTRA VIOLET",
+    "artist": "Thouxanbanfauni",
+    "url": "https://open.spotify.com/track/2CxjDTsUBmVlcMjjy2UETJ",
+    "image": "https://i.scdn.co/image/ab67616d0000b2735cfae55e2ee292ad59ac53f3",
+    "preview_url": null
+  },
+  {
+    "name": "Got Me On The Run (with Stick Figure and Pepper)",
+    "artist": "Slightly Stoopid, Stick Figure, Pepper",
+    "url": "https://open.spotify.com/track/39KOFS51LBiUeAEle7utOX",
+    "image": "https://i.scdn.co/image/ab67616d0000b273cd450ea32db2a151d5ab19b3",
+    "preview_url": null
+  },
+  {
+    "name": "Sway (feat. Quavo & Lil Yachty)",
+    "artist": "NexXthursday, Quavo, Lil Yachty",
+    "url": "https://open.spotify.com/track/4QeBlVCl2KzUEcQZiuskRd",
+    "image": "https://i.scdn.co/image/ab67616d0000b2736f2d385ec59d382aa4e280b7",
+    "preview_url": null
+  },
+  {
     "name": "The Mission",
     "artist": "Bakar",
     "url": "https://open.spotify.com/track/4CGORuRtjSK6xMy8s1VvSS",
@@ -11,27 +32,6 @@
     "artist": "Gojira",
     "url": "https://open.spotify.com/track/1HMfJaHiP556ExbQF5O6QU",
     "image": "https://i.scdn.co/image/ab67616d0000b27377f30d6531bfdeb33c1fccbf",
-    "preview_url": null
-  },
-  {
-    "name": "Out Of Control",
-    "artist": "Hoobastank",
-    "url": "https://open.spotify.com/track/4eU274e7gXhJxDOQwolXUH",
-    "image": "https://i.scdn.co/image/ab67616d0000b27384366df7e9b8adcb2ccf71e5",
-    "preview_url": null
-  },
-  {
-    "name": "Take Me Home Tonight",
-    "artist": "Eddie Money",
-    "url": "https://open.spotify.com/track/63diy8Bzm0pHMAU37By2Nh",
-    "image": "https://i.scdn.co/image/ab67616d0000b27344fa9dc16ac2790d27e45364",
-    "preview_url": null
-  },
-  {
-    "name": "Dubai Shit",
-    "artist": "Huncho Jack, Travis Scott, Quavo, Offset",
-    "url": "https://open.spotify.com/track/6urLjX35oXXRYtcH1b3dCh",
-    "image": "https://i.scdn.co/image/ab67616d0000b273631973893e94d01cfcdf0e5e",
     "preview_url": null
   }
 ]
