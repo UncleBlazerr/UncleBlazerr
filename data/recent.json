@@ -1,5 +1,12 @@
 [
   {
+    "name": "Des kleinen Herzens letzter Schlag",
+    "artist": "Nachtblut",
+    "url": "https://open.spotify.com/track/5pgO6wkMrIAChG2zPIuxyW",
+    "image": "https://i.scdn.co/image/ab67616d0000b2735230787aa45b9b20c25f97b1",
+    "preview_url": null
+  },
+  {
     "name": "Digital Love",
     "artist": "Daft Punk",
     "url": "https://open.spotify.com/track/2VEZx7NWsZ1D0eJ4uv5Fym",
@@ -24,13 +31,6 @@
     "name": "Veridis Quo",
     "artist": "Daft Punk",
     "url": "https://open.spotify.com/track/2LD2gT7gwAurzdQDQtILds",
-    "image": "https://i.scdn.co/image/ab67616d0000b2731e81bff9807a9e629fce5ade",
-    "preview_url": null
-  },
-  {
-    "name": "Harder, Better, Faster, Stronger",
-    "artist": "Daft Punk",
-    "url": "https://open.spotify.com/track/5W3cjX2J3tjhG8zb6u0qHn",
     "image": "https://i.scdn.co/image/ab67616d0000b2731e81bff9807a9e629fce5ade",
     "preview_url": null
   }
