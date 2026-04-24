@@ -1,5 +1,26 @@
 [
   {
+    "name": "Breathe",
+    "artist": "Stick Figure",
+    "url": "https://open.spotify.com/track/4Th9Lu8GK0mt5fZZ945FI7",
+    "image": "https://i.scdn.co/image/ab67616d0000b273d05956a2233c7be9340ae85b",
+    "preview_url": null
+  },
+  {
+    "name": "Black Lights",
+    "artist": "Algorhythm",
+    "url": "https://open.spotify.com/track/7GcRrfDer8y3lmuWkqRXBl",
+    "image": "https://i.scdn.co/image/ab67616d0000b273c0b129ad8f331254d2484138",
+    "preview_url": null
+  },
+  {
+    "name": "Margaritas (with Orange Grove)",
+    "artist": "The Elovaters, Orange Grove",
+    "url": "https://open.spotify.com/track/2c5fBn05SvBLF1GNmzNuTF",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e303e8b6645f7d326f68bf89",
+    "preview_url": null
+  },
+  {
     "name": "Des kleinen Herzens letzter Schlag",
     "artist": "Nachtblut",
     "url": "https://open.spotify.com/track/5pgO6wkMrIAChG2zPIuxyW",
@@ -10,27 +31,6 @@
     "name": "Digital Love",
     "artist": "Daft Punk",
     "url": "https://open.spotify.com/track/2VEZx7NWsZ1D0eJ4uv5Fym",
-    "image": "https://i.scdn.co/image/ab67616d0000b2731e81bff9807a9e629fce5ade",
-    "preview_url": null
-  },
-  {
-    "name": "Lose Yourself to Dance (feat. Pharrell Williams)",
-    "artist": "Daft Punk, Pharrell Williams",
-    "url": "https://open.spotify.com/track/5CMjjywI0eZMixPeqNd75R",
-    "image": "https://i.scdn.co/image/ab67616d0000b2739b9b36b0e22870b9f542d937",
-    "preview_url": null
-  },
-  {
-    "name": "Something About Us",
-    "artist": "Daft Punk",
-    "url": "https://open.spotify.com/track/1NeLwFETswx8Fzxl2AFl91",
-    "image": "https://i.scdn.co/image/ab67616d0000b2731e81bff9807a9e629fce5ade",
-    "preview_url": null
-  },
-  {
-    "name": "Veridis Quo",
-    "artist": "Daft Punk",
-    "url": "https://open.spotify.com/track/2LD2gT7gwAurzdQDQtILds",
     "image": "https://i.scdn.co/image/ab67616d0000b2731e81bff9807a9e629fce5ade",
     "preview_url": null
   }
