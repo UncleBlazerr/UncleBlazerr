@@ -1,5 +1,19 @@
 [
   {
+    "name": "Shots Fired",
+    "artist": "The Elovaters",
+    "url": "https://open.spotify.com/track/2GmXErKfSrlVWFPCDAX8Zp",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e303e8b6645f7d326f68bf89",
+    "preview_url": null
+  },
+  {
+    "name": "Shots Fired",
+    "artist": "The Elovaters",
+    "url": "https://open.spotify.com/track/2GmXErKfSrlVWFPCDAX8Zp",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e303e8b6645f7d326f68bf89",
+    "preview_url": null
+  },
+  {
     "name": "Back To Life",
     "artist": "Algorhythm",
     "url": "https://open.spotify.com/track/5Zvwmwo2wsjAZz4EDcnBQE",
@@ -18,20 +32,6 @@
     "artist": "Iration",
     "url": "https://open.spotify.com/track/0QkWubamAKEvvcOTriSKX3",
     "image": "https://i.scdn.co/image/ab67616d0000b273a6fa12933853bd89255acb9d",
-    "preview_url": null
-  },
-  {
-    "name": "Lazy Afternoon",
-    "artist": "Rebelution",
-    "url": "https://open.spotify.com/track/358pQNJQ5QlwooBpxWNlpR",
-    "image": "https://i.scdn.co/image/ab67616d0000b27355aa666389e8642087fffcfc",
-    "preview_url": null
-  },
-  {
-    "name": "Show Love (with Stick Figure)",
-    "artist": "Sensamotion, Stick Figure",
-    "url": "https://open.spotify.com/track/40duW4CYbkAvHPtb19eX03",
-    "image": "https://i.scdn.co/image/ab67616d0000b273beffb4a6f1e973932a11f454",
     "preview_url": null
   }
 ]
