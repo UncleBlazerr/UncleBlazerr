@@ -1,5 +1,19 @@
 [
   {
+    "name": "Inhale Exhale",
+    "artist": "Rebelution, Protoje",
+    "url": "https://open.spotify.com/track/0eJt4W5XDXTQxl0lZwBrgZ",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e64e3cc7d98fb31483b60725",
+    "preview_url": null
+  },
+  {
+    "name": "Mary Wanna",
+    "artist": "Common Kings",
+    "url": "https://open.spotify.com/track/2M9jXURIaJAq028aIv9Eny",
+    "image": "https://i.scdn.co/image/ab67616d0000b2738faf4ffc1c8a2830c57ad77d",
+    "preview_url": null
+  },
+  {
     "name": "Shots Fired",
     "artist": "The Elovaters",
     "url": "https://open.spotify.com/track/2GmXErKfSrlVWFPCDAX8Zp",
@@ -18,20 +32,6 @@
     "artist": "Algorhythm",
     "url": "https://open.spotify.com/track/5Zvwmwo2wsjAZz4EDcnBQE",
     "image": "https://i.scdn.co/image/ab67616d0000b273c0b129ad8f331254d2484138",
-    "preview_url": null
-  },
-  {
-    "name": "Good Life (with Stick Figure) - 2017",
-    "artist": "Collie Buddz, Stick Figure",
-    "url": "https://open.spotify.com/track/7GM1icCPWW3nRxa9p1mS3B",
-    "image": "https://i.scdn.co/image/ab67616d0000b273fd87ccaacc9e87aa8ec70fb1",
-    "preview_url": null
-  },
-  {
-    "name": "Summer Nights",
-    "artist": "Iration",
-    "url": "https://open.spotify.com/track/0QkWubamAKEvvcOTriSKX3",
-    "image": "https://i.scdn.co/image/ab67616d0000b273a6fa12933853bd89255acb9d",
     "preview_url": null
   }
 ]
