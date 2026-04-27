@@ -1,5 +1,12 @@
 [
   {
+    "name": "Shine",
+    "artist": "Stick Figure",
+    "url": "https://open.spotify.com/track/1QhrlNjzqmqEFW5T5yMFhw",
+    "image": "https://i.scdn.co/image/ab67616d0000b273b051ce304d1eb1a6f340cd20",
+    "preview_url": null
+  },
+  {
     "name": "Cool Me Down",
     "artist": "The Movement",
     "url": "https://open.spotify.com/track/4xh6F59NMVAXOhF4Gdo9GA",
@@ -25,13 +32,6 @@
     "artist": "TJ O'Neill, Stick Figure",
     "url": "https://open.spotify.com/track/2Cv6DwpDGeg1m6gcHG55dc",
     "image": "https://i.scdn.co/image/ab67616d0000b273eea85bac84babffabee4c0c9",
-    "preview_url": null
-  },
-  {
-    "name": "Your House",
-    "artist": "Steel Pulse",
-    "url": "https://open.spotify.com/track/6PbtTwGUPPbnT7nRTA1gS3",
-    "image": "https://i.scdn.co/image/ab67616d0000b273575da312c2dbaf47c49ececb",
     "preview_url": null
   }
 ]
