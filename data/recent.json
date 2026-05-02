@@ -1,5 +1,12 @@
 [
   {
+    "name": "LIGHT DESIGN",
+    "artist": "Turnstile",
+    "url": "https://open.spotify.com/track/4UI693m28NeH4uY0mnBV0F",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e6b88d3e4886ae3a17621c53",
+    "preview_url": null
+  },
+  {
     "name": "Keep It Moving",
     "artist": "Turnstile",
     "url": "https://open.spotify.com/track/4VVnprM3eR1hlac2ulGzjv",
@@ -25,13 +32,6 @@
     "artist": "Turnstile",
     "url": "https://open.spotify.com/track/0kshHISCRGn9MwpkbqafG4",
     "image": "https://i.scdn.co/image/ab67616d0000b273e6b88d3e4886ae3a17621c53",
-    "preview_url": null
-  },
-  {
-    "name": "Better Way",
-    "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/0AfcDu9FosOBh8HtoEVxHE",
-    "image": "https://i.scdn.co/image/ab67616d0000b2737232e39fbe7bd41d35de013d",
     "preview_url": null
   }
 ]
