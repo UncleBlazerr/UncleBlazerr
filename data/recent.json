@@ -1,23 +1,30 @@
 [
   {
-    "name": "SOLE",
-    "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/6PaSOin7Y9GnXRZ5U5sMsv",
-    "image": "https://i.scdn.co/image/ab67616d0000b273e6b88d3e4886ae3a17621c53",
+    "name": "Throw Yourself to the Sword",
+    "artist": "Die Spitz",
+    "url": "https://open.spotify.com/track/1T4TSL2UaYjauerxFyPal0",
+    "image": "https://i.scdn.co/image/ab67616d0000b273eb669b77bb18a94ab93134c9",
     "preview_url": null
   },
   {
-    "name": "NO SURPRISE",
+    "name": "Blue by You",
     "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/0PpWnBWEEgfTdZedQlqs4U",
-    "image": "https://i.scdn.co/image/ab67616d0000b273585ea43bfa7a9d13c91b6bfc",
+    "url": "https://open.spotify.com/track/6hSIZc6GWa6uUTyzSPcwWT",
+    "image": "https://i.scdn.co/image/ab67616d0000b27317bafa76e1da26c7167e5192",
     "preview_url": null
   },
   {
-    "name": "HOLIDAY",
-    "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/1dB0NylVkpjdOe8DiekIs7",
-    "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
+    "name": "Don't Stop",
+    "artist": "Bad Nerves",
+    "url": "https://open.spotify.com/track/4wAthLtaqrQveWGHmMca7i",
+    "image": "https://i.scdn.co/image/ab67616d0000b2732d7099fc381829b61795df23",
+    "preview_url": null
+  },
+  {
+    "name": "Wake The Dead",
+    "artist": "Comeback Kid",
+    "url": "https://open.spotify.com/track/58U3KUbCdpTEoZtGNnQBOa",
+    "image": "https://i.scdn.co/image/ab67616d0000b2738e011155d119a35ce52a191e",
     "preview_url": null
   },
   {
@@ -25,13 +32,6 @@
     "artist": "Turnstile",
     "url": "https://open.spotify.com/track/0bGImSqDB2ebdeoCidUC8o",
     "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
-    "preview_url": null
-  },
-  {
-    "name": "Cinderella",
-    "artist": "Stephanie Stearns",
-    "url": "https://open.spotify.com/track/758ehxhBBJFGukUrEgnTjD",
-    "image": "https://i.scdn.co/image/ab67616d0000b2732a8b6ce34511614c9373f423",
     "preview_url": null
   }
 ]
