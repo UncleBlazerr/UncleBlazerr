@@ -1,5 +1,19 @@
 [
   {
+    "name": "SOLE",
+    "artist": "Turnstile",
+    "url": "https://open.spotify.com/track/6PaSOin7Y9GnXRZ5U5sMsv",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e6b88d3e4886ae3a17621c53",
+    "preview_url": null
+  },
+  {
+    "name": "TIME IS HAPPENING",
+    "artist": "Turnstile",
+    "url": "https://open.spotify.com/track/3BpHUFGTW8KGd7FLEQJ4ac",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e6b88d3e4886ae3a17621c53",
+    "preview_url": null
+  },
+  {
     "name": "MYSTERY",
     "artist": "Turnstile",
     "url": "https://open.spotify.com/track/1Epzx03A5ZWs9Jbti46lsg",
@@ -18,20 +32,6 @@
     "artist": "Turnstile",
     "url": "https://open.spotify.com/track/3FT12lBLjNgy1jTa4E1160",
     "image": "https://i.scdn.co/image/ab67616d0000b2737232e39fbe7bd41d35de013d",
-    "preview_url": null
-  },
-  {
-    "name": "MYSTERY",
-    "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/4eVUe4dJvjKNlqm9Ccu8gq",
-    "image": "https://i.scdn.co/image/ab67616d0000b273585ea43bfa7a9d13c91b6bfc",
-    "preview_url": null
-  },
-  {
-    "name": "Bleach Temple",
-    "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/4myAFNt3gbRRIjNtLf4ZA9",
-    "image": "https://i.scdn.co/image/ab67616d0000b27317bafa76e1da26c7167e5192",
     "preview_url": null
   }
 ]
