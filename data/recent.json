@@ -1,36 +1,36 @@
 [
   {
-    "name": "WILD WRLD",
+    "name": "Psychosocial",
+    "artist": "Slipknot",
+    "url": "https://open.spotify.com/track/3RAFcUBrCNaboRXoP3S5t1",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e7fbc0883149094912559f2c",
+    "preview_url": null
+  },
+  {
+    "name": "DON'T PLAY",
     "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/5t8tjt1sS6EKdCnohahoaw",
+    "url": "https://open.spotify.com/track/69uzV9BQmNLPIu0dWK4Tbe",
     "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
     "preview_url": null
   },
   {
-    "name": "ALIEN LOVE CALL",
-    "artist": "Turnstile, Blood Orange",
-    "url": "https://open.spotify.com/track/5o5SdS2vu1PgKblBABGlER",
+    "name": "BIRDS",
+    "artist": "Turnstile",
+    "url": "https://open.spotify.com/track/0kshHISCRGn9MwpkbqafG4",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e6b88d3e4886ae3a17621c53",
+    "preview_url": null
+  },
+  {
+    "name": "BLACKOUT",
+    "artist": "Turnstile",
+    "url": "https://open.spotify.com/track/0bGImSqDB2ebdeoCidUC8o",
     "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
     "preview_url": null
   },
   {
-    "name": "FLY AGAIN",
+    "name": "DON'T PLAY",
     "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/53mkoU4zonxWTbgcNOYy1b",
-    "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
-    "preview_url": null
-  },
-  {
-    "name": "ENDLESS",
-    "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/6yzMX2L7bjFbklJPfBIO3o",
-    "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
-    "preview_url": null
-  },
-  {
-    "name": "HUMANOID / SHAKE IT UP",
-    "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/4hVbecfxAWbMsb56lxGshM",
+    "url": "https://open.spotify.com/track/69uzV9BQmNLPIu0dWK4Tbe",
     "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
     "preview_url": null
   }
