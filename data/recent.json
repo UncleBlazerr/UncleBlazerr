@@ -1,5 +1,12 @@
 [
   {
+    "name": "Heat Waves",
+    "artist": "Glass Animals",
+    "url": "https://open.spotify.com/track/3USxtqRwSYz57Ewm6wWRMp",
+    "image": "https://i.scdn.co/image/ab67616d0000b273712701c5e263efc8726b1464",
+    "preview_url": null
+  },
+  {
     "name": "Golden Brown",
     "artist": "The Stranglers",
     "url": "https://open.spotify.com/track/5GpfyJrKHJI36jDKtQiyGN",
@@ -24,13 +31,6 @@
     "name": "DON'T PLAY",
     "artist": "Turnstile",
     "url": "https://open.spotify.com/track/69uzV9BQmNLPIu0dWK4Tbe",
-    "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
-    "preview_url": null
-  },
-  {
-    "name": "BLACKOUT",
-    "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/0bGImSqDB2ebdeoCidUC8o",
     "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
     "preview_url": null
   }
