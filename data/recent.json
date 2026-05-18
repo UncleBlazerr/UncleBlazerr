@@ -1,37 +1,37 @@
 [
   {
-    "name": "7",
+    "name": "LIGHT DESIGN",
     "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/6VHhnEVCYvxlQQr5kbWd5i",
+    "url": "https://open.spotify.com/track/4UI693m28NeH4uY0mnBV0F",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e6b88d3e4886ae3a17621c53",
+    "preview_url": null
+  },
+  {
+    "name": "Generator",
+    "artist": "Turnstile",
+    "url": "https://open.spotify.com/track/04vAjpZ2ppNIFcxq9bqj39",
+    "image": "https://i.scdn.co/image/ab67616d0000b273da460bd80377420b21884053",
+    "preview_url": null
+  },
+  {
+    "name": "Better Way",
+    "artist": "Turnstile",
+    "url": "https://open.spotify.com/track/0AfcDu9FosOBh8HtoEVxHE",
     "image": "https://i.scdn.co/image/ab67616d0000b2737232e39fbe7bd41d35de013d",
     "preview_url": null
   },
   {
-    "name": "Pushing Me Away",
+    "name": "ENDLESS",
     "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/2lko49bKOuj6hsh7byOXIz",
-    "image": "https://i.scdn.co/image/ab67616d0000b2737232e39fbe7bd41d35de013d",
+    "url": "https://open.spotify.com/track/6yzMX2L7bjFbklJPfBIO3o",
+    "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
     "preview_url": null
   },
   {
-    "name": "Alien Love Call",
-    "artist": "Turnstile, BADBADNOTGOOD, Blood Orange",
-    "url": "https://open.spotify.com/track/5D7AFGloFpXtdT2PiKTEC3",
-    "image": "https://i.scdn.co/image/ab67616d0000b27391e7857dbe41d243a9445e07",
-    "preview_url": null
-  },
-  {
-    "name": "Blue by You",
+    "name": "SEEIN’ STARS",
     "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/6hSIZc6GWa6uUTyzSPcwWT",
-    "image": "https://i.scdn.co/image/ab67616d0000b27317bafa76e1da26c7167e5192",
-    "preview_url": null
-  },
-  {
-    "name": "Canned Heat",
-    "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/3FT12lBLjNgy1jTa4E1160",
-    "image": "https://i.scdn.co/image/ab67616d0000b2737232e39fbe7bd41d35de013d",
+    "url": "https://open.spotify.com/track/2Z4nIITCxUoaZvFug5FxtO",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e6b88d3e4886ae3a17621c53",
     "preview_url": null
   }
 ]
