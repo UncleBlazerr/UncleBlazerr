@@ -1,5 +1,12 @@
 [
   {
+    "name": "DON'T PLAY",
+    "artist": "Turnstile",
+    "url": "https://open.spotify.com/track/69uzV9BQmNLPIu0dWK4Tbe",
+    "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
+    "preview_url": null
+  },
+  {
     "name": "LIGHT DESIGN",
     "artist": "Turnstile",
     "url": "https://open.spotify.com/track/4UI693m28NeH4uY0mnBV0F",
@@ -25,13 +32,6 @@
     "artist": "Turnstile",
     "url": "https://open.spotify.com/track/6yzMX2L7bjFbklJPfBIO3o",
     "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
-    "preview_url": null
-  },
-  {
-    "name": "SEEIN’ STARS",
-    "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/2Z4nIITCxUoaZvFug5FxtO",
-    "image": "https://i.scdn.co/image/ab67616d0000b273e6b88d3e4886ae3a17621c53",
     "preview_url": null
   }
 ]
