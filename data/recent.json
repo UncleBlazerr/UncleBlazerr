@@ -1,5 +1,12 @@
 [
   {
+    "name": "MYSTERY",
+    "artist": "Turnstile",
+    "url": "https://open.spotify.com/track/5iXnD2VizcAbErpkcuNQ6I",
+    "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
+    "preview_url": null
+  },
+  {
     "name": "Generator",
     "artist": "Turnstile",
     "url": "https://open.spotify.com/track/04vAjpZ2ppNIFcxq9bqj39",
@@ -25,13 +32,6 @@
     "artist": "Turnstile",
     "url": "https://open.spotify.com/track/69uzV9BQmNLPIu0dWK4Tbe",
     "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
-    "preview_url": null
-  },
-  {
-    "name": "Better Way",
-    "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/0AfcDu9FosOBh8HtoEVxHE",
-    "image": "https://i.scdn.co/image/ab67616d0000b2737232e39fbe7bd41d35de013d",
     "preview_url": null
   }
 ]
