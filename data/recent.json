@@ -1,5 +1,12 @@
 [
   {
+    "name": "LOOK OUT FOR ME",
+    "artist": "Turnstile",
+    "url": "https://open.spotify.com/track/4gM6AHXp4h8aj5482znmYz",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e6b88d3e4886ae3a17621c53",
+    "preview_url": null
+  },
+  {
     "name": "Better Way",
     "artist": "Turnstile",
     "url": "https://open.spotify.com/track/0AfcDu9FosOBh8HtoEVxHE",
@@ -25,13 +32,6 @@
     "artist": "Turnstile",
     "url": "https://open.spotify.com/track/30gtuczW6s6jj2OUVj5rat",
     "image": "https://i.scdn.co/image/ab67616d0000b273da460bd80377420b21884053",
-    "preview_url": null
-  },
-  {
-    "name": "BLACKOUT",
-    "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/0bGImSqDB2ebdeoCidUC8o",
-    "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
     "preview_url": null
   }
 ]
