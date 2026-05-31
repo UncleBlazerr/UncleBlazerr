@@ -1,5 +1,12 @@
 [
   {
+    "name": "Mercury Blues",
+    "artist": "Alan Jackson",
+    "url": "https://open.spotify.com/track/48JlBoXcuOj8hDDgbaZUxg",
+    "image": "https://i.scdn.co/image/ab67616d0000b273933cf67cacfab71afa20c6c4",
+    "preview_url": null
+  },
+  {
     "name": "If I Could Make a Living",
     "artist": "Clay Walker",
     "url": "https://open.spotify.com/track/7njoWVpJbAiTkyT6rKwbze",
@@ -25,13 +32,6 @@
     "artist": "Travis Tritt",
     "url": "https://open.spotify.com/track/3oW6SWwGqiZSPTiAp7ZQoH",
     "image": "https://i.scdn.co/image/ab67616d0000b2739fd857fb9120e851eb0c68ea",
-    "preview_url": null
-  },
-  {
-    "name": "Pickup Man",
-    "artist": "Joe Diffie",
-    "url": "https://open.spotify.com/track/60w5eL1G4Or7LlTSrR5r8a",
-    "image": "https://i.scdn.co/image/ab67616d0000b2736066a4456dc39273b2c9698a",
     "preview_url": null
   }
 ]
