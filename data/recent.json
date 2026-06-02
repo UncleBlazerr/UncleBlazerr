@@ -1,5 +1,12 @@
 [
   {
+    "name": "Easy Runaway",
+    "artist": "Stick Figure",
+    "url": "https://open.spotify.com/track/7E0CCie7empmlbOH4Vh4BI",
+    "image": "https://i.scdn.co/image/ab67616d0000b273069a434e32ddf15c11428771",
+    "preview_url": null
+  },
+  {
     "name": "Nice & Slow (with The Elovaters)",
     "artist": "The Movement, The Elovaters",
     "url": "https://open.spotify.com/track/4ubV6Np89bTs5aJzGOY4bm",
@@ -25,13 +32,6 @@
     "artist": "The Elovaters",
     "url": "https://open.spotify.com/track/0WEyr36ozlv4OVckANYLDx",
     "image": "https://i.scdn.co/image/ab67616d0000b273fe1a85bebab8f31ddc57455a",
-    "preview_url": null
-  },
-  {
-    "name": "The Wiggle Dance",
-    "artist": "Danny Go!",
-    "url": "https://open.spotify.com/track/57qfCDMbmBzWHuVk3A9Iir",
-    "image": "https://i.scdn.co/image/ab67616d0000b2735be3817eee6153d5122a75c7",
     "preview_url": null
   }
 ]
