@@ -1,37 +1,37 @@
 [
   {
-    "name": "Fazed Out",
+    "name": "Gravity",
     "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/31EYM7iJC3FEADrfzA4bmD",
+    "url": "https://open.spotify.com/track/47BhgqJy3oRTGzjNTgf3hq",
     "image": "https://i.scdn.co/image/ab67616d0000b27317bafa76e1da26c7167e5192",
     "preview_url": null
   },
   {
-    "name": "Blue by You",
+    "name": "UNDERWATER BOI",
     "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/6hSIZc6GWa6uUTyzSPcwWT",
+    "url": "https://open.spotify.com/track/4pV11quzVm52tULYj6ITD2",
+    "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
+    "preview_url": null
+  },
+  {
+    "name": "(Lost Another) Piece of My World",
+    "artist": "Turnstile",
+    "url": "https://open.spotify.com/track/1afMorBjO1qEq8RCXz9RqV",
+    "image": "https://i.scdn.co/image/ab67616d0000b273da460bd80377420b21884053",
+    "preview_url": null
+  },
+  {
+    "name": "Drop",
+    "artist": "Turnstile",
+    "url": "https://open.spotify.com/track/2RUlE7rP0oKPQE5fI6nQMk",
     "image": "https://i.scdn.co/image/ab67616d0000b27317bafa76e1da26c7167e5192",
     "preview_url": null
   },
   {
-    "name": "BLACKOUT",
+    "name": "DON'T PLAY",
     "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/0bGImSqDB2ebdeoCidUC8o",
+    "url": "https://open.spotify.com/track/69uzV9BQmNLPIu0dWK4Tbe",
     "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
-    "preview_url": null
-  },
-  {
-    "name": "BLACKOUT",
-    "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/0bGImSqDB2ebdeoCidUC8o",
-    "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
-    "preview_url": null
-  },
-  {
-    "name": "Shine",
-    "artist": "Stick Figure",
-    "url": "https://open.spotify.com/track/1QhrlNjzqmqEFW5T5yMFhw",
-    "image": "https://i.scdn.co/image/ab67616d0000b273069a434e32ddf15c11428771",
     "preview_url": null
   }
 ]
