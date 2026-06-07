@@ -1,5 +1,12 @@
 [
   {
+    "name": "The Animal Dance Game",
+    "artist": "Danny Go!",
+    "url": "https://open.spotify.com/track/7uK3on96wGPbnOQWPpRFz8",
+    "image": "https://i.scdn.co/image/ab67616d0000b2730c78c3657f25f52a12071293",
+    "preview_url": null
+  },
+  {
     "name": "The Sub-Orbital Blues",
     "artist": "Rivers of Nihil",
     "url": "https://open.spotify.com/track/1md3iyYm7Ovimen8lebaPe",
@@ -25,13 +32,6 @@
     "artist": "End It",
     "url": "https://open.spotify.com/track/07HfZXSrbwMXTgdZWYSNYB",
     "image": "https://i.scdn.co/image/ab67616d0000b2737160ee5dafd1739d677178fe",
-    "preview_url": null
-  },
-  {
-    "name": "Toothache",
-    "artist": "LOCKED SHUT",
-    "url": "https://open.spotify.com/track/4P9E2sy8HOrFjzNtrBQJh6",
-    "image": "https://i.scdn.co/image/ab67616d0000b273c8231e358c79439dc7ccafc4",
     "preview_url": null
   }
 ]
