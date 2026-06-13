@@ -1,5 +1,26 @@
 [
   {
+    "name": "SLOWDIVE",
+    "artist": "Turnstile",
+    "url": "https://open.spotify.com/track/1wNspyFiI1E9YGhJzz3AoO",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e6b88d3e4886ae3a17621c53",
+    "preview_url": null
+  },
+  {
+    "name": "ENDLESS",
+    "artist": "Turnstile",
+    "url": "https://open.spotify.com/track/6yzMX2L7bjFbklJPfBIO3o",
+    "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
+    "preview_url": null
+  },
+  {
+    "name": "SOLE",
+    "artist": "Turnstile",
+    "url": "https://open.spotify.com/track/6PaSOin7Y9GnXRZ5U5sMsv",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e6b88d3e4886ae3a17621c53",
+    "preview_url": null
+  },
+  {
     "name": "Canned Heat",
     "artist": "Turnstile",
     "url": "https://open.spotify.com/track/3FT12lBLjNgy1jTa4E1160",
@@ -11,27 +32,6 @@
     "artist": "Turnstile",
     "url": "https://open.spotify.com/track/4W024pk8Dm0yjFn3ciaz2F",
     "image": "https://i.scdn.co/image/ab67616d0000b27317bafa76e1da26c7167e5192",
-    "preview_url": null
-  },
-  {
-    "name": "New Rules",
-    "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/41qY7F57ob5JSwboHiPoBk",
-    "image": "https://i.scdn.co/image/ab67616d0000b2736fcb0a0f9c77a56c8c0d0c4d",
-    "preview_url": null
-  },
-  {
-    "name": "Pushing Me Away",
-    "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/2lko49bKOuj6hsh7byOXIz",
-    "image": "https://i.scdn.co/image/ab67616d0000b2737232e39fbe7bd41d35de013d",
-    "preview_url": null
-  },
-  {
-    "name": "Real Thing",
-    "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/1Rz1CTinAymBA4dcMPGijY",
-    "image": "https://i.scdn.co/image/ab67616d0000b273da460bd80377420b21884053",
     "preview_url": null
   }
 ]
