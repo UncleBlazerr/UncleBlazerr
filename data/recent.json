@@ -1,36 +1,36 @@
 [
   {
-    "name": "Cinderella",
-    "artist": "Stephanie Stearns",
-    "url": "https://open.spotify.com/track/758ehxhBBJFGukUrEgnTjD",
-    "image": "https://i.scdn.co/image/ab67616d0000b2732a8b6ce34511614c9373f423",
-    "preview_url": null
-  },
-  {
-    "name": "Frozen Storyette Pt. 3",
-    "artist": "Nolan North",
-    "url": "https://open.spotify.com/track/2JjVwdiEkZAcsuLJ8nUJef",
-    "image": "https://i.scdn.co/image/ab67616d0000b2734889e4625468364bdbb0081d",
-    "preview_url": null
-  },
-  {
-    "name": "Frozen Storyette Pt. 2",
-    "artist": "Nolan North",
-    "url": "https://open.spotify.com/track/2uEFakDjYJ83pcQZaFauzb",
-    "image": "https://i.scdn.co/image/ab67616d0000b2734889e4625468364bdbb0081d",
-    "preview_url": null
-  },
-  {
-    "name": "Frozen Storyette Pt. 1",
-    "artist": "Nolan North",
-    "url": "https://open.spotify.com/track/5QyxZGonXF7bV7Cs4FEVNT",
-    "image": "https://i.scdn.co/image/ab67616d0000b2734889e4625468364bdbb0081d",
-    "preview_url": null
-  },
-  {
-    "name": "LOOK OUT FOR ME",
+    "name": "SEEIN’ STARS",
     "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/4gM6AHXp4h8aj5482znmYz",
+    "url": "https://open.spotify.com/track/2Z4nIITCxUoaZvFug5FxtO",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e6b88d3e4886ae3a17621c53",
+    "preview_url": null
+  },
+  {
+    "name": "DON'T PLAY",
+    "artist": "Turnstile",
+    "url": "https://open.spotify.com/track/69uzV9BQmNLPIu0dWK4Tbe",
+    "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
+    "preview_url": null
+  },
+  {
+    "name": "High Pressure",
+    "artist": "Turnstile",
+    "url": "https://open.spotify.com/track/6chFS0M9e67gNlHY11wnDm",
+    "image": "https://i.scdn.co/image/ab67616d0000b273da460bd80377420b21884053",
+    "preview_url": null
+  },
+  {
+    "name": "BLACKOUT",
+    "artist": "Turnstile",
+    "url": "https://open.spotify.com/track/0bGImSqDB2ebdeoCidUC8o",
+    "image": "https://i.scdn.co/image/ab67616d0000b273c11ba539d58741bbd1332c92",
+    "preview_url": null
+  },
+  {
+    "name": "I CARE",
+    "artist": "Turnstile",
+    "url": "https://open.spotify.com/track/7KVIuHxbV5lvBE5Vyiw8FC",
     "image": "https://i.scdn.co/image/ab67616d0000b273e6b88d3e4886ae3a17621c53",
     "preview_url": null
   }
