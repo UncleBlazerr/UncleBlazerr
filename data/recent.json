@@ -1,5 +1,12 @@
 [
   {
+    "name": "Slowly Turning Blue",
+    "artist": "No Cure",
+    "url": "https://open.spotify.com/track/4YqENY598REOECia70REDu",
+    "image": "https://i.scdn.co/image/ab67616d0000b273ffcc3953dfed7dda84a21c14",
+    "preview_url": null
+  },
+  {
     "name": "Faded",
     "artist": "ZHU",
     "url": "https://open.spotify.com/track/2GQEM9JuHu30sGFvRYeCxz",
@@ -25,13 +32,6 @@
     "artist": "The Him, Sorana, Kyco, Barkley",
     "url": "https://open.spotify.com/track/5HCMxtjQaeLrNQOT5qRksq",
     "image": "https://i.scdn.co/image/07c95835861966354a9e741f088ebd98af15de96",
-    "preview_url": null
-  },
-  {
-    "name": "Empty",
-    "artist": "Juice WRLD",
-    "url": "https://open.spotify.com/track/3T06rGO2dVEntMvym0vpQu",
-    "image": "https://i.scdn.co/image/ab67616d0000b2738b27d35aa2c6dcf99895d664",
     "preview_url": null
   }
 ]
