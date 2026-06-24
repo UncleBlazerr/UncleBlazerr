@@ -1,5 +1,12 @@
 [
   {
+    "name": "Faded",
+    "artist": "ZHU",
+    "url": "https://open.spotify.com/track/2GQEM9JuHu30sGFvRYeCxz",
+    "image": "https://i.scdn.co/image/ab67616d0000b273a5aa7beadbc1f93d0ec01f23",
+    "preview_url": null
+  },
+  {
     "name": "Could You Love Me?",
     "artist": "End It",
     "url": "https://open.spotify.com/track/07HfZXSrbwMXTgdZWYSNYB",
@@ -25,13 +32,6 @@
     "artist": "Juice WRLD",
     "url": "https://open.spotify.com/track/3T06rGO2dVEntMvym0vpQu",
     "image": "https://i.scdn.co/image/ab67616d0000b2738b27d35aa2c6dcf99895d664",
-    "preview_url": null
-  },
-  {
-    "name": "Perfect",
-    "artist": "Capoxxo, oaf1, dreamcache",
-    "url": "https://open.spotify.com/track/2dyeWlhqtGsDW7VpUroZwo",
-    "image": "https://i.scdn.co/image/ab67616d0000b273bc44c3a5094b03ec6d501e31",
     "preview_url": null
   }
 ]
