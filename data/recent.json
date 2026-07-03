@@ -1,5 +1,19 @@
 [
   {
+    "name": "Hypercolour",
+    "artist": "CamelPhat, Yannis, Foals",
+    "url": "https://open.spotify.com/track/3CmUXmrh17WIaQOQu9OVha",
+    "image": "https://i.scdn.co/image/ab67616d0000b273859acf6fc8c49e92a32715b0",
+    "preview_url": null
+  },
+  {
+    "name": "Zeig dich",
+    "artist": "Rammstein",
+    "url": "https://open.spotify.com/track/3d3k8g4GTVx9EFIFlOZOEX",
+    "image": "https://i.scdn.co/image/ab67616d0000b27302add2c77fb6999e311a3248",
+    "preview_url": null
+  },
+  {
     "name": "Dreaming",
     "artist": "Smallpools",
     "url": "https://open.spotify.com/track/3c7vquF4xacCmFrxztLUVH",
@@ -18,20 +32,6 @@
     "artist": "Juice WRLD",
     "url": "https://open.spotify.com/track/6QNFQJKlZUKr0xlGZ74CZJ",
     "image": "https://i.scdn.co/image/ab67616d0000b2739bc762efb2fc7252289b2a26",
-    "preview_url": null
-  },
-  {
-    "name": "Signs",
-    "artist": "Caskets",
-    "url": "https://open.spotify.com/track/7v6YqvhuUAJXn08bOT9JBs",
-    "image": "https://i.scdn.co/image/ab67616d0000b273e8a25962136d48a5d73eccb5",
-    "preview_url": null
-  },
-  {
-    "name": "Them Changes",
-    "artist": "Thundercat",
-    "url": "https://open.spotify.com/track/7CH99b2i1TXS5P8UUyWtnM",
-    "image": "https://i.scdn.co/image/ab67616d0000b27385c5e6c686ced3e43bae2748",
     "preview_url": null
   }
 ]
