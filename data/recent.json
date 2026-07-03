@@ -1,5 +1,12 @@
 [
   {
+    "name": "Rich And Blind",
+    "artist": "Juice WRLD",
+    "url": "https://open.spotify.com/track/6QNFQJKlZUKr0xlGZ74CZJ",
+    "image": "https://i.scdn.co/image/ab67616d0000b2739bc762efb2fc7252289b2a26",
+    "preview_url": null
+  },
+  {
     "name": "Signs",
     "artist": "Caskets",
     "url": "https://open.spotify.com/track/7v6YqvhuUAJXn08bOT9JBs",
@@ -25,13 +32,6 @@
     "artist": "Boney M.",
     "url": "https://open.spotify.com/track/3WMbD1OyfKuwWDWMNbPQ4g",
     "image": "https://i.scdn.co/image/ab67616d0000b273dafd1cd6e9537ec8463ea691",
-    "preview_url": null
-  },
-  {
-    "name": "Why Am I Like This?",
-    "artist": "The Word Alive",
-    "url": "https://open.spotify.com/track/1wZy1qIk3qPVv33I9bALi6",
-    "image": "https://i.scdn.co/image/ab67616d0000b273d997e6c050cf7deae873fec1",
     "preview_url": null
   }
 ]
