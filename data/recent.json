@@ -1,5 +1,19 @@
 [
   {
+    "name": "Out the Door",
+    "artist": "Stick Figure",
+    "url": "https://open.spotify.com/track/6fo3vAnEA8NLICFCzYfVI8",
+    "image": "https://i.scdn.co/image/ab67616d0000b27328292b2539f0ed722e58aa63",
+    "preview_url": null
+  },
+  {
+    "name": "Choice Is Yours (with Slightly Stoopid)",
+    "artist": "Stick Figure, Slightly Stoopid",
+    "url": "https://open.spotify.com/track/1azvKxDb5Vkph2KR7aq1Cx",
+    "image": "https://i.scdn.co/image/ab67616d0000b27328292b2539f0ed722e58aa63",
+    "preview_url": null
+  },
+  {
     "name": "Fall into the Sun",
     "artist": "Stick Figure",
     "url": "https://open.spotify.com/track/0dpdFqEAwSh3KPcIiLxSMP",
@@ -18,20 +32,6 @@
     "artist": "Rufus, Chaka Khan",
     "url": "https://open.spotify.com/track/53Za5vyGc1x7GxgJVRjRKc",
     "image": "https://i.scdn.co/image/ab67616d0000b2731ab2a1683ee8b7fcbc997510",
-    "preview_url": null
-  },
-  {
-    "name": "Verdansk - Remix",
-    "artist": "Dannc Steelee",
-    "url": "https://open.spotify.com/track/36WBNhL7Ui2n7wey7zNFFL",
-    "image": "https://i.scdn.co/image/ab67616d0000b273455fa17fa833c68014464e8b",
-    "preview_url": null
-  },
-  {
-    "name": "For the First Time in Forever - From \"Frozen\"/Soundtrack Version",
-    "artist": "Kristen Bell, Idina Menzel",
-    "url": "https://open.spotify.com/track/70b5Sq3ePOu3Gqg0hjlOtR",
-    "image": "https://i.scdn.co/image/ab67616d0000b273a985e1e7c6b095da213eaa7c",
     "preview_url": null
   }
 ]
