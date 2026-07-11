@@ -1,5 +1,12 @@
 [
   {
+    "name": "Hercules - Storyteller Version",
+    "artist": "Roy Dotrice",
+    "url": "https://open.spotify.com/track/1W9JuReekSyJqYddaVw8os",
+    "image": "https://i.scdn.co/image/ab67616d0000b27305bc94f207bd534a4cd81210",
+    "preview_url": null
+  },
+  {
     "name": "Aladdin - Storyteller",
     "artist": "Chuck Riley",
     "url": "https://open.spotify.com/track/3n6ej62cDXOS7LAPLqC0Um",
@@ -25,13 +32,6 @@
     "artist": "The Stranglers",
     "url": "https://open.spotify.com/track/5GpfyJrKHJI36jDKtQiyGN",
     "image": "https://i.scdn.co/image/ab67616d0000b2730cf70d72827e4304c0e5a551",
-    "preview_url": null
-  },
-  {
-    "name": "BIRDS",
-    "artist": "Turnstile",
-    "url": "https://open.spotify.com/track/0kshHISCRGn9MwpkbqafG4",
-    "image": "https://i.scdn.co/image/ab67616d0000b273e6b88d3e4886ae3a17621c53",
     "preview_url": null
   }
 ]
