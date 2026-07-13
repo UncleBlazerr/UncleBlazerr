@@ -1,5 +1,26 @@
 [
   {
+    "name": "Edge of Desire",
+    "artist": "Jonas Blue, Malive",
+    "url": "https://open.spotify.com/track/4A56h4B9xUuMMXoKuj18HT",
+    "image": "https://i.scdn.co/image/ab67616d0000b273d62a34460f9106ee437bb0b5",
+    "preview_url": null
+  },
+  {
+    "name": "Lush Life",
+    "artist": "Zara Larsson",
+    "url": "https://open.spotify.com/track/1rIKgCH4H52lrvDcz50hS8",
+    "image": "https://i.scdn.co/image/ab67616d0000b273401bf6103d4b7f5230a21582",
+    "preview_url": null
+  },
+  {
+    "name": "Black Friday (pretty like the sun)",
+    "artist": "Lost Frequencies, Tom Odell",
+    "url": "https://open.spotify.com/track/4MSj19TwYBLgDFj3ddEeco",
+    "image": "https://i.scdn.co/image/ab67616d0000b273a0fab1c9bdfc54357ddb89a6",
+    "preview_url": null
+  },
+  {
     "name": "One More Time",
     "artist": "Daft Punk",
     "url": "https://open.spotify.com/track/0DiWol3AO6WpXZgp0goxAV",
@@ -7,31 +28,10 @@
     "preview_url": null
   },
   {
-    "name": "Caribbean Queen (No More Love On the Run)",
-    "artist": "Billy Ocean",
-    "url": "https://open.spotify.com/track/4JEylZNW8SbO4zUyfVrpb7",
-    "image": "https://i.scdn.co/image/ab67616d0000b27399ee23dac7128cb5754f593c",
-    "preview_url": null
-  },
-  {
-    "name": "Lady - Hear Me Tonight",
-    "artist": "Modjo",
-    "url": "https://open.spotify.com/track/49X0LAl6faAusYq02PRAY6",
-    "image": "https://i.scdn.co/image/ab67616d0000b27354c5c304064df85d61253ac7",
-    "preview_url": null
-  },
-  {
-    "name": "Roses - Imanbek Remix",
-    "artist": "SAINt JHN, Imanbek",
-    "url": "https://open.spotify.com/track/72GVdRHK49beKrC1NqRCqj",
-    "image": "https://i.scdn.co/image/ab67616d0000b2738e51ad44471425be0ddcc6a0",
-    "preview_url": null
-  },
-  {
-    "name": "Aladdin - Storyteller",
-    "artist": "Chuck Riley",
-    "url": "https://open.spotify.com/track/3n6ej62cDXOS7LAPLqC0Um",
-    "image": "https://i.scdn.co/image/ab67616d0000b273fe72b9394bef2aebeb4ad0cb",
+    "name": "One More Time",
+    "artist": "Daft Punk",
+    "url": "https://open.spotify.com/track/0DiWol3AO6WpXZgp0goxAV",
+    "image": "https://i.scdn.co/image/ab67616d0000b2731e81bff9807a9e629fce5ade",
     "preview_url": null
   }
 ]
